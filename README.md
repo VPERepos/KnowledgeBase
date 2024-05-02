@@ -227,7 +227,14 @@
       - [Give an example of using an Atomic Variable in Concurrency.](#give-an-example-of-using-an-atomic-variable-in-concurrency)
       - [Give an example of a Use Case for Futures and Promises.](#give-an-example-of-a-use-case-for-futures-and-promises)
     - [Interview questions for Python.](#interview-questions-for-python)
+      - [What is Python? What are the benfits of using it?](#what-is-python-what-are-the-benfits-of-using-it)
+      - [Explain Interpreted Programming Language.](#explain-interpreted-programming-language)
+      - [What is a dynamically typed language?](#what-is-a-dynamically-typed-language)
+      - [What is PEP 8 and why is it important?](#what-is-pep-8-and-why-is-it-important)
+      - [What is Scope in Python?](#what-is-scope-in-python)
       - [What is the difference between Mutable and Immutable Data Types in Pyhon?](#what-is-the-difference-between-mutable-and-immutable-data-types-in-pyhon)
+      - [What are lists and tuples? What is the key difference between the two?](#what-are-lists-and-tuples-what-is-the-key-difference-between-the-two)
+      - [What are the common built-in data types in Python?](#what-are-the-common-built-in-data-types-in-python)
     - [Interview questions for Machine Learning.](#interview-questions-for-machine-learning)
     - [Interview questions for Deep Learning.](#interview-questions-for-deep-learning)
     - [Interview questions for Computer Vision.](#interview-questions-for-computer-vision)
@@ -2483,8 +2490,53 @@ A possible Use Case for Futures and Promises would be passing of data between th
 ```
 
 ### Interview questions for Python.
+**Sources:**<br>
+www.interviewbit.com/python-interview-questions/ <br>
+www.geeksforgeeks.org/python-interview-questions/ <br>
+
+#### What is Python? What are the benfits of using it?
+Python is a high-level, interpreted, dynamically typed, general-purpose programming language. It can be used to build almost any type of application with the right tools/libraries. Python supports objects, modules, threads, exception-handling, and automatic memory management which help in modelling real-world problems and building applications to solve these problems.<br>
+Benefits of using Python:
+* Python is a general-purpose programming language that has a simple, easy-to-learn syntax that emphasizes readability and therefore reduces the cost of program maintenance. Moreover, the language is capable of scripting, is completely open-source, and supports third-party packages encouraging modularity and code reuse.
+* Its high-level data structures, combined with dynamic typing and dynamic binding, attract a huge community of developers for Rapid Application Development and deployment.
+
+#### Explain Interpreted Programming Language.
+An interpreted language executes its statements line by line. Languages such as Python, Javascript, R, PHP, and Ruby are prime examples of Interpreted languages. Programs written in an interpreted language runs directly from the source code, with no intermediary compilation step.
+
+#### What is a dynamically typed language?
+Typing refers to type-checking in programming languages. In a strongly-typed language, such as Python, "1" + 2 will result in a type error since these languages don't allow for "type-coercion" (implicit conversion of data types). On the other hand, a weakly-typed language, such as Javascript, will simply output "12" as a result.<br>
+Type-checking can be done at two stages:
+* Static - Data Types are checked before execution.
+* Dynamic - Data Types are checked during execution.<br>
+
+Python is an interpreted language, executes each statement line by line and thus type-checking is done on the fly, during execution. Hence, Python is a Dynamically Typed Language.
+
+#### What is PEP 8 and why is it important?
+PEP stands for **Python Enhancement Proposal**. A PEP is an official design document providing information to the Python community, or describing a new feature for Python or its processes. PEP 8 is especially important since it documents the style guidelines for Python Code. Apparently contributing to the Python open-source community requires you to follow these style guidelines sincerely and strictly.
+
+#### What is Scope in Python?
+Every object in Python functions within a scope. A scope is a block of code where an object in Python remains relevant. Namespaces uniquely identify all the objects inside a program. However, these namespaces also have a scope defined for them where you could use their objects without any prefix. A few examples of scope created during code execution in Python are as follows:
+* A **Local Scope** refers to the local objects available in the current function.
+* A **Global Scope** refers to the objects available throughout the code execution since their inception.
+* A **Module-level Scope** refers to the global objects of the current module accessible in the program.
+* An **Outermost Scope** refers to all the built-in names callable in the program. The objects in this scope are searched last to find the name referenced.
 
 #### What is the difference between Mutable and Immutable Data Types in Pyhon?
+Mutable data types can be edited i.e., they can change at runtime. Eg – List, Dictionary, etc. Immutable data types can not be edited i.e., they can not change at runtime. Eg – String, Tuple, Byte and all single value built-in types.
+
+#### What are lists and tuples? What is the key difference between the two?
+Lists and Tuples are both sequence data types that can store a collection of objects in Python. The objects stored in both sequences can have different data types. Lists are represented with square brackets ['sara', 6, 0.19], while tuples are represented with parantheses ('ansh', 5, 0.97). The key difference between the two is that while lists are mutable, tuples on the other hand are immutable objects. This means that lists can be modified, appended or sliced on the go but tuples remain constant and cannot be modified in any manner.
+
+#### What are the common built-in data types in Python?
+There are several built-in data types in Python. Although, Python doesn't require data types to be defined explicitly during variable declarations type errors are likely to occur if the knowledge of data types and their compatibility with each other are neglected. Python provides ``type()`` and ``isinstance()`` functions to check the type of these variables. These data types can be grouped into the following categories:
+* **None Type:** represents the null values in Python. Boolean equality operation can be performed using these NoneType objects.
+* **Numeric Types:** there are three distinct numeric types - **integers**, **floating-point numbers**, and **complex numbers**. Additionally, **booleans** are a sub-type of integers.
+* **Sequence Types:** there are four kinds of sequence data types: **list** (matable), **tuple** (immutable), **range** (immutable) and **str**(immutable).
+* **Mapping Types:** **dict** (dictionary) is mutable data type that stores key-value pairs. Implemented as a **Hash Map**.
+* **Set Types:** Currently, Python has two built-in types - **set** and **frozenset**. **set** type is mutable and supports methods like add() and remove(). **frozenset** type is immutable and can't be modified after creation.
+* **Modules:** is an additional built-in type supported by the Python Interpreter. It supports one special operation, i.e., attribute access: ``mymod.myobj``, where ``mymod`` is a module and ``myobj`` references a name defined in m's symbol table. The module's symbol table resides in a very special attribute of the module __dict__, but direct assignment to this module is neither possible nor recommended.
+* **Callable Types:** Callable types are the types to which function call can be applied. They can be **user-defined functions**, **instance methods**, **generator functions** and some other built-in functions, methods and classes.
+ 
 
 ### Interview questions for Machine Learning.
 ### Interview questions for Deep Learning.
