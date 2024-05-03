@@ -235,6 +235,36 @@
       - [What is the difference between Mutable and Immutable Data Types in Pyhon?](#what-is-the-difference-between-mutable-and-immutable-data-types-in-pyhon)
       - [What are lists and tuples? What is the key difference between the two?](#what-are-lists-and-tuples-what-is-the-key-difference-between-the-two)
       - [What are the common built-in data types in Python?](#what-are-the-common-built-in-data-types-in-python)
+      - [What is ``pass`` in Python?](#what-is-pass-in-python)
+      - [How are arguments passed by value or by reference in Python?](#how-are-arguments-passed-by-value-or-by-reference-in-python)
+      - [What is List Comprehension? Give an Example.](#what-is-list-comprehension-give-an-example)
+      - [What is a lambda function?](#what-is-a-lambda-function)
+      - [What is the difference between / and // in Python?](#what-is-the-difference-between--and--in-python)
+      - [How is Exceptional handling done in Python?](#how-is-exceptional-handling-done-in-python)
+      - [What is swapcase function in Python?](#what-is-swapcase-function-in-python)
+      - [Can we pass a function as an argument in Python?](#can-we-pass-a-function-as-an-argument-in-python)
+      - [What are ``*args`` and ``*kwargs``?](#what-are-args-and-kwargs)
+      - [Is Indentation Required in Python?](#is-indentation-required-in-python)
+      - [What is docstring in Python?](#what-is-docstring-in-python)
+      - [What is a ``break``, ``continue``, and ``pass`` in Python?](#what-is-a-break-continue-and-pass-in-python)
+      - [How do you floor a number in Python?](#how-do-you-floor-a-number-in-python)
+      - [What are global, protected and private attributes in Python?](#what-are-global-protected-and-private-attributes-in-python)
+      - [What is the use of ``self`` in Python?](#what-is-the-use-of-self-in-python)
+      - [What is ``__init__`` in Python?](#what-is-__init__-in-python)
+      - [What is slicing in Python?](#what-is-slicing-in-python)
+      - [What is the difference between Python Arrays and Lists?](#what-is-the-difference-between-python-arrays-and-lists)
+      - [How is memory managed in Python?](#how-is-memory-managed-in-python)
+      - [What are Python namespaces? Why are they used?](#what-are-python-namespaces-why-are-they-used)
+      - [What are Decorators in Python?](#what-are-decorators-in-python)
+      - [How do you copy an object in Python?](#how-do-you-copy-an-object-in-python)
+      - [What is pickling and unpickling?](#what-is-pickling-and-unpickling)
+      - [What are Generators in Python?](#what-are-generators-in-python)
+      - [What is the difference between .py and .pyc files?](#what-is-the-difference-between-py-and-pyc-files)
+      - [How Python is interpreted?](#how-python-is-interpreted)
+      - [What are iterators in Python?](#what-are-iterators-in-python)
+      - [What are negative indexes and why are they used?](#what-are-negative-indexes-and-why-are-they-used)
+      - [Which sorting technique is used by ``sort()`` and ``sorted()`` functions of python?](#which-sorting-technique-is-used-by-sort-and-sorted-functions-of-python)
+      - [Does Python supports multiple Inheritance?](#does-python-supports-multiple-inheritance)
     - [Interview questions for Machine Learning.](#interview-questions-for-machine-learning)
     - [Interview questions for Deep Learning.](#interview-questions-for-deep-learning)
     - [Interview questions for Computer Vision.](#interview-questions-for-computer-vision)
@@ -2537,6 +2567,272 @@ There are several built-in data types in Python. Although, Python doesn't requir
 * **Modules:** is an additional built-in type supported by the Python Interpreter. It supports one special operation, i.e., attribute access: ``mymod.myobj``, where ``mymod`` is a module and ``myobj`` references a name defined in m's symbol table. The module's symbol table resides in a very special attribute of the module __dict__, but direct assignment to this module is neither possible nor recommended.
 * **Callable Types:** Callable types are the types to which function call can be applied. They can be **user-defined functions**, **instance methods**, **generator functions** and some other built-in functions, methods and classes.
  
+#### What is ``pass`` in Python?
+The ``pass`` keyword represents a null operation in Python. It is generally used for the purpose of filling up empty blocks of code which may execute during runtime but has yet to be written.
+
+#### How are arguments passed by value or by reference in Python?
+Everything in Python is an object and all variables hold references to the objects. The reference values are according to the functions; as a result, you cannot change the value of the references. However, you can change the objects if it is mutable.
+
+#### What is List Comprehension? Give an Example.
+List comprehension is a syntax construction to ease the creation of a list based on existing iterable.<br>
+For Example:<br>
+```python
+my_list = [i for i in range(1, 10)]
+```
+
+#### What is a lambda function?
+A lambda function is an anonymous function. This function can have any number of parameters but, can have just one statement. <br>
+For Example:
+```python
+a = lambda x, y : x*y
+print(a(7, 19))
+```
+
+#### What is the difference between / and // in Python?
+``/`` represents precise division (result is a floating point number) whereas ``//`` represents floor division (result is an integer).<br>
+For Example:
+```python
+5//2 = 2
+5/2 = 2.5
+```
+
+#### How is Exceptional handling done in Python?
+There are 3 main keywords i.e. ``try``, ``except``, and ``finally`` which are used to catch exceptions and handle the recovering mechanism accordingly. ``try`` is the block of a code that is monitored for errors. Except block gets executed when an error occurs.<br>
+The beauty of the ``final`` block is to execute the code after trying for an error. This block gets executed irrespective of whether an error occurred or not. ``final`` block is used to do the required cleanup activities of objects/variables.
+
+#### What is swapcase function in Python?
+It is a string’s function that converts all uppercase characters into lowercase and vice versa. It is used to alter the existing case of the string. This method creates a copy of the string which contains all the characters in the swap case. <br> 
+For Example:
+```python
+string = "PythonRules"
+string.swapcase() ---> "pYTHONrULES"
+```
+
+#### Can we pass a function as an argument in Python?
+Yes, Several arguments can be passed to a function, including objects, variables (of the same or distinct data types), and functions. Functions can be passed as parameters to other functions because they are objects. Higher-order functions are functions that can take other functions as arguments.
+
+#### What are ``*args`` and ``*kwargs``?
+To pass a variable number of arguments to a function in Python, use the special syntax ``*args`` and ``**kwargs`` in the function specification. It is used to pass a variable-length, keyword-free argument list. By using the *, the variable we associate with the * becomes iterable, allowing you to do operations on it such as iterating over it and using higher-order operations like map and filter.
+
+#### Is Indentation Required in Python?
+Yes, indentation is required in Python. A Python interpreter can be informed that a group of statements belongs to a specific block of code by using Python indentation. Indentations make the code easy to read for developers in all programming languages but in Python, it is very important to indent the code in a specific order.
+
+#### What is docstring in Python?
+Python documentation strings (or docstrings) provide a convenient way of associating documentation with Python modules, functions, classes, and methods.
+* **Declaring Docstrings:** The docstrings are declared using ”’triple single quotes”’ or “””triple double quotes””” just below the class, method, or function declaration. All functions should have a docstring.
+* **Accessing Docstrings:** The docstrings can be accessed using the ``__doc__`` method of the object or using the help function.
+
+#### What is a ``break``, ``continue``, and ``pass`` in Python? 
+The ``break`` statement is used to terminate the loop or statement in which it is present. After that, the control will pass to the statements that are present after the break statement, if available.<br>
+``continue`` is also a loop control statement just like the break statement. ``continue`` statement is opposite to that of the break statement, instead of terminating the loop, it forces to execute the next iteration of the loop.<br>
+``pass`` means performing no operation or in other words, it is a placeholder in the compound statement, where there should be a blank left and nothing has to be written there.
+
+#### How do you floor a number in Python?
+The Python math module includes a method that can be used to calculate the floor of a number.
+* ``floor()`` method in Python returns the floor of x i.e., the largest integer not greater than x. 
+* Also, The method ``ceil(x)`` in Python returns a ceiling value of x i.e., the smallest integer greater than or equal to x.
+
+#### What are global, protected and private attributes in Python?
+* **Global** variables are public variables that are defined in the global scope. To use the variable in the global scope inside a function, we use the global keyword.
+* **Protected** attributes are attributes defined with an underscore prefixed to their identifier eg. _sara. They can still be accessed and modified from outside the class they are defined in but a responsible developer should refrain from doing so.
+* **Private** attributes are attributes with double underscore prefixed to their identifier eg. __ansh. They cannot be accessed or modified from the outside directly and will result in an AttributeError if such an attempt is made.
+
+#### What is the use of ``self`` in Python?
+``self`` is used to represent the instance of the class. With this keyword, you can access the attributes and methods of an object inside the class definition in Python.
+
+#### What is ``__init__`` in Python?
+``__init__`` is a contructor method in Python and is automatically called to allocate memory when a new object/instance is created. All classes have a ``__init__`` method associated with them. It helps in distinguishing methods and attributes of a class from local variables.
+
+#### What is slicing in Python?
+* As the name suggests, ‘slicing’ is taking parts of a container.
+* Syntax for slicing is ``[start : stop : step]``
+* ``start`` is the starting index from where to slice a list or tuple
+* ``stop`` is the ending index or where to stop.
+* ``step`` is the number of steps to jump.
+* Default value for start is 0, stop is number of items, step is 1.
+* Slicing can be done on strings, arrays, lists, and tuples.
+
+#### What is the difference between Python Arrays and Lists?
+* **Arrays** in Python can only contain elements of same data types i.e., data type of array should be homogeneous. It is a thin wrapper around C language arrays and consumes far less memory than lists.
+* **Lists** in Python can contain elements of different data types i.e., data type of lists can be heterogeneous. It has the disadvantage of consuming large memory.<br>
+Example:
+```python
+import array
+a = array.array('i', [1, 2, 3])
+for i in a:
+    print(i, end=' ')    #OUTPUT: 1 2 3
+a = array.array('i', [1, 2, 'string'])    #OUTPUT: TypeError: an integer is required (got type str)
+a = [1, 2, 'string']
+for i in a:
+   print(i, end=' ')    #OUTPUT: 1 2 string
+```
+
+#### How is memory managed in Python?
+* Memory management in Python is handled by the Python Memory Manager. The memory allocated by the manager is in form of a private heap space dedicated to Python. All Python objects are stored in this heap and being private, it is inaccessible to the programmer. Though, python does provide some core API functions to work upon the private heap space.
+* Additionally, Python has an in-built garbage collection to recycle the unused memory for the private heap space.
+
+#### What are Python namespaces? Why are they used?
+A namespace in Python ensures that object names in a program are unique and can be used without any conflict. Python implements these namespaces as dictionaries with 'name as key' mapped to a corresponding 'object as value'. This allows for multiple namespaces to use the same name and map it to a separate object. A few examples of namespaces are as follows:
+* **Local Namespace** includes local names inside a function. The namespace is temporarily created for a function call and gets cleared when the function returns.
+* **Global Namespace** includes names from various imported packages/ modules that are being used in the current project. This namespace is created when the package is imported in the script and lasts until the execution of the script.
+* **Built-in Namespace** includes built-in functions of core Python and built-in names for various types of exceptions.
+
+The lifecycle of a namespace depends upon the scope of objects they are mapped to. If the scope of an object ends, the lifecycle of that namespace comes to an end. Hence, it isn't possible to access inner namespace objects from an outer namespace.
+
+#### What are Decorators in Python?
+Decorators in Python are essentially functions that add functionality to an existing function in Python without changing the structure of the function itself. They are represented the ``@decorator_name`` in Python and are called in a bottom-up fashion. <br>
+For example:
+```python
+# decorator function to convert to lowercase
+def lowercase_decorator(function):
+   def wrapper():
+       func = function()
+       string_lowercase = func.lower()
+       return string_lowercase
+   return wrapper
+# decorator function to split words
+def splitter_decorator(function):
+   def wrapper():
+       func = function()
+       string_split = func.split()
+       return string_split
+   return wrapper
+@splitter_decorator # this is executed next
+@lowercase_decorator # this is executed first
+def hello():
+   return 'Hello World'
+hello()   # output => [ 'hello' , 'world' ]
+```
+The beauty of the decorators lies in the fact that besides adding functionality to the output of the method, they can even accept arguments for functions and can further modify those arguments before passing it to the function itself. The inner nested function, i.e. 'wrapper' function, plays a significant role here. It is implemented to enforce encapsulation and thus, keep itself hidden from the global scope.
+```python
+# decorator function to capitalize names
+def names_decorator(function):
+   def wrapper(arg1, arg2):
+       arg1 = arg1.capitalize()
+       arg2 = arg2.capitalize()
+       string_hello = function(arg1, arg2)
+       return string_hello
+   return wrapper
+@names_decorator
+def say_hello(name1, name2):
+   return 'Hello ' + name1 + '! Hello ' + name2 + '!'
+say_hello('sara', 'ansh')   # output => 'Hello Sara! Hello Ansh!'
+```
+#### How do you copy an object in Python?
+In Python, the assignment statement (``=`` operator) does not copy objects. Instead, it creates a binding between the existing object and the target variable name. To create copies of an object in Python, we need to use the copy module. Moreover, there are two ways of creating copies for the given object using the ``copy`` module:
+* **Shallow Copy** is a bit-wise copy of an object. The copied object created has an exact copy of the values in the original object. If either of the values is a reference to other objects, just the reference addresses for the same are copied.
+* **Deep Copy** copies all values recursively from source to target object, i.e. it even duplicates the objects referenced by the source object.<br>
+Examples:
+```python
+from copy import copy, deepcopy
+list_1 = [1, 2, [3, 5], 4]
+## shallow copy
+list_2 = copy(list_1) 
+list_2[3] = 7
+list_2[2].append(6)
+list_2    # output => [1, 2, [3, 5, 6], 7]
+list_1    # output => [1, 2, [3, 5, 6], 4]
+## deep copy
+list_3 = deepcopy(list_1)
+list_3[3] = 8
+list_3[2].append(7)
+list_3    # output => [1, 2, [3, 5, 6, 7], 8]
+list_1    # output => [1, 2, [3, 5, 6], 4]
+```
+
+#### What is pickling and unpickling?
+Python library ``pickle`` offers a feature - serialization out of the box. Serializing an object refers to transforming it into a format that can be stored, so as to be able to deserialize it, later on, to obtain the original object. Here, the pickle module comes into play.
+
+#### What are Generators in Python?
+Generators are functions that return an iterable collection of items, one at a time, in a set manner. Generators, in general, are used to create iterators with a different approach. They employ the use of ´´yield´´ keyword rather than ´´return`` to return a generator object.<br>
+Let's try and build a generator for fibonacci numbers:
+```python
+## generate fibonacci numbers upto n
+def fib(n):
+   p, q = 0, 1
+   while(p < n):
+       yield p
+       p, q = q, p + q
+x = fib(10)    # create generator object 
+ 
+## iterating using __next__(), for Python2, use next()
+x.__next__()    # output => 0
+x.__next__()    # output => 1
+x.__next__()    # output => 1
+x.__next__()    # output => 2
+x.__next__()    # output => 3
+x.__next__()    # output => 5
+x.__next__()    # output => 8
+x.__next__()    # error
+ 
+## iterating using loop
+for i in fib(10):
+   print(i)    # output => 0 1 1 2 3 5 8
+```
+
+#### What is the difference between .py and .pyc files?
+* .py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program. We get bytecode after compilation of .py file (source code). .pyc files are not created for all the files that you run. It is only created for the files that you import.
+* Before executing a python program python interpreter checks for the compiled files. If the file is present, the virtual machine executes it. If not found, it checks for .py file. If found, compiles it to .pyc file and then python virtual machine executes it.
+* Having .pyc file saves you the compilation time.
+
+#### How Python is interpreted?
+* Python as a language is not interpreted or compiled. Interpreted or compiled is the property of the implementation. Python is a bytecode(set of interpreter readable instructions) interpreted generally.
+* Source code is a file with .py extension.
+* Python compiles the source code to a set of instructions for a virtual machine. The Python interpreter is an implementation of that virtual machine. This intermediate format is called “bytecode”.
+* .py source code is first compiled to give .pyc which is bytecode. This bytecode can be then interpreted by the official CPython or JIT(Just in Time compiler) compiled by PyPy.
+
+#### What are iterators in Python?
+* An iterator is an object.
+* It remembers its state i.e., where it is during iteration (see code below to see how)
+* ``__iter__()`` method initializes an iterator.
+* It has a ``__next__()`` method which returns the next item in iteration and points to the next element. Upon reaching the end of iterable object ``__next__()`` must return StopIteration exception.
+* It is also self-iterable.
+* Iterators are objects with which we can iterate over iterable objects like lists, strings, etc.<br>
+
+Example:
+```python
+class ArrayList:
+   def __init__(self, number_list):
+       self.numbers = number_list
+   def __iter__(self):
+       self.pos = 0
+       return self
+   def __next__(self):
+       if(self.pos < len(self.numbers)):
+           self.pos += 1
+           return self.numbers[self.pos - 1]
+       else:
+           raise StopIteration
+array_obj = ArrayList([1, 2, 3])
+it = iter(array_obj)
+print(next(it)) #output: 2
+print(next(it)) #output: 3
+print(next(it))
+#Throws Exception
+#Traceback (most recent call last):
+#...
+#StopIteration
+```
+
+#### What are negative indexes and why are they used?
+* Negative indexes are the indexes from the end of the list or tuple or string.
+* Arr[-1] means the last element of array Arr[]. <br>
+
+Example:
+```python
+arr = [1, 2, 3, 4, 5, 6]
+#get the last element
+print(arr[-1]) #output 6
+#get the second last element
+print(arr[-2]) #output 5
+```
+
+#### Which sorting technique is used by ``sort()`` and ``sorted()`` functions of python?
+Python uses the TimSort algorithm for sorting. It’s a stable sorting whose worst case is O(N log N). It’s a hybrid sorting algorithm, derived from MergeSort and InsertionSort, designed to perform well on many kinds of real-world data.
+
+#### Does Python supports multiple Inheritance?
+Python does support multiple inheritances, unlike Java. Multiple inheritances mean that a class can be derived from more than one parent class.
+
 
 ### Interview questions for Machine Learning.
 ### Interview questions for Deep Learning.
