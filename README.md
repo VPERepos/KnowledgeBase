@@ -264,7 +264,23 @@
       - [What are iterators in Python?](#what-are-iterators-in-python)
       - [What are negative indexes and why are they used?](#what-are-negative-indexes-and-why-are-they-used)
       - [Which sorting technique is used by ``sort()`` and ``sorted()`` functions of python?](#which-sorting-technique-is-used-by-sort-and-sorted-functions-of-python)
-      - [Does Python supports multiple Inheritance?](#does-python-supports-multiple-inheritance)
+      - [How do you create a class in Python?](#how-do-you-create-a-class-in-python)
+      - [How does inheritance work in python? Explain it with an example.](#how-does-inheritance-work-in-python-explain-it-with-an-example)
+      - [How do you access parent members in the child class?](#how-do-you-access-parent-members-in-the-child-class)
+      - [Are access specifiers used in python?](#are-access-specifiers-used-in-python)
+      - [Is it possible to call parent class without its instance creation?](#is-it-possible-to-call-parent-class-without-its-instance-creation)
+      - [How is an empty class created in python?](#how-is-an-empty-class-created-in-python)
+      - [What is Polymorphism in Python?](#what-is-polymorphism-in-python)
+      - [Differentiate between new and override modifiers.](#differentiate-between-new-and-override-modifiers)
+      - [How will you check if a class is a child of another class?](#how-will-you-check-if-a-class-is-a-child-of-another-class)
+      - [Define encapsulation in Python?](#define-encapsulation-in-python)
+      - [How do you do data abstraction in Python?](#how-do-you-do-data-abstraction-in-python)
+      - [Give an example of Multithreading with Threads Synchronization in Python.](#give-an-example-of-multithreading-with-threads-synchronization-in-python)
+      - [Give an example of Threads Synchronization with Condition Variables.](#give-an-example-of-threads-synchronization-with-condition-variables)
+      - [Give an example of using ThreadPoolExecuter in Python.](#give-an-example-of-using-threadpoolexecuter-in-python)
+      - [Give an example of using ProcessPoolExecuter.](#give-an-example-of-using-processpoolexecuter)
+      - [Explain the difference between Thread and Process in Python.](#explain-the-difference-between-thread-and-process-in-python)
+      - [What is the Python Global Interpreter Lock (GIL)?](#what-is-the-python-global-interpreter-lock-gil)
     - [Interview questions for Machine Learning.](#interview-questions-for-machine-learning)
     - [Interview questions for Deep Learning.](#interview-questions-for-deep-learning)
     - [Interview questions for Computer Vision.](#interview-questions-for-computer-vision)
@@ -2830,9 +2846,401 @@ print(arr[-2]) #output 5
 #### Which sorting technique is used by ``sort()`` and ``sorted()`` functions of python?
 Python uses the TimSort algorithm for sorting. It’s a stable sorting whose worst case is O(N log N). It’s a hybrid sorting algorithm, derived from MergeSort and InsertionSort, designed to perform well on many kinds of real-world data.
 
-#### Does Python supports multiple Inheritance?
-Python does support multiple inheritances, unlike Java. Multiple inheritances mean that a class can be derived from more than one parent class.
+#### How do you create a class in Python?
+To create a class in python, we use the keyword “class” as shown in the example below:
+```python
+class Employee:
+   def __init__(self, emp_name):
+       self.emp_name = emp_name
+```
+To instantiate or create an object from the class created above, we do the following:
+```python
+emp_1=Employee("Mr. Employee")
+```
+To access the name attribute, we just call the attribute using the dot operator as shown below:
+```python
+print(emp_1.emp_name)
+```
+To create methods inside the class, we include the methods under the scope of the class as shown below:
+```python
+class Employee:
+   def __init__(self, emp_name):
+       self.emp_name = emp_name
+       
+   def introduce(self):
+       print("Hello I am " + self.emp_name)
+```
+The ``self`` parameter has to be the first parameter of any method defined inside the class. The method of the class ``Employee`` can be accessed as shown below:
+```python
+emp_1.introduce()
+```
 
+#### How does inheritance work in python? Explain it with an example.
+Inheritance gives the power to a class to access all attributes and methods of another class. It aids in code reusability and helps the developer to maintain applications without redundant code. The class inheriting from another class is a child class or also called a derived class. The class from which a child class derives the members are called parent class or superclass.<br>
+Python supports different kinds of inheritance, they are:
+* **Single Inheritance:** Child class derives members of one parent class.
+```python
+# Parent class
+class ParentClass:
+    def par_func(self):
+         print("I am parent class function")
+
+# Child class
+class ChildClass(ParentClass):
+    def child_func(self):
+         print("I am child class function")
+
+# Driver code
+obj1 = ChildClass()
+obj1.par_func()
+obj1.child_func()
+```
+* **Multi-level Inheritance:** The members of the parent class, A, are inherited by child class which is then inherited by another child class, B. The features of the base class and the derived class are further inherited into the new derived class, C. Here, A is the grandfather class of class C.
+```python
+# Parent class
+class A:
+   def __init__(self, a_name):
+       self.a_name = a_name
+   
+# Intermediate class
+class B(A):
+   def __init__(self, b_name, a_name):
+       self.b_name = b_name
+       # invoke constructor of class A
+       A.__init__(self, a_name)
+
+# Child class
+class C(B):
+   def __init__(self,c_name, b_name, a_name):
+       self.c_name = c_name
+       # invoke constructor of class B
+       B.__init__(self, b_name, a_name)
+       
+   def display_names(self):
+       print("A name : ", self.a_name)
+       print("B name : ", self.b_name)
+       print("C name : ", self.c_name)
+
+#  Driver code
+obj1 = C('child', 'intermediate', 'parent')
+print(obj1.a_name)
+obj1.display_names()
+```
+* **Multiple Inheritance:** This is achieved when one child class derives members from more than one parent class. All features of parent classes are inherited in the child class.
+```python
+# Parent class1
+class Parent1:
+   def parent1_func(self):
+       print("Hi I am first Parent")
+
+# Parent class2
+class Parent2:
+   def parent2_func(self):
+       print("Hi I am second Parent")
+
+# Child class
+class Child(Parent1, Parent2):
+   def child_func(self):
+       self.parent1_func()
+       self.parent2_func()
+
+# Driver's code
+obj1 = Child()
+obj1.child_func()
+```
+* **Hierarchical Inheritance:** When a parent class is derived by more than one child class, it is called hierarchical inheritance.
+```python
+# Base class
+class A:
+     def a_func(self):
+         print("I am from the parent class.")
+
+# 1st Derived class
+class B(A):
+     def b_func(self):
+         print("I am from the first child.")
+
+# 2nd Derived class
+class C(A):
+     def c_func(self):
+         print("I am from the second child.")
+ 
+# Driver's code
+obj1 = B()
+obj2 = C()
+obj1.a_func()
+obj1.b_func()    #child 1 method
+obj2.a_func()
+obj2.c_func()    #child 2 method
+```
+
+#### How do you access parent members in the child class?
+Following are the ways using which you can access parent class members within a child class:
+* **By using Parent class name:** You can use the name of the parent class to access the attributes as shown in the example below:
+```python
+class Parent(object):  
+   # Constructor
+   def __init__(self, name):
+       self.name = name    
+ 
+class Child(Parent): 
+   # Constructor
+   def __init__(self, name, age):
+       Parent.name = name
+       self.age = age
+ 
+   def display(self):
+       print(Parent.name, self.age)
+ 
+# Driver Code
+obj = Child("Interviewbit", 6)
+obj.display()
+```
+* **By using ``super()``:** The parent class members can be accessed in child class using the ``super`` keyword.
+```python
+class Parent(object):
+   # Constructor
+   def __init__(self, name):
+       self.name = name    
+ 
+class Child(Parent):
+   # Constructor
+   def __init__(self, name, age):         
+       ''' 
+       In Python 3.x, we can also use super().__init__(name)
+       ''' 
+       super(Child, self).__init__(name)
+       self.age = age
+ 
+   def display(self):
+      # Note that Parent.name cant be used 
+      # here since super() is used in the constructor
+      print(self.name, self.age)
+  
+# Driver Code
+obj = Child("Interviewbit", 6)
+obj.display()
+```
+
+#### Are access specifiers used in python?
+Python does not make use of access specifiers specifically like private, public, protected, etc. However, it does not derive this from any variables. It has the concept of imitating the behaviour of variables by making use of a single (protected) or double underscore (private) as prefixed to the variable names. By default, the variables without prefixed underscores are public.
+
+#### Is it possible to call parent class without its instance creation?
+Yes, it is possible if the base class is instantiated by other child classes or if the base class is a static method.
+
+#### How is an empty class created in python?
+An empty class does not have any members defined in it. It is created by using the ``pass`` keyword (the pass command does nothing in python). We can create objects for this class outside the class.
+
+#### What is Polymorphism in Python?
+Polymorphism means the ability to take multiple forms. So, for instance, if the parent class has a method named ABC then the child class also can have a method with the same name ABC having its own parameters and variables. Python allows polymorphism.
+
+#### Differentiate between new and override modifiers.
+The ``new`` modifier is used to instruct the compiler to use the new implementation and not the base class function. The ``override`` modifier is useful for overriding a base class function inside the child class.
+
+#### How will you check if a class is a child of another class?
+This is done by using a method called ``issubclass()`` provided by python. The method tells us if any class is a child of another class by returning true or false accordingly. 
+
+#### Define encapsulation in Python?
+Encapsulation means binding the code and the data together. A Python class is an example of encapsulation.
+
+#### How do you do data abstraction in Python?
+Data Abstraction is providing only the required details and hides the implementation from the world. It can be achieved in Python by using interfaces and abstract classes.
+
+#### Give an example of Multithreading with Threads Synchronization in Python.
+The following code gives an example of threads synchronaization in Python:
+```python
+
+import threading 
+  
+# global variable x 
+x = 0
+  
+def increment(): 
+    """ 
+    function to increment global variable x 
+    """
+    global x 
+    x += 1
+  
+def thread_task(lock): 
+    """ 
+    task for thread 
+    calls increment function 100000 times. 
+    """
+    for _ in range(100000): 
+        lock.acquire() 
+        increment() 
+        lock.release() 
+  
+def main_task(): 
+    global x 
+    # setting global variable x as 0 
+    x = 0
+  
+    # creating a lock 
+    lock = threading.Lock() 
+  
+    # creating threads 
+    t1 = threading.Thread(target=thread_task, args=(lock,)) 
+    t2 = threading.Thread(target=thread_task, args=(lock,)) 
+  
+    # start threads 
+    t1.start() 
+    t2.start() 
+  
+    # wait until threads finish their job 
+    t1.join() 
+    t2.join() 
+  
+if __name__ == "__main__": 
+    for i in range(10): 
+        main_task() 
+        print("Iteration {0}: x = {1}".format(i,x)) 
+
+```
+**Output:**<br>
+Iteration 0: x = 200000<br>
+Iteration 1: x = 200000<br>
+Iteration 2: x = 200000<br>
+Iteration 3: x = 200000<br>
+Iteration 4: x = 200000<br>
+Iteration 5: x = 200000<br>
+Iteration 6: x = 200000<br>
+Iteration 7: x = 200000<br>
+Iteration 8: x = 200000<br>
+Iteration 9: x = 200000<br>
+
+#### Give an example of Threads Synchronization with Condition Variables.
+Consider the following example:
+```python
+import threading
+import time
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    format='(%(threadName)-9s) %(message)s',)
+
+def consumer(cv):
+    logging.debug('Consumer thread started ...')
+    with cv:
+    	logging.debug('Consumer waiting ...')
+        cv.wait()
+        logging.debug('Consumer consumed the resource')
+
+def producer(cv):
+    logging.debug('Producer thread started ...')
+    with cv:
+        logging.debug('Making resource available')
+        logging.debug('Notifying to all consumers')
+        cv.notifyAll()
+
+if __name__ == '__main__':
+    condition = threading.Condition()
+    cs1 = threading.Thread(name='consumer1', target=consumer, args=(condition,))
+    cs2 = threading.Thread(name='consumer2', target=consumer, args=(condition,))
+    pd = threading.Thread(name='producer', target=producer, args=(condition,))
+
+    cs1.start()
+    time.sleep(2)
+    cs2.start()
+    time.sleep(2)
+    pd.start()
+```
+**Output:**<br>
+(consumer1) Consumer thread started ...<br>
+(consumer1) Consumer waiting ...<br>
+(consumer2) Consumer thread started ...<br>
+(consumer2) Consumer waiting ...<br>
+(producer ) Producer thread started ...<br>
+(producer ) Making resource available<br>
+(producer ) Notifying to all consumers<br>
+(consumer1) Consumer consumed the resource<br>
+(consumer2) Consumer consumed the resource<br>
+
+#### Give an example of using ThreadPoolExecuter in Python.
+Consider the following:
+```python
+import concurrent.futures
+import urllib.request
+
+URLS = ['http://www.foxnews.com/',
+        'http://www.cnn.com/',
+        'http://europe.wsj.com/',
+        'http://www.bbc.co.uk/',
+        'http://nonexistant-subdomain.python.org/']
+
+# Retrieve a single page and report the URL and contents
+def load_url(url, timeout):
+    with urllib.request.urlopen(url, timeout=timeout) as conn:
+        return conn.read()
+
+# We can use a with statement to ensure threads are cleaned up promptly
+with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+    # Start the load operations and mark each future with its URL
+    future_to_url = {executor.submit(load_url, url, 60): url for url in URLS}
+    for future in concurrent.futures.as_completed(future_to_url):
+        url = future_to_url[future]
+        try:
+            data = future.result()
+        except Exception as exc:
+            print('%r generated an exception: %s' % (url, exc))
+        else:
+            print('%r page is %d bytes' % (url, len(data)))
+```
+
+#### Give an example of using ProcessPoolExecuter.
+The following code describes such a use case:
+```python
+import concurrent.futures
+import math
+
+PRIMES = [
+    112272535095293,
+    112582705942171,
+    112272535095293,
+    115280095190773,
+    115797848077099,
+    1099726899285419]
+
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+
+    sqrt_n = int(math.floor(math.sqrt(n)))
+    for i in range(3, sqrt_n + 1, 2):
+        if n % i == 0:
+            return False
+    return True
+
+def main():
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        for number, prime in zip(PRIMES, executor.map(is_prime, PRIMES)):
+            print('%d is prime: %s' % (number, prime))
+
+if __name__ == '__main__':
+    main()
+```
+
+#### Explain the difference between Thread and Process in Python.
+A **Process** is an instance of a program, e.g. a Python interpreter. They are independent from each other and do not share the same memory.<br>
+**Key facts:** - A new process is started independently from the first process - Takes advantage of multiple CPUs and cores - Separate memory space - Memory is not shared between processes - One GIL (Global interpreter lock) for each process, i.e. avoids GIL limitation - Great for CPU-bound processing - Child processes are interruptable/killable
+* Starting a process is slower that starting a thread
+* Larger memory footprint
+* IPC (inter-process communication) is more complicated
+
+A **Thread** is an entity within a process that can be scheduled for execution (Also known as "leightweight process"). A Process can spawn multiple threads. The main difference is that all threads within a process share the same memory.<br>
+**Key facts:** - Multiple threads can be spawned within one process - Memory is shared between all threads - Starting a thread is faster than starting a process - Great for I/O-bound tasks - Leightweight - low memory footprint
+* One GIL for all threads, i.e. threads are limited by GIL.
+* Multithreading has no effect for CPU-bound tasks due to the GIL.
+* Not interruptible/killable -> be careful with memory leaks.
+* Increased potential for race conditions.
+
+#### What is the Python Global Interpreter Lock (GIL)?
+Python Global Interpreter Lock (GIL) is a type of process lock which is used by python whenever it deals with processes. Generally, Python only uses only one thread to execute the set of written statements. This means that in python only one thread will be executed at a time. The performance of the single-threaded process and the multi-threaded process will be the same in python and this is because of GIL in python. We can not achieve multithreading in python because we have global interpreter lock which restricts the threads and works as a single thread.
 
 ### Interview questions for Machine Learning.
 ### Interview questions for Deep Learning.
