@@ -1,491 +1,491 @@
-# Knowledge Base
+# 1. Knowledge Base
 
-- [Knowledge Base](#knowledge-base)
-  - [Possible interview questions.](#possible-interview-questions)
-    - [Interview questions for probability and statistics.](#interview-questions-for-probability-and-statistics)
-      - [Can you give an intuitive definition of probability of an event?](#can-you-give-an-intuitive-definition-of-probability-of-an-event)
-      - [What is the absolute necessery condition for the intuitive definition of probability to be true?](#what-is-the-absolute-necessery-condition-for-the-intuitive-definition-of-probability-to-be-true)
-      - [What is the difference between probability and statistics?](#what-is-the-difference-between-probability-and-statistics)
-      - [Enlist and explain the most important combinatoric formulas.](#enlist-and-explain-the-most-important-combinatoric-formulas)
-      - [How is probability generally defined in terms of sets?](#how-is-probability-generally-defined-in-terms-of-sets)
-      - [How to express a possible outcome or element of a sample space in terms of sets?](#how-to-express-a-possible-outcome-or-element-of-a-sample-space-in-terms-of-sets)
-      - [What are the differences between "element of", "subset" and "proper subset"?](#what-are-the-differences-between-element-of-subset-and-proper-subset)
-      - [What is the difference between union and intersection of two sets?](#what-is-the-difference-between-union-and-intersection-of-two-sets)
-      - [What is the probability of the union of two non-disjoint event sets?](#what-is-the-probability-of-the-union-of-two-non-disjoint-event-sets)
-      - [How to calculate a probability that an event won't happen, knowing its probability to happen?](#how-to-calculate-a-probability-that-an-event-wont-happen-knowing-its-probability-to-happen)
-      - [What is conditional probability of two events and how it is calculated? Give a simple example.](#what-is-conditional-probability-of-two-events-and-how-it-is-calculated-give-a-simple-example)
-      - [What is Bayes' rule?](#what-is-bayes-rule)
-      - [Define the law of total probability.](#define-the-law-of-total-probability)
-      - [What is the difference between prior and posterior probabilities?](#what-is-the-difference-between-prior-and-posterior-probabilities)
-      - [When are two events independent?](#when-are-two-events-independent)
-      - [How is independence of many events defined?](#how-is-independence-of-many-events-defined)
-      - [What is conditional independence?](#what-is-conditional-independence)
-      - [Give a definition of random variables.](#give-a-definition-of-random-variables)
-      - [What is a distribution of a random variable?](#what-is-a-distribution-of-a-random-variable)
-      - [Name two main types of random variables.](#name-two-main-types-of-random-variables)
-      - [Give a formal definition of a discrete random variable.](#give-a-formal-definition-of-a-discrete-random-variable)
-      - [What is support of a discrete random variable?](#what-is-support-of-a-discrete-random-variable)
-      - [What is probability mass function of a discrete random variable?](#what-is-probability-mass-function-of-a-discrete-random-variable)
-      - [Give a formal definition of the Bernoulli distribution.](#give-a-formal-definition-of-the-bernoulli-distribution)
-      - [What is an indicator random variable?](#what-is-an-indicator-random-variable)
-      - [What is Bernoulli trial?](#what-is-bernoulli-trial)
-      - [Give a formal definition of Binomial distribution.](#give-a-formal-definition-of-binomial-distribution)
-      - [Give a formal definition of Hypergeometric distribution.](#give-a-formal-definition-of-hypergeometric-distribution)
-      - [Is there connection between Binomial and Hypergeometric distributions?](#is-there-connection-between-binomial-and-hypergeometric-distributions)
-      - [Give a formal definition of a discrete uniform distribution.](#give-a-formal-definition-of-a-discrete-uniform-distribution)
-      - [What is Cumulative Distribution Function (CDF)?](#what-is-cumulative-distribution-function-cdf)
-      - [Enlist and explain key properties of a CDF.](#enlist-and-explain-key-properties-of-a-cdf)
-      - [How are PMF and CDF of a discrete random variable related?](#how-are-pmf-and-cdf-of-a-discrete-random-variable-related)
-      - [Give a formal definition of a function of random variables.](#give-a-formal-definition-of-a-function-of-random-variables)
-      - [How to calculate PMF of a function of a random variable?](#how-to-calculate-pmf-of-a-function-of-a-random-variable)
-      - [Define when two random variables are independent.](#define-when-two-random-variables-are-independent)
-      - [What is the distribution of the sum of two independent variables with binomial distributions?](#what-is-the-distribution-of-the-sum-of-two-independent-variables-with-binomial-distributions)
-      - [Give a definition of conditional independence of two random variables given a third random variable.](#give-a-definition-of-conditional-independence-of-two-random-variables-given-a-third-random-variable)
-      - [What is expectation of a discrete random variable?](#what-is-expectation-of-a-discrete-random-variable)
-      - [How do expectations of two random variables with the same distribution relate to each other?](#how-do-expectations-of-two-random-variables-with-the-same-distribution-relate-to-each-other)
-      - [How is the expectation of a sum of two random variables or a product of a constant and a random variable defined?](#how-is-the-expectation-of-a-sum-of-two-random-variables-or-a-product-of-a-constant-and-a-random-variable-defined)
-      - [How is monotonicity of expectation is defined?](#how-is-monotonicity-of-expectation-is-defined)
-      - [What is Geometric distribution of a discrete random variable?](#what-is-geometric-distribution-of-a-discrete-random-variable)
-      - [Give a formal definition of the Cumulative Distribution Function of Geometric distribution.](#give-a-formal-definition-of-the-cumulative-distribution-function-of-geometric-distribution)
-      - [How is the Negative Binomial distribution defined?](#how-is-the-negative-binomial-distribution-defined)
-      - [How does PMF of the Negative Binomial distribution look like?](#how-does-pmf-of-the-negative-binomial-distribution-look-like)
-      - [How is the Expectation of the Negative Binomial distribution defined?](#how-is-the-expectation-of-the-negative-binomial-distribution-defined)
-      - [What are the main properties of indicator variables?](#what-are-the-main-properties-of-indicator-variables)
-      - [How is the Fundamental Bridge between probability and expection defined?](#how-is-the-fundamental-bridge-between-probability-and-expection-defined)
-      - [Give the formal definition of the Low of Unconcious Statistician (LOTUS).](#give-the-formal-definition-of-the-low-of-unconcious-statistician-lotus)
-      - [Define the Variance of a discrete random variable.](#define-the-variance-of-a-discrete-random-variable)
-      - [What are the main properties of Variance?](#what-are-the-main-properties-of-variance)
-      - [Give the formula of the variance of a discrete random variable with Binomial distribution.](#give-the-formula-of-the-variance-of-a-discrete-random-variable-with-binomial-distribution)
-      - [Give the formula of the variance of a discrete random variable with Hypergeometric distribution.](#give-the-formula-of-the-variance-of-a-discrete-random-variable-with-hypergeometric-distribution)
-      - [Give the formula of the variance of a discrete random variable with Negative Binomial distribution.](#give-the-formula-of-the-variance-of-a-discrete-random-variable-with-negative-binomial-distribution)
-      - [Give the formula of the variance of a discrete random variable with Geometric distribution.](#give-the-formula-of-the-variance-of-a-discrete-random-variable-with-geometric-distribution)
-      - [Give a formal definition and interpretation of Poisson distribution.](#give-a-formal-definition-and-interpretation-of-poisson-distribution)
-      - [How is the expectation of Poisson distribution is defined?](#how-is-the-expectation-of-poisson-distribution-is-defined)
-      - [How is the variance of Poisson distribution is defined?](#how-is-the-variance-of-poisson-distribution-is-defined)
-      - [How is the sum of two independent  Poissons defined?](#how-is-the-sum-of-two-independent--poissons-defined)
-      - [How is the conditional distribution of a variable with Poisson distribution given a sum with another independent variable with Poisson defined?](#how-is-the-conditional-distribution-of-a-variable-with-poisson-distribution-given-a-sum-with-another-independent-variable-with-poisson-defined)
-      - [How are Binomial and Poisson distributions related?](#how-are-binomial-and-poisson-distributions-related)
-      - [Give a formal definition of a continuous random variable in terms of distribution.](#give-a-formal-definition-of-a-continuous-random-variable-in-terms-of-distribution)
-      - [What is the main difference between discrete and continuous variables in terms of probability?](#what-is-the-main-difference-between-discrete-and-continuous-variables-in-terms-of-probability)
-      - [What is the Probability Density Function of a continuous random variable?](#what-is-the-probability-density-function-of-a-continuous-random-variable)
-      - [How to calculate CDF from PDF of a continuous random variable?](#how-to-calculate-cdf-from-pdf-of-a-continuous-random-variable)
-      - [Which criteria must be sutisfied by a function to be a valid PDF?](#which-criteria-must-be-sutisfied-by-a-function-to-be-a-valid-pdf)
-      - [How is the expectation of a continuous random variable defined?](#how-is-the-expectation-of-a-continuous-random-variable-defined)
-      - [Define the Low of the Unconcious Statistician (LOTUS) for continuous random variables.](#define-the-low-of-the-unconcious-statistician-lotus-for-continuous-random-variables)
-      - [Give a formal definition of the Continuous Uniform distribution.](#give-a-formal-definition-of-the-continuous-uniform-distribution)
-      - [How is the Expectation of the continuous Uniform distribution defined?](#how-is-the-expectation-of-the-continuous-uniform-distribution-defined)
-      - [How is Variance of the continuous Uniform distribution defined?](#how-is-variance-of-the-continuous-uniform-distribution-defined)
-      - [Give a formal definition of the Standard Normal Distribution.](#give-a-formal-definition-of-the-standard-normal-distribution)
-      - [How does the CDF of the Standard Normal distribution is defined?](#how-does-the-cdf-of-the-standard-normal-distribution-is-defined)
-      - [Give the values of the expectation and variance of the Standard Normal Distribution.](#give-the-values-of-the-expectation-and-variance-of-the-standard-normal-distribution)
-      - [Give the formal definition of the Normal Distribution.](#give-the-formal-definition-of-the-normal-distribution)
-      - [How is the CDF of the Normal distribution is defined?](#how-is-the-cdf-of-the-normal-distribution-is-defined)
-      - [Give a formal definition of the Exponential distribution.](#give-a-formal-definition-of-the-exponential-distribution)
-      - [How is the CDF of the Exponential distribution defined?](#how-is-the-cdf-of-the-exponential-distribution-defined)
-      - [How does Expectation of the Exponential distribution look like?](#how-does-expectation-of-the-exponential-distribution-look-like)
-      - [How does Variance of the Exponential distribution look like?](#how-does-variance-of-the-exponential-distribution-look-like)
-      - [What does memoryless property of a continuous distribution mean?](#what-does-memoryless-property-of-a-continuous-distribution-mean)
-      - [Which distribution does a memoryless continuous variable have?](#which-distribution-does-a-memoryless-continuous-variable-have)
-      - [Give a formal definition of a Poisson process.](#give-a-formal-definition-of-a-poisson-process)
-      - [How are interarrival times in a Poisson process defined?](#how-are-interarrival-times-in-a-poisson-process-defined)
-      - [Give a formal definition of the Mean value of a distribution.](#give-a-formal-definition-of-the-mean-value-of-a-distribution)
-      - [Give a formal definition of the Median value of a distribution.](#give-a-formal-definition-of-the-median-value-of-a-distribution)
-      - [Give a formal definition of the Mode value of a distribution.](#give-a-formal-definition-of-the-mode-value-of-a-distribution)
-      - [What is the Skewness of a distribution.](#what-is-the-skewness-of-a-distribution)
-      - [Which summary values are more appropriate for symmetric and non-symmetric distributions.](#which-summary-values-are-more-appropriate-for-symmetric-and-non-symmetric-distributions)
-      - [Give a formal definition of interquartile range (IQR).](#give-a-formal-definition-of-interquartile-range-iqr)
-      - [Give a formal definition of the Kurtosis of a distribution.](#give-a-formal-definition-of-the-kurtosis-of-a-distribution)
-      - [Give a formal definition and interpretation of a Moment Generating Function.](#give-a-formal-definition-and-interpretation-of-a-moment-generating-function)
-      - [Give a formal definition of joint CDF of two discrete random variables.](#give-a-formal-definition-of-joint-cdf-of-two-discrete-random-variables)
-      - [Give a formal definition of joint PMF of two discrete random variables.](#give-a-formal-definition-of-joint-pmf-of-two-discrete-random-variables)
-      - [What is the marginal PMF of two discrete random variables?](#what-is-the-marginal-pmf-of-two-discrete-random-variables)
-      - [How is the conditional PMF of two discrete random variables defined?](#how-is-the-conditional-pmf-of-two-discrete-random-variables-defined)
-      - [How is the joint PDF of two continuous random variables defined?](#how-is-the-joint-pdf-of-two-continuous-random-variables-defined)
-      - [How is the marginal PDF of two continuous random variables defined?](#how-is-the-marginal-pdf-of-two-continuous-random-variables-defined)
-      - [How is the conditional PDF of two continuous random variables defined?](#how-is-the-conditional-pdf-of-two-continuous-random-variables-defined)
-      - [How is the 2D LOTUS defined?](#how-is-the-2d-lotus-defined)
-      - [Give a formal definition of the Covariance between two random variables.](#give-a-formal-definition-of-the-covariance-between-two-random-variables)
-      - [Emlist the main properties of Covariance.](#emlist-the-main-properties-of-covariance)
-      - [How is Correlation between two random variables defined?](#how-is-correlation-between-two-random-variables-defined)
-      - [Give a formal definition of Multinomial distribution.](#give-a-formal-definition-of-multinomial-distribution)
-      - [How is the joint PMF of Multinomial distribution is defined?](#how-is-the-joint-pmf-of-multinomial-distribution-is-defined)
-      - [Define multinomial conditioning.](#define-multinomial-conditioning)
-      - [Define Covariance for Multinomial distribution.](#define-covariance-for-multinomial-distribution)
-      - [Give a formal definition of the Multivariate Normal distribution.](#give-a-formal-definition-of-the-multivariate-normal-distribution)
-      - [How is the joint PDF of the Multivariate Normal distribution defined?](#how-is-the-joint-pdf-of-the-multivariate-normal-distribution-defined)
-      - [How is the joint Moment Generating Function defined?](#how-is-the-joint-moment-generating-function-defined)
-      - [Give a formal definition of the Beta Distribution.](#give-a-formal-definition-of-the-beta-distribution)
-      - [Give a short interpretation of Beta Distribution.](#give-a-short-interpretation-of-beta-distribution)
-      - [Give definitions for mean, variance and mode values of the Beta distribution.](#give-definitions-for-mean-variance-and-mode-values-of-the-beta-distribution)
-      - [Give some examples of usage of Beta distribution.](#give-some-examples-of-usage-of-beta-distribution)
-      - [Give a formal definition of the Gamma Distribution.](#give-a-formal-definition-of-the-gamma-distribution)
-      - [Give a short interpretation of the Gamma distribution.](#give-a-short-interpretation-of-the-gamma-distribution)
-      - [Give definitions for mean, variance and mode values of the Gamma distribution.](#give-definitions-for-mean-variance-and-mode-values-of-the-gamma-distribution)
-      - [How are Beta and Gamma distributions connected?](#how-are-beta-and-gamma-distributions-connected)
-      - [Give a formal definition of a Conditional Expectation given an event.](#give-a-formal-definition-of-a-conditional-expectation-given-an-event)
-      - [How is the Low of Total Expectation defined?](#how-is-the-low-of-total-expectation-defined)
-      - [Give a definition of Conditional Expectation given a random variable.](#give-a-definition-of-conditional-expectation-given-a-random-variable)
-      - [Enlist the properties of Conditional Expectation.](#enlist-the-properties-of-conditional-expectation)
-      - [Define the Conditional Variance.](#define-the-conditional-variance)
-      - [Give a definition of the law of the total variance (Eve's law).](#give-a-definition-of-the-law-of-the-total-variance-eves-law)
-      - [Give a definition of Couchy-Schwarz inequality for marginal bound on a joint expectation.](#give-a-definition-of-couchy-schwarz-inequality-for-marginal-bound-on-a-joint-expectation)
-      - [Give a definition for Jensen's inequality for convexity.](#give-a-definition-for-jensens-inequality-for-convexity)
-      - [Give a definition for Markov's bound on tail probabilities.](#give-a-definition-for-markovs-bound-on-tail-probabilities)
-      - [Give a definition for Chebyshev's bound on tail probabilities.](#give-a-definition-for-chebyshevs-bound-on-tail-probabilities)
-      - [Give a definition for Chernoff's bound on tail probabilities.](#give-a-definition-for-chernoffs-bound-on-tail-probabilities)
-      - [Give a formal definition of the Weak Law of Large Numbers.](#give-a-formal-definition-of-the-weak-law-of-large-numbers)
-      - [Give a formal definition of the Strong Law of Large Numbers.](#give-a-formal-definition-of-the-strong-law-of-large-numbers)
-      - [Give a formal definition of the Central Limit Theorem.](#give-a-formal-definition-of-the-central-limit-theorem)
-      - [Give a formal definition of the Chi-Square distribution.](#give-a-formal-definition-of-the-chi-square-distribution)
-      - [Give a formal definition of the Student-t distribution.](#give-a-formal-definition-of-the-student-t-distribution)
-      - [Give a formal definition of a Markov chain.](#give-a-formal-definition-of-a-markov-chain)
-      - [Give a definition of the Transition Martrix of a Markov Chain.](#give-a-definition-of-the-transition-martrix-of-a-markov-chain)
-      - [Give a formal defintion of $n$-step transition probability.](#give-a-formal-defintion-of-n-step-transition-probability)
-      - [What are recurrent and transient states in Markov chains?](#what-are-recurrent-and-transient-states-in-markov-chains)
-      - [How are irreducible and reducible Markov chains defined?](#how-are-irreducible-and-reducible-markov-chains-defined)
-      - [How is a period of a state in a Markov chain defined?](#how-is-a-period-of-a-state-in-a-markov-chain-defined)
-      - [What is stationary distribution of a Markov chain?](#what-is-stationary-distribution-of-a-markov-chain)
-      - [What is reversibility of a Markov chain.](#what-is-reversibility-of-a-markov-chain)
-      - [What problem does a Markov Chain Monte-Carlo Simulation solve?](#what-problem-does-a-markov-chain-monte-carlo-simulation-solve)
-      - [Explain Metropolis-Hastings MCMC algorithm.](#explain-metropolis-hastings-mcmc-algorithm)
-      - [Explain the Gibbs sampling MCMC algorithm.](#explain-the-gibbs-sampling-mcmc-algorithm)
-      - [Give a definition of Poisson processes in one dimension.](#give-a-definition-of-poisson-processes-in-one-dimension)
-      - [Explain the conditioning property of one-dimensional Poisson processes.](#explain-the-conditioning-property-of-one-dimensional-poisson-processes)
-      - [Explain the superposition property of one-dimensional Poisson processes.](#explain-the-superposition-property-of-one-dimensional-poisson-processes)
-      - [Explain the thinning property of one-dimensional Poisson processes.](#explain-the-thinning-property-of-one-dimensional-poisson-processes)
-      - [Give a definition of two-dimensional Poisson processes.](#give-a-definition-of-two-dimensional-poisson-processes)
-      - [What is data reduction of a distribution in statistical inference?](#what-is-data-reduction-of-a-distribution-in-statistical-inference)
-      - [How is sufficient statistic defined?](#how-is-sufficient-statistic-defined)
-      - [Explain what minimal sufficient statistic is.](#explain-what-minimal-sufficient-statistic-is)
-      - [Explain what ancillary statistic is.](#explain-what-ancillary-statistic-is)
-      - [Explain what complete statistic is.](#explain-what-complete-statistic-is)
-      - [What is the likelihood function in statistical inference?](#what-is-the-likelihood-function-in-statistical-inference)
-      - [Explain the principle of equivariance in statistical inference.](#explain-the-principle-of-equivariance-in-statistical-inference)
-      - [What is a point estimator in statistical inference?](#what-is-a-point-estimator-in-statistical-inference)
-      - [Explain method of moments (MOM) for point estimation.](#explain-method-of-moments-mom-for-point-estimation)
-      - [Explain Maximum Likelihood point estimator (MLE).](#explain-maximum-likelihood-point-estimator-mle)
-      - [Explain Bayes point estimator.](#explain-bayes-point-estimator)
-      - [Explain principal difference between classical and Bayesian statistical inference.](#explain-principal-difference-between-classical-and-bayesian-statistical-inference)
-      - [Enlist methods of evaluating the point estimators.](#enlist-methods-of-evaluating-the-point-estimators)
-      - [Give a definition of what is hypothesis and its testing in inference statistics.](#give-a-definition-of-what-is-hypothesis-and-its-testing-in-inference-statistics)
-      - [Explain Critical Region / Rejection Region Method for Hypothesis testing.](#explain-critical-region--rejection-region-method-for-hypothesis-testing)
-      - [Explain the Z-test statistic for hypothesis testing.](#explain-the-z-test-statistic-for-hypothesis-testing)
-      - [Explain the t-test statistic for hypothesis testing.](#explain-the-t-test-statistic-for-hypothesis-testing)
-      - [Explain the Chi-Square test statistic for hypothesis testing.](#explain-the-chi-square-test-statistic-for-hypothesis-testing)
-      - [Explain the F-test statistic for comparing two variances.](#explain-the-f-test-statistic-for-comparing-two-variances)
-      - [Explain Likelihood Ratio Test (LRT) for General Parametric Models.](#explain-likelihood-ratio-test-lrt-for-general-parametric-models)
-      - [Explain Non-Parametric / Rank-Based Tests.](#explain-non-parametric--rank-based-tests)
-      - [Explain p-value method for Hypotheses testing.](#explain-p-value-method-for-hypotheses-testing)
-      - [What are Union Intersection and Intersection Union tests?](#what-are-union-intersection-and-intersection-union-tests)
-      - [Explain Analysis of Variance (ANOVA) method.](#explain-analysis-of-variance-anova-method)
-      - [Explain Bayesian method for hypothesis testing.](#explain-bayesian-method-for-hypothesis-testing)
-      - [Enlist and explain main methods of evaluation of hypothesis tests.](#enlist-and-explain-main-methods-of-evaluation-of-hypothesis-tests)
-      - [What are the interval estimators in statistical inference?](#what-are-the-interval-estimators-in-statistical-inference)
-      - [Explain and give a simple example for Pivot (Pivotal Quantity) Method.](#explain-and-give-a-simple-example-for-pivot-pivotal-quantity-method)
-      - [Explain Test Inversion method for finding confidence intervals.](#explain-test-inversion-method-for-finding-confidence-intervals)
-      - [Explain Likelihood-Based Method for Interval Estimation.](#explain-likelihood-based-method-for-interval-estimation)
-      - [Explain Asymptotic (Normal Approximation) Method for Interval Estimation.](#explain-asymptotic-normal-approximation-method-for-interval-estimation)
-      - [Explain Bootstrap Method for Interval Estimation.](#explain-bootstrap-method-for-interval-estimation)
-      - [Explain Bayesian Credible Intervals estimation.](#explain-bayesian-credible-intervals-estimation)
-      - [What are the methods of evaluating interval estimators?](#what-are-the-methods-of-evaluating-interval-estimators)
-    - [Interview questions for Databases.](#interview-questions-for-databases)
-      - [How is a Database defined?](#how-is-a-database-defined)
-      - [Define DBMS.](#define-dbms)
-      - [Define RDBMS.](#define-rdbms)
-      - [Enlist the advantages of DBMS.](#enlist-the-advantages-of-dbms)
-      - [What is the Database Transaction?](#what-is-the-database-transaction)
-      - [Enlist four fundamental Properties of Transactions in RDBMS.](#enlist-four-fundamental-properties-of-transactions-in-rdbms)
-      - [Explain the terms ‘Record’, ‘Field’ and ‘Table’ in terms of database.](#explain-the-terms-record-field-and-table-in-terms-of-database)
-      - [What do you understand by Data Redundancy?](#what-do-you-understand-by-data-redundancy)
-      - [What is a Primary Key in a Relational Database?](#what-is-a-primary-key-in-a-relational-database)
-      - [What is a Foreign Key in a Relational Database?](#what-is-a-foreign-key-in-a-relational-database)
-      - [What are Non-key Attributes?](#what-are-non-key-attributes)
-      - [Categorize Data Modification Anomalies in a Database.](#categorize-data-modification-anomalies-in-a-database)
-      - [What are the various types of relationships in Database? Define them.](#what-are-the-various-types-of-relationships-in-database-define-them)
-      - [Explain Normalization and De-Normalization.](#explain-normalization-and-de-normalization)
-      - [What are the different types of Normalization?](#what-are-the-different-types-of-normalization)
-      - [What is BCNF?](#what-is-bcnf)
-      - [What is SQL?](#what-is-sql)
-      - [How many SQL statements are used? Define them.](#how-many-sql-statements-are-used-define-them)
-      - [Enlist some commands of DDL, DML and DCL.](#enlist-some-commands-of-ddl-dml-and-dcl)
-      - [What is Quaery Processor in DBMS?](#what-is-quaery-processor-in-dbms)
-      - [Define DML Compiler.](#define-dml-compiler)
-      - [What is DDL interpreter?](#what-is-ddl-interpreter)
-      - [What is Query Optimizer?](#what-is-query-optimizer)
-      - [What is Embedded DML Pre-compiler?](#what-is-embedded-dml-pre-compiler)
-      - [Enlist the advantages of SQL.](#enlist-the-advantages-of-sql)
-      - [What is a Relational Database Schema?](#what-is-a-relational-database-schema)
-      - [What is a Physical Level in a Relational Database.](#what-is-a-physical-level-in-a-relational-database)
-      - [What is a Conceptual (Logical) Level in a Relational Database.](#what-is-a-conceptual-logical-level-in-a-relational-database)
-      - [What is a View Level in a Relational Database?](#what-is-a-view-level-in-a-relational-database)
-      - [What are the advantages and disadvantages of views in the database?](#what-are-the-advantages-and-disadvantages-of-views-in-the-database)
-      - [What do you understand by Data Independence? What are its two types?](#what-do-you-understand-by-data-independence-what-are-its-two-types)
-      - [What do you understand by Functional dependency?](#what-do-you-understand-by-functional-dependency)
-      - [What is a Fully Functional Dependancy?](#what-is-a-fully-functional-dependancy)
-      - [What do you understand by the E-R model?](#what-do-you-understand-by-the-e-r-model)
-      - [Define Entity, Entity type, and Entity set.](#define-entity-entity-type-and-entity-set)
-      - [What is a Weak Entity?](#what-is-a-weak-entity)
-      - [Explain the terms ‘Attribute’ and ‘Relations’.](#explain-the-terms-attribute-and-relations)
-      - [What are VDL and SDL?](#what-are-vdl-and-sdl)
-      - [Define Cursor and its types.](#define-cursor-and-its-types)
-      - [Define Database Lock and its types.](#define-database-lock-and-its-types)
-      - [What is Data Warehousing?](#what-is-data-warehousing)
-      - [What do you understand by Join?](#what-do-you-understand-by-join)
-      - [What do you understand by Index Hunting?](#what-do-you-understand-by-index-hunting)
-      - [How to improve query performance using Index hunting?](#how-to-improve-query-performance-using-index-hunting)
-      - [Differentiate between ‘Cluster’ and ‘Non-cluster’ index.](#differentiate-between-cluster-and-non-cluster-index)
-      - [What do you understand by Fragmentation?](#what-do-you-understand-by-fragmentation)
-      - [Define Join types.](#define-join-types)
-      - [What do you understand by ‘Atomicity’ and ‘Aggregation’?](#what-do-you-understand-by-atomicity-and-aggregation)
-      - [Define Phantom Deadlock.](#define-phantom-deadlock)
-      - [Define Checkpoint.](#define-checkpoint)
-      - [What is Database Partitioning?](#what-is-database-partitioning)
-      - [Explain the importance of Database Partitioning.](#explain-the-importance-of-database-partitioning)
-      - [Explain the Data Dictionary.](#explain-the-data-dictionary)
-      - [Explain the Primary Key and Composite Key.](#explain-the-primary-key-and-composite-key)
-      - [What do you understand by the Unique key?](#what-do-you-understand-by-the-unique-key)
-      - [What do you understand by Database Triggers?](#what-do-you-understand-by-database-triggers)
-      - [Define Stored Procedures.](#define-stored-procedures)
-      - [What do you understand by B-Trees?](#what-do-you-understand-by-b-trees)
-      - [Name the different Data Models that are available for database systems.](#name-the-different-data-models-that-are-available-for-database-systems)
-      - [Differentiate between ‘DELETE’, ‘TRUNCATE’ and ‘DROP’ commands.](#differentiate-between-delete-truncate-and-drop-commands)
-      - [Based on the given table, solve the following queries.](#based-on-the-given-table-solve-the-following-queries)
-      - [What do you understand by NoSQL?](#what-do-you-understand-by-nosql)
-      - [How many types of NoSQL Databases are there?](#how-many-types-of-nosql-databases-are-there)
-      - [Write down the difference between vertical and horizontal databases.](#write-down-the-difference-between-vertical-and-horizontal-databases)
-      - [When should one use NoSQL in place of the normal database?](#when-should-one-use-nosql-in-place-of-the-normal-database)
-      - [What do you know about polyglot persistence in NoSQL?](#what-do-you-know-about-polyglot-persistence-in-nosql)
-      - [Clarify the Key-Value Approach in a NoSQL Database.](#clarify-the-key-value-approach-in-a-nosql-database)
-      - [Explain the CAP theorem in NoSQL.](#explain-the-cap-theorem-in-nosql)
-      - [What is Sharding an a NoSQL Database?](#what-is-sharding-an-a-nosql-database)
-      - [What is Big SQL?](#what-is-big-sql)
-      - [How does Impedance Mismatch Happening in a Database?](#how-does-impedance-mismatch-happening-in-a-database)
-      - [What is an Aggregate-Oriented Database](#what-is-an-aggregate-oriented-database)
-      - [What is eventual consistency in the context of NoSQL?](#what-is-eventual-consistency-in-the-context-of-nosql)
-      - [What are the BASE Properties in NoSQL?](#what-are-the-base-properties-in-nosql)
-      - [Can Normalization be used in a NoSQL Database?](#can-normalization-be-used-in-a-nosql-database)
-    - [Interview questions for Python.](#interview-questions-for-python)
-      - [What is Python? What are the benfits of using it?](#what-is-python-what-are-the-benfits-of-using-it)
-      - [Explain Interpreted Programming Language.](#explain-interpreted-programming-language)
-      - [What is a dynamically typed language?](#what-is-a-dynamically-typed-language)
-      - [What is PEP 8 and why is it important?](#what-is-pep-8-and-why-is-it-important)
-      - [What is Scope in Python?](#what-is-scope-in-python)
-      - [What is the difference between Mutable and Immutable Data Types in Pyhon?](#what-is-the-difference-between-mutable-and-immutable-data-types-in-pyhon)
-      - [What are lists and tuples? What is the key difference between the two?](#what-are-lists-and-tuples-what-is-the-key-difference-between-the-two)
-      - [What are the common built-in data types in Python?](#what-are-the-common-built-in-data-types-in-python)
-      - [What is ``pass`` in Python?](#what-is-pass-in-python)
-      - [How are arguments passed by value or by reference in Python?](#how-are-arguments-passed-by-value-or-by-reference-in-python)
-      - [What is List Comprehension? Give an Example.](#what-is-list-comprehension-give-an-example)
-      - [What is a lambda function?](#what-is-a-lambda-function)
-      - [What is the difference between / and // in Python?](#what-is-the-difference-between--and--in-python)
-      - [How is Exceptional handling done in Python?](#how-is-exceptional-handling-done-in-python)
-      - [What is swapcase function in Python?](#what-is-swapcase-function-in-python)
-      - [Can we pass a function as an argument in Python?](#can-we-pass-a-function-as-an-argument-in-python)
-      - [What are ``*args`` and ``*kwargs``?](#what-are-args-and-kwargs)
-      - [Is Indentation Required in Python?](#is-indentation-required-in-python)
-      - [What is docstring in Python?](#what-is-docstring-in-python)
-      - [What is a ``break``, ``continue``, and ``pass`` in Python?](#what-is-a-break-continue-and-pass-in-python)
-      - [How do you floor a number in Python?](#how-do-you-floor-a-number-in-python)
-      - [What are global, protected and private attributes in Python?](#what-are-global-protected-and-private-attributes-in-python)
-      - [What is the use of ``self`` in Python?](#what-is-the-use-of-self-in-python)
-      - [What is ``__init__`` in Python?](#what-is-__init__-in-python)
-      - [What is slicing in Python?](#what-is-slicing-in-python)
-      - [What is the difference between Python Arrays and Lists?](#what-is-the-difference-between-python-arrays-and-lists)
-      - [How is memory managed in Python?](#how-is-memory-managed-in-python)
-      - [What are Python namespaces? Why are they used?](#what-are-python-namespaces-why-are-they-used)
-      - [What are Decorators in Python?](#what-are-decorators-in-python)
-      - [How do you copy an object in Python?](#how-do-you-copy-an-object-in-python)
-      - [What is pickling and unpickling?](#what-is-pickling-and-unpickling)
-      - [What are Generators in Python?](#what-are-generators-in-python)
-      - [What is the difference between .py and .pyc files?](#what-is-the-difference-between-py-and-pyc-files)
-      - [How Python is interpreted?](#how-python-is-interpreted)
-      - [What are iterators in Python?](#what-are-iterators-in-python)
-      - [What are negative indexes and why are they used?](#what-are-negative-indexes-and-why-are-they-used)
-      - [Which sorting technique is used by ``sort()`` and ``sorted()`` functions of python?](#which-sorting-technique-is-used-by-sort-and-sorted-functions-of-python)
-      - [How do you create a class in Python?](#how-do-you-create-a-class-in-python)
-      - [How does inheritance work in python? Explain it with an example.](#how-does-inheritance-work-in-python-explain-it-with-an-example)
-      - [How do you access parent members in the child class?](#how-do-you-access-parent-members-in-the-child-class)
-      - [Are access specifiers used in python?](#are-access-specifiers-used-in-python)
-      - [Is it possible to call parent class without its instance creation?](#is-it-possible-to-call-parent-class-without-its-instance-creation)
-      - [How is an empty class created in python?](#how-is-an-empty-class-created-in-python)
-      - [What is Polymorphism in Python?](#what-is-polymorphism-in-python)
-      - [Differentiate between new and override modifiers.](#differentiate-between-new-and-override-modifiers)
-      - [How will you check if a class is a child of another class?](#how-will-you-check-if-a-class-is-a-child-of-another-class)
-      - [Define encapsulation in Python?](#define-encapsulation-in-python)
-      - [How do you do data abstraction in Python?](#how-do-you-do-data-abstraction-in-python)
-      - [Give an example of Multithreading with Threads Synchronization in Python.](#give-an-example-of-multithreading-with-threads-synchronization-in-python)
-      - [Give an example of Threads Synchronization with Condition Variables.](#give-an-example-of-threads-synchronization-with-condition-variables)
-      - [Give an example of using ThreadPoolExecuter in Python.](#give-an-example-of-using-threadpoolexecuter-in-python)
-      - [Give an example of using ProcessPoolExecuter.](#give-an-example-of-using-processpoolexecuter)
-      - [Explain the difference between Thread and Process in Python.](#explain-the-difference-between-thread-and-process-in-python)
-      - [What is the Python Global Interpreter Lock (GIL)?](#what-is-the-python-global-interpreter-lock-gil)
-    - [Interview questions for algorithms and data structures.](#interview-questions-for-algorithms-and-data-structures)
-      - [What is a Data Structure?](#what-is-a-data-structure)
-      - [Describe the types of Data Structures?](#describe-the-types-of-data-structures)
-      - [What is a Linear Data Structure? Name a few examples.](#what-is-a-linear-data-structure-name-a-few-examples)
-      - [How are the elements of a 2D Array stored in the memory.](#how-are-the-elements-of-a-2d-array-stored-in-the-memory)
-      - [What are some use cases for Row-Major and Column-Major storing of 2D Arrays?](#what-are-some-use-cases-for-row-major-and-column-major-storing-of-2d-arrays)
-      - [How can you possibly choose between Row-Major and Column-Major 2D Arrays storing implementations?](#how-can-you-possibly-choose-between-row-major-and-column-major-2d-arrays-storing-implementations)
-      - [What is a Linked List Data Structure?](#what-is-a-linked-list-data-structure)
-      - [Are Linked Lists considered Linear or Non-linear Data Structures?](#are-linked-lists-considered-linear-or-non-linear-data-structures)
-      - [What are the advantages of a Linked List over an Array? In which scenarios do we use Linked List and when Array?](#what-are-the-advantages-of-a-linked-list-over-an-array-in-which-scenarios-do-we-use-linked-list-and-when-array)
-      - [What is a Doubly-Linked List?](#what-is-a-doubly-linked-list)
-      - [What are Dynamic Data Structures? Name a few.](#what-are-dynamic-data-structures-name-a-few)
-      - [What is a Stack?](#what-is-a-stack)
-      - [Where are Stacks used?](#where-are-stacks-used)
-      - [What are the operations that can be performed on a Stack?](#what-are-the-operations-that-can-be-performed-on-a-stack)
-      - [What is a queue Data Structure?](#what-is-a-queue-data-structure)
-      - [List some applications of the Queue Data Structure.](#list-some-applications-of-the-queue-data-structure)
-      - [What is a Dequeue?](#what-is-a-dequeue)
-      - [What operations can be performed on Queues?](#what-operations-can-be-performed-on-queues)
-      - [Define the Graph Data Structure.](#define-the-graph-data-structure)
-      - [What are the applications of Graph Data Structures?](#what-are-the-applications-of-graph-data-structures)
-      - [List the types of Trees?](#list-the-types-of-trees)
-      - [How is a Node Height in the Tree Data Structure determined?](#how-is-a-node-height-in-the-tree-data-structure-determined)
-      - [How is a Node Depth in the Tree Data Structure determined?](#how-is-a-node-depth-in-the-tree-data-structure-determined)
-      - [What is a Node Degree in the Tree Data Structure?](#what-is-a-node-degree-in-the-tree-data-structure)
-      - [What is a Forest in relation with the Tree Data Structure?](#what-is-a-forest-in-relation-with-the-tree-data-structure)
-      - [How is a Balanced Binary Tree determined?](#how-is-a-balanced-binary-tree-determined)
-      - [What is a Self-balancing Binary Tree?](#what-is-a-self-balancing-binary-tree)
-      - [What is a B-Tree Data Structure?](#what-is-a-b-tree-data-structure)
-      - [Explain what Jagged Array is?](#explain-what-jagged-array-is)
-      - [What is an Algorithm?](#what-is-an-algorithm)
-      - [What is an asymptotic analysis of an algorithm?](#what-is-an-asymptotic-analysis-of-an-algorithm)
-      - [What are Asymptotic Notations?](#what-are-asymptotic-notations)
-      - [What are the common algorithmic runtimes in big O notation?](#what-are-the-common-algorithmic-runtimes-in-big-o-notation)
-      - [What are basic operations on Arrays?](#what-are-basic-operations-on-arrays)
-      - [What are the basic types of searching? Describe their worst case asymptotic behaviour.](#what-are-the-basic-types-of-searching-describe-their-worst-case-asymptotic-behaviour)
-      - [What are some common array sorting algorithms?](#what-are-some-common-array-sorting-algorithms)
-      - [Name the main properties of the basic operations on linked lists.](#name-the-main-properties-of-the-basic-operations-on-linked-lists)
-      - [How can one detect loops in a Linked Lists, name a few approaches?](#how-can-one-detect-loops-in-a-linked-lists-name-a-few-approaches)
-      - [Give some examples of basic Hash Functions that can be used in Hash Table Data Structure?](#give-some-examples-of-basic-hash-functions-that-can-be-used-in-hash-table-data-structure)
-      - [How can one possibly avoid Hash Collisions in Hash Tables?](#how-can-one-possibly-avoid-hash-collisions-in-hash-tables)
-      - [What are the basic operations on Hash Tables?](#what-are-the-basic-operations-on-hash-tables)
-      - [What is a Bipartite Graph?](#what-is-a-bipartite-graph)
-      - [What is a Weighted Graph?](#what-is-a-weighted-graph)
-      - [What is a Directed Graph?](#what-is-a-directed-graph)
-      - [What is a Transpose of a Directed Graph?](#what-is-a-transpose-of-a-directed-graph)
-      - [What is a Strongly Connected Graph?](#what-is-a-strongly-connected-graph)
-      - [What is a Minimum Spanning Tree of a Graph?](#what-is-a-minimum-spanning-tree-of-a-graph)
-      - [Name the ways of representing and storing a Graph Data Structure.](#name-the-ways-of-representing-and-storing-a-graph-data-structure)
-      - [What are the basic operations on Graphs?](#what-are-the-basic-operations-on-graphs)
-      - [List the ways of Traversing a Graph.](#list-the-ways-of-traversing-a-graph)
-      - [List the main applications of Breadth-First-Search.](#list-the-main-applications-of-breadth-first-search)
-      - [List the main applications of Depth-First-Search.](#list-the-main-applications-of-depth-first-search)
-      - [What are the basic operations on Trees Data Structures?](#what-are-the-basic-operations-on-trees-data-structures)
-      - [Explain the mechanism of Self-Balancing in AVL Trees.](#explain-the-mechanism-of-self-balancing-in-avl-trees)
-      - [Explain the mechanism of Self-Balancing in Red-Black Trees.](#explain-the-mechanism-of-self-balancing-in-red-black-trees)
-      - [What is Recursion?](#what-is-recursion)
-      - [What is Dynamic Programming?](#what-is-dynamic-programming)
-      - [What is Linear Programming?](#what-is-linear-programming)
-      - [What is Backtracking?](#what-is-backtracking)
-      - [What is a Greedy Algorithm?](#what-is-a-greedy-algorithm)
-    - [Interview questions for C++.](#interview-questions-for-c)
-      - [What is C++? What are the advantages of C++?](#what-is-c-what-are-the-advantages-of-c)
-      - [What are the differences between C and C++?](#what-are-the-differences-between-c-and-c)
-      - [What are the different data types present in C++?](#what-are-the-different-data-types-present-in-c)
-      - [Define ‘std’?](#define-std)
-      - [What is a Pointer in C++?](#what-is-a-pointer-in-c)
-      - [What are references in C++?](#what-are-references-in-c)
-      - [What are the differences between References and Pointers?](#what-are-the-differences-between-references-and-pointers)
-      - [What is meant by Call by Value and Call by Reference?](#what-is-meant-by-call-by-value-and-call-by-reference)
-      - [Define token in C++.](#define-token-in-c)
-      - [What are the differences between Structures and Classes?](#what-are-the-differences-between-structures-and-classes)
-      - [Discuss prefix and postfix operators.](#discuss-prefix-and-postfix-operators)
-      - [What is the difference between new and malloc()?](#what-is-the-difference-between-new-and-malloc)
-      - [What are the differences between Program Stack and Heap memory types?](#what-are-the-differences-between-program-stack-and-heap-memory-types)
-      - [What is the difference between function overloading and operator overloading?](#what-is-the-difference-between-function-overloading-and-operator-overloading)
-      - [What does the Scope Resolution operator do?](#what-does-the-scope-resolution-operator-do)
-      - [What is the difference between shallow copy and deep copy?](#what-is-the-difference-between-shallow-copy-and-deep-copy)
-      - [Can you compile a program without the main function?](#can-you-compile-a-program-without-the-main-function)
-      - [Define inline function. Can we have a recursive inline function in C++?](#define-inline-function-can-we-have-a-recursive-inline-function-in-c)
-      - [Define the spicifier 'auto'.](#define-the-spicifier-auto)
-      - [Define the specifier 'decltype'.](#define-the-specifier-decltype)
-      - [Define the specifier 'constexpr'.](#define-the-specifier-constexpr)
-      - [What is the main use of the keyword 'volatile'?](#what-is-the-main-use-of-the-keyword-volatile)
-      - [Define storage class in C++ and name some.](#define-storage-class-in-c-and-name-some)
-      - [Enlist Value Categories.](#enlist-value-categories)
-      - [Explain 'move()' semantics.](#explain-move-semantics)
-      - [Explain Perfect Forwarding.](#explain-perfect-forwarding)
-      - [What are Range Based For Loops?](#what-are-range-based-for-loops)
-      - [Enlist some key advantages of 'switch' over 'if-else' ladders.](#enlist-some-key-advantages-of-switch-over-if-else-ladders)
-      - [Which operations are permitted on pointers?](#which-operations-are-permitted-on-pointers)
-      - [What are Smart Pointers? Enlist their types.](#what-are-smart-pointers-enlist-their-types)
-      - [Give an example of Circular Dependency issues with std::shared\_ptr, and how to resolve it with std::weak\_ptr.](#give-an-example-of-circular-dependency-issues-with-stdshared_ptr-and-how-to-resolve-it-with-stdweak_ptr)
-      - [Are Shared Pointers thread safe?](#are-shared-pointers-thread-safe)
-      - [What are the various OOPs concepts in C++?](#what-are-the-various-oops-concepts-in-c)
-      - [What are Classes and Objects in C++?](#what-are-classes-and-objects-in-c)
-      - [What are the C++ access modifiers?](#what-are-the-c-access-modifiers)
-      - [What is the difference between 'struct' and 'class'?](#what-is-the-difference-between-struct-and-class)
-      - [What is the difference between C and C++ structures?](#what-is-the-difference-between-c-and-c-structures)
-      - [What is an Abstract Class and when do you use it?](#what-is-an-abstract-class-and-when-do-you-use-it)
-      - [What are the static data members and static member functions?](#what-are-the-static-data-members-and-static-member-functions)
-      - [Explain inheritance.](#explain-inheritance)
-      - [When should we use multiple inheritance?](#when-should-we-use-multiple-inheritance)
-      - [What is virtual inheritance?](#what-is-virtual-inheritance)
-      - [What is polymorphism in C++?](#what-is-polymorphism-in-c)
-      - [What is Function Overriding?](#what-is-function-overriding)
-      - [What is the difference between Virtual Functions and Pure Virtual Functions?](#what-is-the-difference-between-virtual-functions-and-pure-virtual-functions)
-      - [Explain Constructors in C++.](#explain-constructors-in-c)
-      - [What is the sequence of calling Constructors in a Class Hierarhcy?](#what-is-the-sequence-of-calling-constructors-in-a-class-hierarhcy)
-      - [Explain Destructors in C++.](#explain-destructors-in-c)
-      - [When is a Destructor in a Base Class should be virtual?](#when-is-a-destructor-in-a-base-class-should-be-virtual)
-      - [Is Destructor Overloading possible?](#is-destructor-overloading-possible)
-      - [Can a Destructor have parameters?](#can-a-destructor-have-parameters)
-      - [What is a Template in programming and why it is useful?](#what-is-a-template-in-programming-and-why-it-is-useful)
-      - [What is the difference between a Template Function and Function Overloading in C++?](#what-is-the-difference-between-a-template-function-and-function-overloading-in-c)
-      - [How does Template Specialization in C++ work?](#how-does-template-specialization-in-c-work)
-      - [What is a Class Template in C++ and how is it different from Function Templates?](#what-is-a-class-template-in-c-and-how-is-it-different-from-function-templates)
-      - [Explain how template metaprogramming works.](#explain-how-template-metaprogramming-works)
-      - [Can you discuss some of the potential problems or challenges that can occur when working with templates?](#can-you-discuss-some-of-the-potential-problems-or-challenges-that-can-occur-when-working-with-templates)
-      - [Enlist Types of Template Parameters.](#enlist-types-of-template-parameters)
-      - [Explain the difference between Template Classes and Class Templates.](#explain-the-difference-between-template-classes-and-class-templates)
-      - [How can you create a templated function within a class in C++?](#how-can-you-create-a-templated-function-within-a-class-in-c)
-      - [Can you explain the term Template Instantiation?](#can-you-explain-the-term-template-instantiation)
-      - [What is meant by Template Argument Deduction in C++?](#what-is-meant-by-template-argument-deduction-in-c)
-      - [Can you explain the difference between Complete and Incomplete Template Specialization?](#can-you-explain-the-difference-between-complete-and-incomplete-template-specialization)
-      - [What are Variadic Templates in C++ and how are they useful?](#what-are-variadic-templates-in-c-and-how-are-they-useful)
-      - [Can you discuss a situation when it would be more beneficial to use a virtual function rather than a template?](#can-you-discuss-a-situation-when-it-would-be-more-beneficial-to-use-a-virtual-function-rather-than-a-template)
-      - [How can you prevent the instantiation of a template for a particular data type?](#how-can-you-prevent-the-instantiation-of-a-template-for-a-particular-data-type)
-      - [Explain the potential challenges of debugging a templated code and how would you overcome them?](#explain-the-potential-challenges-of-debugging-a-templated-code-and-how-would-you-overcome-them)
-      - [What are Template Type Traits in C++?](#what-are-template-type-traits-in-c)
-      - [How to check a Trait at Compile-Time in a Template?](#how-to-check-a-trait-at-compile-time-in-a-template)
-      - [Define a Metafunction.](#define-a-metafunction)
-      - [What is a Concept for Templates?](#what-is-a-concept-for-templates)
-      - [What is the main advantage of Concepts?](#what-is-the-main-advantage-of-concepts)
-      - [What is C++ STL?](#what-is-c-stl)
-      - [Enlist Container Types in STL.](#enlist-container-types-in-stl)
-      - [What is an Iterator in STL?](#what-is-an-iterator-in-stl)
-      - [Give an overview of Algorithms in STL.](#give-an-overview-of-algorithms-in-stl)
-      - [What is Concurrency in Programming?](#what-is-concurrency-in-programming)
-      - [What is the difference between Concurrency and Parallelism?](#what-is-the-difference-between-concurrency-and-parallelism)
-      - [Elist Errors and Risks associated with Concurency.](#elist-errors-and-risks-associated-with-concurency)
-      - [Enlist Libraries and Instruments for realizing Concurrency in C++.](#enlist-libraries-and-instruments-for-realizing-concurrency-in-c)
-      - [Give an example of a Race Condition in C++.](#give-an-example-of-a-race-condition-in-c)
-      - [Enlist types of Mutexes.](#enlist-types-of-mutexes)
-      - [Enlist types of RAII(Resource Acquisition Is Initialization) Wrappers of Mutex Locks.](#enlist-types-of-raiiresource-acquisition-is-initialization-wrappers-of-mutex-locks)
-      - [Give some examples of Deadlocks and how to avoid them.](#give-some-examples-of-deadlocks-and-how-to-avoid-them)
-      - [What is a Condition Variable in C++?](#what-is-a-condition-variable-in-c)
-      - [Give an example of using an Atomic Variable in Concurrency.](#give-an-example-of-using-an-atomic-variable-in-concurrency)
-      - [Give an example of a Use Case for Futures and Promises.](#give-an-example-of-a-use-case-for-futures-and-promises)
+- [1. Knowledge Base](#1-knowledge-base)
+  - [1.1. Possible interview questions.](#11-possible-interview-questions)
+    - [1.1.1. Interview questions for probability and statistics.](#111-interview-questions-for-probability-and-statistics)
+      - [1.1.1.1. Can you give an intuitive definition of probability of an event?](#1111-can-you-give-an-intuitive-definition-of-probability-of-an-event)
+      - [1.1.1.2. What is the absolute necessery condition for the intuitive definition of probability to be true?](#1112-what-is-the-absolute-necessery-condition-for-the-intuitive-definition-of-probability-to-be-true)
+      - [1.1.1.3. What is the difference between probability and statistics?](#1113-what-is-the-difference-between-probability-and-statistics)
+      - [1.1.1.4. Enlist and explain the most important combinatoric formulas.](#1114-enlist-and-explain-the-most-important-combinatoric-formulas)
+      - [1.1.1.5. How is probability generally defined in terms of sets?](#1115-how-is-probability-generally-defined-in-terms-of-sets)
+      - [1.1.1.6. How to express a possible outcome or element of a sample space in terms of sets?](#1116-how-to-express-a-possible-outcome-or-element-of-a-sample-space-in-terms-of-sets)
+      - [1.1.1.7. What are the differences between "element of", "subset" and "proper subset"?](#1117-what-are-the-differences-between-element-of-subset-and-proper-subset)
+      - [1.1.1.8. What is the difference between union and intersection of two sets?](#1118-what-is-the-difference-between-union-and-intersection-of-two-sets)
+      - [1.1.1.9. What is the probability of the union of two non-disjoint event sets?](#1119-what-is-the-probability-of-the-union-of-two-non-disjoint-event-sets)
+      - [1.1.1.10. How to calculate a probability that an event won't happen, knowing its probability to happen?](#11110-how-to-calculate-a-probability-that-an-event-wont-happen-knowing-its-probability-to-happen)
+      - [1.1.1.11. What is conditional probability of two events and how it is calculated? Give a simple example.](#11111-what-is-conditional-probability-of-two-events-and-how-it-is-calculated-give-a-simple-example)
+      - [1.1.1.12. What is Bayes' rule?](#11112-what-is-bayes-rule)
+      - [1.1.1.13. Define the law of total probability.](#11113-define-the-law-of-total-probability)
+      - [1.1.1.14. What is the difference between prior and posterior probabilities?](#11114-what-is-the-difference-between-prior-and-posterior-probabilities)
+      - [1.1.1.15. When are two events independent?](#11115-when-are-two-events-independent)
+      - [1.1.1.16. How is independence of many events defined?](#11116-how-is-independence-of-many-events-defined)
+      - [1.1.1.17. What is conditional independence?](#11117-what-is-conditional-independence)
+      - [1.1.1.18. Give a definition of random variables.](#11118-give-a-definition-of-random-variables)
+      - [1.1.1.19. What is a distribution of a random variable?](#11119-what-is-a-distribution-of-a-random-variable)
+      - [1.1.1.20. Name two main types of random variables.](#11120-name-two-main-types-of-random-variables)
+      - [1.1.1.21. Give a formal definition of a discrete random variable.](#11121-give-a-formal-definition-of-a-discrete-random-variable)
+      - [1.1.1.22. What is support of a discrete random variable?](#11122-what-is-support-of-a-discrete-random-variable)
+      - [1.1.1.23. What is probability mass function of a discrete random variable?](#11123-what-is-probability-mass-function-of-a-discrete-random-variable)
+      - [1.1.1.24. Give a formal definition of the Bernoulli distribution.](#11124-give-a-formal-definition-of-the-bernoulli-distribution)
+      - [1.1.1.25. What is an indicator random variable?](#11125-what-is-an-indicator-random-variable)
+      - [1.1.1.26. What is Bernoulli trial?](#11126-what-is-bernoulli-trial)
+      - [1.1.1.27. Give a formal definition of Binomial distribution.](#11127-give-a-formal-definition-of-binomial-distribution)
+      - [1.1.1.28. Give a formal definition of Hypergeometric distribution.](#11128-give-a-formal-definition-of-hypergeometric-distribution)
+      - [1.1.1.29. Is there connection between Binomial and Hypergeometric distributions?](#11129-is-there-connection-between-binomial-and-hypergeometric-distributions)
+      - [1.1.1.30. Give a formal definition of a discrete uniform distribution.](#11130-give-a-formal-definition-of-a-discrete-uniform-distribution)
+      - [1.1.1.31. What is Cumulative Distribution Function (CDF)?](#11131-what-is-cumulative-distribution-function-cdf)
+      - [1.1.1.32. Enlist and explain key properties of a CDF.](#11132-enlist-and-explain-key-properties-of-a-cdf)
+      - [1.1.1.33. How are PMF and CDF of a discrete random variable related?](#11133-how-are-pmf-and-cdf-of-a-discrete-random-variable-related)
+      - [1.1.1.34. Give a formal definition of a function of random variables.](#11134-give-a-formal-definition-of-a-function-of-random-variables)
+      - [1.1.1.35. How to calculate PMF of a function of a random variable?](#11135-how-to-calculate-pmf-of-a-function-of-a-random-variable)
+      - [1.1.1.36. Define when two random variables are independent.](#11136-define-when-two-random-variables-are-independent)
+      - [1.1.1.37. What is the distribution of the sum of two independent variables with binomial distributions?](#11137-what-is-the-distribution-of-the-sum-of-two-independent-variables-with-binomial-distributions)
+      - [1.1.1.38. Give a definition of conditional independence of two random variables given a third random variable.](#11138-give-a-definition-of-conditional-independence-of-two-random-variables-given-a-third-random-variable)
+      - [1.1.1.39. What is expectation of a discrete random variable?](#11139-what-is-expectation-of-a-discrete-random-variable)
+      - [1.1.1.40. How do expectations of two random variables with the same distribution relate to each other?](#11140-how-do-expectations-of-two-random-variables-with-the-same-distribution-relate-to-each-other)
+      - [1.1.1.41. How is the expectation of a sum of two random variables or a product of a constant and a random variable defined?](#11141-how-is-the-expectation-of-a-sum-of-two-random-variables-or-a-product-of-a-constant-and-a-random-variable-defined)
+      - [1.1.1.42. How is monotonicity of expectation is defined?](#11142-how-is-monotonicity-of-expectation-is-defined)
+      - [1.1.1.43. What is Geometric distribution of a discrete random variable?](#11143-what-is-geometric-distribution-of-a-discrete-random-variable)
+      - [1.1.1.44. Give a formal definition of the Cumulative Distribution Function of Geometric distribution.](#11144-give-a-formal-definition-of-the-cumulative-distribution-function-of-geometric-distribution)
+      - [1.1.1.45. How is the Negative Binomial distribution defined?](#11145-how-is-the-negative-binomial-distribution-defined)
+      - [1.1.1.46. How does PMF of the Negative Binomial distribution look like?](#11146-how-does-pmf-of-the-negative-binomial-distribution-look-like)
+      - [1.1.1.47. How is the Expectation of the Negative Binomial distribution defined?](#11147-how-is-the-expectation-of-the-negative-binomial-distribution-defined)
+      - [1.1.1.48. What are the main properties of indicator variables?](#11148-what-are-the-main-properties-of-indicator-variables)
+      - [1.1.1.49. How is the Fundamental Bridge between probability and expection defined?](#11149-how-is-the-fundamental-bridge-between-probability-and-expection-defined)
+      - [1.1.1.50. Give the formal definition of the Low of Unconcious Statistician (LOTUS).](#11150-give-the-formal-definition-of-the-low-of-unconcious-statistician-lotus)
+      - [1.1.1.51. Define the Variance of a discrete random variable.](#11151-define-the-variance-of-a-discrete-random-variable)
+      - [1.1.1.52. What are the main properties of Variance?](#11152-what-are-the-main-properties-of-variance)
+      - [1.1.1.53. Give the formula of the variance of a discrete random variable with Binomial distribution.](#11153-give-the-formula-of-the-variance-of-a-discrete-random-variable-with-binomial-distribution)
+      - [1.1.1.54. Give the formula of the variance of a discrete random variable with Hypergeometric distribution.](#11154-give-the-formula-of-the-variance-of-a-discrete-random-variable-with-hypergeometric-distribution)
+      - [1.1.1.55. Give the formula of the variance of a discrete random variable with Negative Binomial distribution.](#11155-give-the-formula-of-the-variance-of-a-discrete-random-variable-with-negative-binomial-distribution)
+      - [1.1.1.56. Give the formula of the variance of a discrete random variable with Geometric distribution.](#11156-give-the-formula-of-the-variance-of-a-discrete-random-variable-with-geometric-distribution)
+      - [1.1.1.57. Give a formal definition and interpretation of Poisson distribution.](#11157-give-a-formal-definition-and-interpretation-of-poisson-distribution)
+      - [1.1.1.58. How is the expectation of Poisson distribution is defined?](#11158-how-is-the-expectation-of-poisson-distribution-is-defined)
+      - [1.1.1.59. How is the variance of Poisson distribution is defined?](#11159-how-is-the-variance-of-poisson-distribution-is-defined)
+      - [1.1.1.60. How is the sum of two independent  Poissons defined?](#11160-how-is-the-sum-of-two-independent--poissons-defined)
+      - [1.1.1.61. How is the conditional distribution of a variable with Poisson distribution given a sum with another independent variable with Poisson defined?](#11161-how-is-the-conditional-distribution-of-a-variable-with-poisson-distribution-given-a-sum-with-another-independent-variable-with-poisson-defined)
+      - [1.1.1.62. How are Binomial and Poisson distributions related?](#11162-how-are-binomial-and-poisson-distributions-related)
+      - [1.1.1.63. Give a formal definition of a continuous random variable in terms of distribution.](#11163-give-a-formal-definition-of-a-continuous-random-variable-in-terms-of-distribution)
+      - [1.1.1.64. What is the main difference between discrete and continuous variables in terms of probability?](#11164-what-is-the-main-difference-between-discrete-and-continuous-variables-in-terms-of-probability)
+      - [1.1.1.65. What is the Probability Density Function of a continuous random variable?](#11165-what-is-the-probability-density-function-of-a-continuous-random-variable)
+      - [1.1.1.66. How to calculate CDF from PDF of a continuous random variable?](#11166-how-to-calculate-cdf-from-pdf-of-a-continuous-random-variable)
+      - [1.1.1.67. Which criteria must be sutisfied by a function to be a valid PDF?](#11167-which-criteria-must-be-sutisfied-by-a-function-to-be-a-valid-pdf)
+      - [1.1.1.68. How is the expectation of a continuous random variable defined?](#11168-how-is-the-expectation-of-a-continuous-random-variable-defined)
+      - [1.1.1.69. Define the Low of the Unconcious Statistician (LOTUS) for continuous random variables.](#11169-define-the-low-of-the-unconcious-statistician-lotus-for-continuous-random-variables)
+      - [1.1.1.70. Give a formal definition of the Continuous Uniform distribution.](#11170-give-a-formal-definition-of-the-continuous-uniform-distribution)
+      - [1.1.1.71. How is the Expectation of the continuous Uniform distribution defined?](#11171-how-is-the-expectation-of-the-continuous-uniform-distribution-defined)
+      - [1.1.1.72. How is Variance of the continuous Uniform distribution defined?](#11172-how-is-variance-of-the-continuous-uniform-distribution-defined)
+      - [1.1.1.73. Give a formal definition of the Standard Normal Distribution.](#11173-give-a-formal-definition-of-the-standard-normal-distribution)
+      - [1.1.1.74. How does the CDF of the Standard Normal distribution is defined?](#11174-how-does-the-cdf-of-the-standard-normal-distribution-is-defined)
+      - [1.1.1.75. Give the values of the expectation and variance of the Standard Normal Distribution.](#11175-give-the-values-of-the-expectation-and-variance-of-the-standard-normal-distribution)
+      - [1.1.1.76. Give the formal definition of the Normal Distribution.](#11176-give-the-formal-definition-of-the-normal-distribution)
+      - [1.1.1.77. How is the CDF of the Normal distribution is defined?](#11177-how-is-the-cdf-of-the-normal-distribution-is-defined)
+      - [1.1.1.78. Give a formal definition of the Exponential distribution.](#11178-give-a-formal-definition-of-the-exponential-distribution)
+      - [1.1.1.79. How is the CDF of the Exponential distribution defined?](#11179-how-is-the-cdf-of-the-exponential-distribution-defined)
+      - [1.1.1.80. How does Expectation of the Exponential distribution look like?](#11180-how-does-expectation-of-the-exponential-distribution-look-like)
+      - [1.1.1.81. How does Variance of the Exponential distribution look like?](#11181-how-does-variance-of-the-exponential-distribution-look-like)
+      - [1.1.1.82. What does memoryless property of a continuous distribution mean?](#11182-what-does-memoryless-property-of-a-continuous-distribution-mean)
+      - [1.1.1.83. Which distribution does a memoryless continuous variable have?](#11183-which-distribution-does-a-memoryless-continuous-variable-have)
+      - [1.1.1.84. Give a formal definition of a Poisson process.](#11184-give-a-formal-definition-of-a-poisson-process)
+      - [1.1.1.85. How are interarrival times in a Poisson process defined?](#11185-how-are-interarrival-times-in-a-poisson-process-defined)
+      - [1.1.1.86. Give a formal definition of the Mean value of a distribution.](#11186-give-a-formal-definition-of-the-mean-value-of-a-distribution)
+      - [1.1.1.87. Give a formal definition of the Median value of a distribution.](#11187-give-a-formal-definition-of-the-median-value-of-a-distribution)
+      - [1.1.1.88. Give a formal definition of the Mode value of a distribution.](#11188-give-a-formal-definition-of-the-mode-value-of-a-distribution)
+      - [1.1.1.89. What is the Skewness of a distribution.](#11189-what-is-the-skewness-of-a-distribution)
+      - [1.1.1.90. Which summary values are more appropriate for symmetric and non-symmetric distributions.](#11190-which-summary-values-are-more-appropriate-for-symmetric-and-non-symmetric-distributions)
+      - [1.1.1.91. Give a formal definition of interquartile range (IQR).](#11191-give-a-formal-definition-of-interquartile-range-iqr)
+      - [1.1.1.92. Give a formal definition of the Kurtosis of a distribution.](#11192-give-a-formal-definition-of-the-kurtosis-of-a-distribution)
+      - [1.1.1.93. Give a formal definition and interpretation of a Moment Generating Function.](#11193-give-a-formal-definition-and-interpretation-of-a-moment-generating-function)
+      - [1.1.1.94. Give a formal definition of joint CDF of two discrete random variables.](#11194-give-a-formal-definition-of-joint-cdf-of-two-discrete-random-variables)
+      - [1.1.1.95. Give a formal definition of joint PMF of two discrete random variables.](#11195-give-a-formal-definition-of-joint-pmf-of-two-discrete-random-variables)
+      - [1.1.1.96. What is the marginal PMF of two discrete random variables?](#11196-what-is-the-marginal-pmf-of-two-discrete-random-variables)
+      - [1.1.1.97. How is the conditional PMF of two discrete random variables defined?](#11197-how-is-the-conditional-pmf-of-two-discrete-random-variables-defined)
+      - [1.1.1.98. How is the joint PDF of two continuous random variables defined?](#11198-how-is-the-joint-pdf-of-two-continuous-random-variables-defined)
+      - [1.1.1.99. How is the marginal PDF of two continuous random variables defined?](#11199-how-is-the-marginal-pdf-of-two-continuous-random-variables-defined)
+      - [1.1.1.100. How is the conditional PDF of two continuous random variables defined?](#111100-how-is-the-conditional-pdf-of-two-continuous-random-variables-defined)
+      - [1.1.1.101. How is the 2D LOTUS defined?](#111101-how-is-the-2d-lotus-defined)
+      - [1.1.1.102. Give a formal definition of the Covariance between two random variables.](#111102-give-a-formal-definition-of-the-covariance-between-two-random-variables)
+      - [1.1.1.103. Emlist the main properties of Covariance.](#111103-emlist-the-main-properties-of-covariance)
+      - [1.1.1.104. How is Correlation between two random variables defined?](#111104-how-is-correlation-between-two-random-variables-defined)
+      - [1.1.1.105. Give a formal definition of Multinomial distribution.](#111105-give-a-formal-definition-of-multinomial-distribution)
+      - [1.1.1.106. How is the joint PMF of Multinomial distribution is defined?](#111106-how-is-the-joint-pmf-of-multinomial-distribution-is-defined)
+      - [1.1.1.107. Define multinomial conditioning.](#111107-define-multinomial-conditioning)
+      - [1.1.1.108. Define Covariance for Multinomial distribution.](#111108-define-covariance-for-multinomial-distribution)
+      - [1.1.1.109. Give a formal definition of the Multivariate Normal distribution.](#111109-give-a-formal-definition-of-the-multivariate-normal-distribution)
+      - [1.1.1.110. How is the joint PDF of the Multivariate Normal distribution defined?](#111110-how-is-the-joint-pdf-of-the-multivariate-normal-distribution-defined)
+      - [1.1.1.111. How is the joint Moment Generating Function defined?](#111111-how-is-the-joint-moment-generating-function-defined)
+      - [1.1.1.112. Give a formal definition of the Beta Distribution.](#111112-give-a-formal-definition-of-the-beta-distribution)
+      - [1.1.1.113. Give a short interpretation of Beta Distribution.](#111113-give-a-short-interpretation-of-beta-distribution)
+      - [1.1.1.114. Give definitions for mean, variance and mode values of the Beta distribution.](#111114-give-definitions-for-mean-variance-and-mode-values-of-the-beta-distribution)
+      - [1.1.1.115. Give some examples of usage of Beta distribution.](#111115-give-some-examples-of-usage-of-beta-distribution)
+      - [1.1.1.116. Give a formal definition of the Gamma Distribution.](#111116-give-a-formal-definition-of-the-gamma-distribution)
+      - [1.1.1.117. Give a short interpretation of the Gamma distribution.](#111117-give-a-short-interpretation-of-the-gamma-distribution)
+      - [1.1.1.118. Give definitions for mean, variance and mode values of the Gamma distribution.](#111118-give-definitions-for-mean-variance-and-mode-values-of-the-gamma-distribution)
+      - [1.1.1.119. How are Beta and Gamma distributions connected?](#111119-how-are-beta-and-gamma-distributions-connected)
+      - [1.1.1.120. Give a formal definition of a Conditional Expectation given an event.](#111120-give-a-formal-definition-of-a-conditional-expectation-given-an-event)
+      - [1.1.1.121. How is the Low of Total Expectation defined?](#111121-how-is-the-low-of-total-expectation-defined)
+      - [1.1.1.122. Give a definition of Conditional Expectation given a random variable.](#111122-give-a-definition-of-conditional-expectation-given-a-random-variable)
+      - [1.1.1.123. Enlist the properties of Conditional Expectation.](#111123-enlist-the-properties-of-conditional-expectation)
+      - [1.1.1.124. Define the Conditional Variance.](#111124-define-the-conditional-variance)
+      - [1.1.1.125. Give a definition of the law of the total variance (Eve's law).](#111125-give-a-definition-of-the-law-of-the-total-variance-eves-law)
+      - [1.1.1.126. Give a definition of Couchy-Schwarz inequality for marginal bound on a joint expectation.](#111126-give-a-definition-of-couchy-schwarz-inequality-for-marginal-bound-on-a-joint-expectation)
+      - [1.1.1.127. Give a definition for Jensen's inequality for convexity.](#111127-give-a-definition-for-jensens-inequality-for-convexity)
+      - [1.1.1.128. Give a definition for Markov's bound on tail probabilities.](#111128-give-a-definition-for-markovs-bound-on-tail-probabilities)
+      - [1.1.1.129. Give a definition for Chebyshev's bound on tail probabilities.](#111129-give-a-definition-for-chebyshevs-bound-on-tail-probabilities)
+      - [1.1.1.130. Give a definition for Chernoff's bound on tail probabilities.](#111130-give-a-definition-for-chernoffs-bound-on-tail-probabilities)
+      - [1.1.1.131. Give a formal definition of the Weak Law of Large Numbers.](#111131-give-a-formal-definition-of-the-weak-law-of-large-numbers)
+      - [1.1.1.132. Give a formal definition of the Strong Law of Large Numbers.](#111132-give-a-formal-definition-of-the-strong-law-of-large-numbers)
+      - [1.1.1.133. Give a formal definition of the Central Limit Theorem.](#111133-give-a-formal-definition-of-the-central-limit-theorem)
+      - [1.1.1.134. Give a formal definition of the Chi-Square distribution.](#111134-give-a-formal-definition-of-the-chi-square-distribution)
+      - [1.1.1.135. Give a formal definition of the Student-t distribution.](#111135-give-a-formal-definition-of-the-student-t-distribution)
+      - [1.1.1.136. Give a formal definition of a Markov chain.](#111136-give-a-formal-definition-of-a-markov-chain)
+      - [1.1.1.137. Give a definition of the Transition Martrix of a Markov Chain.](#111137-give-a-definition-of-the-transition-martrix-of-a-markov-chain)
+      - [1.1.1.138. Give a formal defintion of $n$-step transition probability.](#111138-give-a-formal-defintion-of-n-step-transition-probability)
+      - [1.1.1.139. What are recurrent and transient states in Markov chains?](#111139-what-are-recurrent-and-transient-states-in-markov-chains)
+      - [1.1.1.140. How are irreducible and reducible Markov chains defined?](#111140-how-are-irreducible-and-reducible-markov-chains-defined)
+      - [1.1.1.141. How is a period of a state in a Markov chain defined?](#111141-how-is-a-period-of-a-state-in-a-markov-chain-defined)
+      - [1.1.1.142. What is stationary distribution of a Markov chain?](#111142-what-is-stationary-distribution-of-a-markov-chain)
+      - [1.1.1.143. What is reversibility of a Markov chain.](#111143-what-is-reversibility-of-a-markov-chain)
+      - [1.1.1.144. What problem does a Markov Chain Monte-Carlo Simulation solve?](#111144-what-problem-does-a-markov-chain-monte-carlo-simulation-solve)
+      - [1.1.1.145. Explain Metropolis-Hastings MCMC algorithm.](#111145-explain-metropolis-hastings-mcmc-algorithm)
+      - [1.1.1.146. Explain the Gibbs sampling MCMC algorithm.](#111146-explain-the-gibbs-sampling-mcmc-algorithm)
+      - [1.1.1.147. Give a definition of Poisson processes in one dimension.](#111147-give-a-definition-of-poisson-processes-in-one-dimension)
+      - [1.1.1.148. Explain the conditioning property of one-dimensional Poisson processes.](#111148-explain-the-conditioning-property-of-one-dimensional-poisson-processes)
+      - [1.1.1.149. Explain the superposition property of one-dimensional Poisson processes.](#111149-explain-the-superposition-property-of-one-dimensional-poisson-processes)
+      - [1.1.1.150. Explain the thinning property of one-dimensional Poisson processes.](#111150-explain-the-thinning-property-of-one-dimensional-poisson-processes)
+      - [1.1.1.151. Give a definition of two-dimensional Poisson processes.](#111151-give-a-definition-of-two-dimensional-poisson-processes)
+      - [1.1.1.152. What is data reduction of a distribution in statistical inference?](#111152-what-is-data-reduction-of-a-distribution-in-statistical-inference)
+      - [1.1.1.153. How is sufficient statistic defined?](#111153-how-is-sufficient-statistic-defined)
+      - [1.1.1.154. Explain what minimal sufficient statistic is.](#111154-explain-what-minimal-sufficient-statistic-is)
+      - [1.1.1.155. Explain what ancillary statistic is.](#111155-explain-what-ancillary-statistic-is)
+      - [1.1.1.156. Explain what complete statistic is.](#111156-explain-what-complete-statistic-is)
+      - [1.1.1.157. What is the likelihood function in statistical inference?](#111157-what-is-the-likelihood-function-in-statistical-inference)
+      - [1.1.1.158. Explain the principle of equivariance in statistical inference.](#111158-explain-the-principle-of-equivariance-in-statistical-inference)
+      - [1.1.1.159. What is a point estimator in statistical inference?](#111159-what-is-a-point-estimator-in-statistical-inference)
+      - [1.1.1.160. Explain method of moments (MOM) for point estimation.](#111160-explain-method-of-moments-mom-for-point-estimation)
+      - [1.1.1.161. Explain Maximum Likelihood point estimator (MLE).](#111161-explain-maximum-likelihood-point-estimator-mle)
+      - [1.1.1.162. Explain Bayes point estimator.](#111162-explain-bayes-point-estimator)
+      - [1.1.1.163. Explain principal difference between classical and Bayesian statistical inference.](#111163-explain-principal-difference-between-classical-and-bayesian-statistical-inference)
+      - [1.1.1.164. Enlist methods of evaluating the point estimators.](#111164-enlist-methods-of-evaluating-the-point-estimators)
+      - [1.1.1.165. Give a definition of what is hypothesis and its testing in inference statistics.](#111165-give-a-definition-of-what-is-hypothesis-and-its-testing-in-inference-statistics)
+      - [1.1.1.166. Explain Critical Region / Rejection Region Method for Hypothesis testing.](#111166-explain-critical-region--rejection-region-method-for-hypothesis-testing)
+      - [1.1.1.167. Explain the Z-test statistic for hypothesis testing.](#111167-explain-the-z-test-statistic-for-hypothesis-testing)
+      - [1.1.1.168. Explain the t-test statistic for hypothesis testing.](#111168-explain-the-t-test-statistic-for-hypothesis-testing)
+      - [1.1.1.169. Explain the Chi-Square test statistic for hypothesis testing.](#111169-explain-the-chi-square-test-statistic-for-hypothesis-testing)
+      - [1.1.1.170. Explain the F-test statistic for comparing two variances.](#111170-explain-the-f-test-statistic-for-comparing-two-variances)
+      - [1.1.1.171. Explain Likelihood Ratio Test (LRT) for General Parametric Models.](#111171-explain-likelihood-ratio-test-lrt-for-general-parametric-models)
+      - [1.1.1.172. Explain Non-Parametric / Rank-Based Tests.](#111172-explain-non-parametric--rank-based-tests)
+      - [1.1.1.173. Explain p-value method for Hypotheses testing.](#111173-explain-p-value-method-for-hypotheses-testing)
+      - [1.1.1.174. What are Union Intersection and Intersection Union tests?](#111174-what-are-union-intersection-and-intersection-union-tests)
+      - [1.1.1.175. Explain Analysis of Variance (ANOVA) method.](#111175-explain-analysis-of-variance-anova-method)
+      - [1.1.1.176. Explain Bayesian method for hypothesis testing.](#111176-explain-bayesian-method-for-hypothesis-testing)
+      - [1.1.1.177. Enlist and explain main methods of evaluation of hypothesis tests.](#111177-enlist-and-explain-main-methods-of-evaluation-of-hypothesis-tests)
+      - [1.1.1.178. What are the interval estimators in statistical inference?](#111178-what-are-the-interval-estimators-in-statistical-inference)
+      - [1.1.1.179. Explain and give a simple example for Pivot (Pivotal Quantity) Method.](#111179-explain-and-give-a-simple-example-for-pivot-pivotal-quantity-method)
+      - [1.1.1.180. Explain Test Inversion method for finding confidence intervals.](#111180-explain-test-inversion-method-for-finding-confidence-intervals)
+      - [1.1.1.181. Explain Likelihood-Based Method for Interval Estimation.](#111181-explain-likelihood-based-method-for-interval-estimation)
+      - [1.1.1.182. Explain Asymptotic (Normal Approximation) Method for Interval Estimation.](#111182-explain-asymptotic-normal-approximation-method-for-interval-estimation)
+      - [1.1.1.183. Explain Bootstrap Method for Interval Estimation.](#111183-explain-bootstrap-method-for-interval-estimation)
+      - [1.1.1.184. Explain Bayesian Credible Intervals estimation.](#111184-explain-bayesian-credible-intervals-estimation)
+      - [1.1.1.185. What are the methods of evaluating interval estimators?](#111185-what-are-the-methods-of-evaluating-interval-estimators)
+    - [1.1.2. Interview questions for Databases.](#112-interview-questions-for-databases)
+      - [1.1.2.1. How is a Database defined?](#1121-how-is-a-database-defined)
+      - [1.1.2.2. Define DBMS.](#1122-define-dbms)
+      - [1.1.2.3. Define RDBMS.](#1123-define-rdbms)
+      - [1.1.2.4. Enlist the advantages of DBMS.](#1124-enlist-the-advantages-of-dbms)
+      - [1.1.2.5. What is the Database Transaction?](#1125-what-is-the-database-transaction)
+      - [1.1.2.6. Enlist four fundamental Properties of Transactions in RDBMS.](#1126-enlist-four-fundamental-properties-of-transactions-in-rdbms)
+      - [1.1.2.7. Explain the terms ‘Record’, ‘Field’ and ‘Table’ in terms of database.](#1127-explain-the-terms-record-field-and-table-in-terms-of-database)
+      - [1.1.2.8. What do you understand by Data Redundancy?](#1128-what-do-you-understand-by-data-redundancy)
+      - [1.1.2.9. What is a Primary Key in a Relational Database?](#1129-what-is-a-primary-key-in-a-relational-database)
+      - [1.1.2.10. What is a Foreign Key in a Relational Database?](#11210-what-is-a-foreign-key-in-a-relational-database)
+      - [1.1.2.11. What are Non-key Attributes?](#11211-what-are-non-key-attributes)
+      - [1.1.2.12. Categorize Data Modification Anomalies in a Database.](#11212-categorize-data-modification-anomalies-in-a-database)
+      - [1.1.2.13. What are the various types of relationships in Database? Define them.](#11213-what-are-the-various-types-of-relationships-in-database-define-them)
+      - [1.1.2.14. Explain Normalization and De-Normalization.](#11214-explain-normalization-and-de-normalization)
+      - [1.1.2.15. What are the different types of Normalization?](#11215-what-are-the-different-types-of-normalization)
+      - [1.1.2.16. What is BCNF?](#11216-what-is-bcnf)
+      - [1.1.2.17. What is SQL?](#11217-what-is-sql)
+      - [1.1.2.18. How many SQL statements are used? Define them.](#11218-how-many-sql-statements-are-used-define-them)
+      - [1.1.2.19. Enlist some commands of DDL, DML and DCL.](#11219-enlist-some-commands-of-ddl-dml-and-dcl)
+      - [1.1.2.20. What is Quaery Processor in DBMS?](#11220-what-is-quaery-processor-in-dbms)
+      - [1.1.2.21. Define DML Compiler.](#11221-define-dml-compiler)
+      - [1.1.2.22. What is DDL interpreter?](#11222-what-is-ddl-interpreter)
+      - [1.1.2.23. What is Query Optimizer?](#11223-what-is-query-optimizer)
+      - [1.1.2.24. What is Embedded DML Pre-compiler?](#11224-what-is-embedded-dml-pre-compiler)
+      - [1.1.2.25. Enlist the advantages of SQL.](#11225-enlist-the-advantages-of-sql)
+      - [1.1.2.26. What is a Relational Database Schema?](#11226-what-is-a-relational-database-schema)
+      - [1.1.2.27. What is a Physical Level in a Relational Database.](#11227-what-is-a-physical-level-in-a-relational-database)
+      - [1.1.2.28. What is a Conceptual (Logical) Level in a Relational Database.](#11228-what-is-a-conceptual-logical-level-in-a-relational-database)
+      - [1.1.2.29. What is a View Level in a Relational Database?](#11229-what-is-a-view-level-in-a-relational-database)
+      - [1.1.2.30. What are the advantages and disadvantages of views in the database?](#11230-what-are-the-advantages-and-disadvantages-of-views-in-the-database)
+      - [1.1.2.31. What do you understand by Data Independence? What are its two types?](#11231-what-do-you-understand-by-data-independence-what-are-its-two-types)
+      - [1.1.2.32. What do you understand by Functional dependency?](#11232-what-do-you-understand-by-functional-dependency)
+      - [1.1.2.33. What is a Fully Functional Dependancy?](#11233-what-is-a-fully-functional-dependancy)
+      - [1.1.2.34. What do you understand by the E-R model?](#11234-what-do-you-understand-by-the-e-r-model)
+      - [1.1.2.35. Define Entity, Entity type, and Entity set.](#11235-define-entity-entity-type-and-entity-set)
+      - [1.1.2.36. What is a Weak Entity?](#11236-what-is-a-weak-entity)
+      - [1.1.2.37. Explain the terms ‘Attribute’ and ‘Relations’.](#11237-explain-the-terms-attribute-and-relations)
+      - [1.1.2.38. What are VDL and SDL?](#11238-what-are-vdl-and-sdl)
+      - [1.1.2.39. Define Cursor and its types.](#11239-define-cursor-and-its-types)
+      - [1.1.2.40. Define Database Lock and its types.](#11240-define-database-lock-and-its-types)
+      - [1.1.2.41. What is Data Warehousing?](#11241-what-is-data-warehousing)
+      - [1.1.2.42. What do you understand by Join?](#11242-what-do-you-understand-by-join)
+      - [1.1.2.43. What do you understand by Index Hunting?](#11243-what-do-you-understand-by-index-hunting)
+      - [1.1.2.44. How to improve query performance using Index hunting?](#11244-how-to-improve-query-performance-using-index-hunting)
+      - [1.1.2.45. Differentiate between ‘Cluster’ and ‘Non-cluster’ index.](#11245-differentiate-between-cluster-and-non-cluster-index)
+      - [1.1.2.46. What do you understand by Fragmentation?](#11246-what-do-you-understand-by-fragmentation)
+      - [1.1.2.47. Define Join types.](#11247-define-join-types)
+      - [1.1.2.48. What do you understand by ‘Atomicity’ and ‘Aggregation’?](#11248-what-do-you-understand-by-atomicity-and-aggregation)
+      - [1.1.2.49. Define Phantom Deadlock.](#11249-define-phantom-deadlock)
+      - [1.1.2.50. Define Checkpoint.](#11250-define-checkpoint)
+      - [1.1.2.51. What is Database Partitioning?](#11251-what-is-database-partitioning)
+      - [1.1.2.52. Explain the importance of Database Partitioning.](#11252-explain-the-importance-of-database-partitioning)
+      - [1.1.2.53. Explain the Data Dictionary.](#11253-explain-the-data-dictionary)
+      - [1.1.2.54. Explain the Primary Key and Composite Key.](#11254-explain-the-primary-key-and-composite-key)
+      - [1.1.2.55. What do you understand by the Unique key?](#11255-what-do-you-understand-by-the-unique-key)
+      - [1.1.2.56. What do you understand by Database Triggers?](#11256-what-do-you-understand-by-database-triggers)
+      - [1.1.2.57. Define Stored Procedures.](#11257-define-stored-procedures)
+      - [1.1.2.58. What do you understand by B-Trees?](#11258-what-do-you-understand-by-b-trees)
+      - [1.1.2.59. Name the different Data Models that are available for database systems.](#11259-name-the-different-data-models-that-are-available-for-database-systems)
+      - [1.1.2.60. Differentiate between ‘DELETE’, ‘TRUNCATE’ and ‘DROP’ commands.](#11260-differentiate-between-delete-truncate-and-drop-commands)
+      - [1.1.2.61. Based on the given table, solve the following queries.](#11261-based-on-the-given-table-solve-the-following-queries)
+      - [1.1.2.62. What do you understand by NoSQL?](#11262-what-do-you-understand-by-nosql)
+      - [1.1.2.63. How many types of NoSQL Databases are there?](#11263-how-many-types-of-nosql-databases-are-there)
+      - [1.1.2.64. Write down the difference between vertical and horizontal databases.](#11264-write-down-the-difference-between-vertical-and-horizontal-databases)
+      - [1.1.2.65. When should one use NoSQL in place of the normal database?](#11265-when-should-one-use-nosql-in-place-of-the-normal-database)
+      - [1.1.2.66. What do you know about polyglot persistence in NoSQL?](#11266-what-do-you-know-about-polyglot-persistence-in-nosql)
+      - [1.1.2.67. Clarify the Key-Value Approach in a NoSQL Database.](#11267-clarify-the-key-value-approach-in-a-nosql-database)
+      - [1.1.2.68. Explain the CAP theorem in NoSQL.](#11268-explain-the-cap-theorem-in-nosql)
+      - [1.1.2.69. What is Sharding an a NoSQL Database?](#11269-what-is-sharding-an-a-nosql-database)
+      - [1.1.2.70. What is Big SQL?](#11270-what-is-big-sql)
+      - [1.1.2.71. How does Impedance Mismatch Happening in a Database?](#11271-how-does-impedance-mismatch-happening-in-a-database)
+      - [1.1.2.72. What is an Aggregate-Oriented Database](#11272-what-is-an-aggregate-oriented-database)
+      - [1.1.2.73. What is eventual consistency in the context of NoSQL?](#11273-what-is-eventual-consistency-in-the-context-of-nosql)
+      - [1.1.2.74. What are the BASE Properties in NoSQL?](#11274-what-are-the-base-properties-in-nosql)
+      - [1.1.2.75. Can Normalization be used in a NoSQL Database?](#11275-can-normalization-be-used-in-a-nosql-database)
+    - [1.1.3. Interview questions for Python.](#113-interview-questions-for-python)
+      - [1.1.3.1. What is Python? What are the benfits of using it?](#1131-what-is-python-what-are-the-benfits-of-using-it)
+      - [1.1.3.2. Explain Interpreted Programming Language.](#1132-explain-interpreted-programming-language)
+      - [1.1.3.3. What is a dynamically typed language?](#1133-what-is-a-dynamically-typed-language)
+      - [1.1.3.4. What is PEP 8 and why is it important?](#1134-what-is-pep-8-and-why-is-it-important)
+      - [1.1.3.5. What is Scope in Python?](#1135-what-is-scope-in-python)
+      - [1.1.3.6. What is the difference between Mutable and Immutable Data Types in Pyhon?](#1136-what-is-the-difference-between-mutable-and-immutable-data-types-in-pyhon)
+      - [1.1.3.7. What are lists and tuples? What is the key difference between the two?](#1137-what-are-lists-and-tuples-what-is-the-key-difference-between-the-two)
+      - [1.1.3.8. What are the common built-in data types in Python?](#1138-what-are-the-common-built-in-data-types-in-python)
+      - [1.1.3.9. What is ``pass`` in Python?](#1139-what-is-pass-in-python)
+      - [1.1.3.10. How are arguments passed by value or by reference in Python?](#11310-how-are-arguments-passed-by-value-or-by-reference-in-python)
+      - [1.1.3.11. What is List Comprehension? Give an Example.](#11311-what-is-list-comprehension-give-an-example)
+      - [1.1.3.12. What is a lambda function?](#11312-what-is-a-lambda-function)
+      - [1.1.3.13. What is the difference between / and // in Python?](#11313-what-is-the-difference-between--and--in-python)
+      - [1.1.3.14. How is Exceptional handling done in Python?](#11314-how-is-exceptional-handling-done-in-python)
+      - [1.1.3.15. What is swapcase function in Python?](#11315-what-is-swapcase-function-in-python)
+      - [1.1.3.16. Can we pass a function as an argument in Python?](#11316-can-we-pass-a-function-as-an-argument-in-python)
+      - [1.1.3.17. What are ``*args`` and ``*kwargs``?](#11317-what-are-args-and-kwargs)
+      - [1.1.3.18. Is Indentation Required in Python?](#11318-is-indentation-required-in-python)
+      - [1.1.3.19. What is docstring in Python?](#11319-what-is-docstring-in-python)
+      - [1.1.3.20. What is a ``break``, ``continue``, and ``pass`` in Python?](#11320-what-is-a-break-continue-and-pass-in-python)
+      - [1.1.3.21. How do you floor a number in Python?](#11321-how-do-you-floor-a-number-in-python)
+      - [1.1.3.22. What are global, protected and private attributes in Python?](#11322-what-are-global-protected-and-private-attributes-in-python)
+      - [1.1.3.23. What is the use of ``self`` in Python?](#11323-what-is-the-use-of-self-in-python)
+      - [1.1.3.24. What is ``__init__`` in Python?](#11324-what-is-__init__-in-python)
+      - [1.1.3.25. What is slicing in Python?](#11325-what-is-slicing-in-python)
+      - [1.1.3.26. What is the difference between Python Arrays and Lists?](#11326-what-is-the-difference-between-python-arrays-and-lists)
+      - [1.1.3.27. How is memory managed in Python?](#11327-how-is-memory-managed-in-python)
+      - [1.1.3.28. What are Python namespaces? Why are they used?](#11328-what-are-python-namespaces-why-are-they-used)
+      - [1.1.3.29. What are Decorators in Python?](#11329-what-are-decorators-in-python)
+      - [1.1.3.30. How do you copy an object in Python?](#11330-how-do-you-copy-an-object-in-python)
+      - [1.1.3.31. What is pickling and unpickling?](#11331-what-is-pickling-and-unpickling)
+      - [1.1.3.32. What are Generators in Python?](#11332-what-are-generators-in-python)
+      - [1.1.3.33. What is the difference between .py and .pyc files?](#11333-what-is-the-difference-between-py-and-pyc-files)
+      - [1.1.3.34. How Python is interpreted?](#11334-how-python-is-interpreted)
+      - [1.1.3.35. What are iterators in Python?](#11335-what-are-iterators-in-python)
+      - [1.1.3.36. What are negative indexes and why are they used?](#11336-what-are-negative-indexes-and-why-are-they-used)
+      - [1.1.3.37. Which sorting technique is used by ``sort()`` and ``sorted()`` functions of python?](#11337-which-sorting-technique-is-used-by-sort-and-sorted-functions-of-python)
+      - [1.1.3.38. How do you create a class in Python?](#11338-how-do-you-create-a-class-in-python)
+      - [1.1.3.39. How does inheritance work in python? Explain it with an example.](#11339-how-does-inheritance-work-in-python-explain-it-with-an-example)
+      - [1.1.3.40. How do you access parent members in the child class?](#11340-how-do-you-access-parent-members-in-the-child-class)
+      - [1.1.3.41. Are access specifiers used in python?](#11341-are-access-specifiers-used-in-python)
+      - [1.1.3.42. Is it possible to call parent class without its instance creation?](#11342-is-it-possible-to-call-parent-class-without-its-instance-creation)
+      - [1.1.3.43. How is an empty class created in python?](#11343-how-is-an-empty-class-created-in-python)
+      - [1.1.3.44. What is Polymorphism in Python?](#11344-what-is-polymorphism-in-python)
+      - [1.1.3.45. Differentiate between new and override modifiers.](#11345-differentiate-between-new-and-override-modifiers)
+      - [1.1.3.46. How will you check if a class is a child of another class?](#11346-how-will-you-check-if-a-class-is-a-child-of-another-class)
+      - [1.1.3.47. Define encapsulation in Python?](#11347-define-encapsulation-in-python)
+      - [1.1.3.48. How do you do data abstraction in Python?](#11348-how-do-you-do-data-abstraction-in-python)
+      - [1.1.3.49. Give an example of Multithreading with Threads Synchronization in Python.](#11349-give-an-example-of-multithreading-with-threads-synchronization-in-python)
+      - [1.1.3.50. Give an example of Threads Synchronization with Condition Variables.](#11350-give-an-example-of-threads-synchronization-with-condition-variables)
+      - [1.1.3.51. Give an example of using ThreadPoolExecuter in Python.](#11351-give-an-example-of-using-threadpoolexecuter-in-python)
+      - [1.1.3.52. Give an example of using ProcessPoolExecuter.](#11352-give-an-example-of-using-processpoolexecuter)
+      - [1.1.3.53. Explain the difference between Thread and Process in Python.](#11353-explain-the-difference-between-thread-and-process-in-python)
+      - [1.1.3.54. What is the Python Global Interpreter Lock (GIL)?](#11354-what-is-the-python-global-interpreter-lock-gil)
+    - [1.1.4. Interview questions for algorithms and data structures.](#114-interview-questions-for-algorithms-and-data-structures)
+      - [1.1.4.1. What is a Data Structure?](#1141-what-is-a-data-structure)
+      - [1.1.4.2. Describe the types of Data Structures?](#1142-describe-the-types-of-data-structures)
+      - [1.1.4.3. What is a Linear Data Structure? Name a few examples.](#1143-what-is-a-linear-data-structure-name-a-few-examples)
+      - [1.1.4.4. How are the elements of a 2D Array stored in the memory.](#1144-how-are-the-elements-of-a-2d-array-stored-in-the-memory)
+      - [1.1.4.5. What are some use cases for Row-Major and Column-Major storing of 2D Arrays?](#1145-what-are-some-use-cases-for-row-major-and-column-major-storing-of-2d-arrays)
+      - [1.1.4.6. How can you possibly choose between Row-Major and Column-Major 2D Arrays storing implementations?](#1146-how-can-you-possibly-choose-between-row-major-and-column-major-2d-arrays-storing-implementations)
+      - [1.1.4.7. What is a Linked List Data Structure?](#1147-what-is-a-linked-list-data-structure)
+      - [1.1.4.8. Are Linked Lists considered Linear or Non-linear Data Structures?](#1148-are-linked-lists-considered-linear-or-non-linear-data-structures)
+      - [1.1.4.9. What are the advantages of a Linked List over an Array? In which scenarios do we use Linked List and when Array?](#1149-what-are-the-advantages-of-a-linked-list-over-an-array-in-which-scenarios-do-we-use-linked-list-and-when-array)
+      - [1.1.4.10. What is a Doubly-Linked List?](#11410-what-is-a-doubly-linked-list)
+      - [1.1.4.11. What are Dynamic Data Structures? Name a few.](#11411-what-are-dynamic-data-structures-name-a-few)
+      - [1.1.4.12. What is a Stack?](#11412-what-is-a-stack)
+      - [1.1.4.13. Where are Stacks used?](#11413-where-are-stacks-used)
+      - [1.1.4.14. What are the operations that can be performed on a Stack?](#11414-what-are-the-operations-that-can-be-performed-on-a-stack)
+      - [1.1.4.15. What is a queue Data Structure?](#11415-what-is-a-queue-data-structure)
+      - [1.1.4.16. List some applications of the Queue Data Structure.](#11416-list-some-applications-of-the-queue-data-structure)
+      - [1.1.4.17. What is a Dequeue?](#11417-what-is-a-dequeue)
+      - [1.1.4.18. What operations can be performed on Queues?](#11418-what-operations-can-be-performed-on-queues)
+      - [1.1.4.19. Define the Graph Data Structure.](#11419-define-the-graph-data-structure)
+      - [1.1.4.20. What are the applications of Graph Data Structures?](#11420-what-are-the-applications-of-graph-data-structures)
+      - [1.1.4.21. List the types of Trees?](#11421-list-the-types-of-trees)
+      - [1.1.4.22. How is a Node Height in the Tree Data Structure determined?](#11422-how-is-a-node-height-in-the-tree-data-structure-determined)
+      - [1.1.4.23. How is a Node Depth in the Tree Data Structure determined?](#11423-how-is-a-node-depth-in-the-tree-data-structure-determined)
+      - [1.1.4.24. What is a Node Degree in the Tree Data Structure?](#11424-what-is-a-node-degree-in-the-tree-data-structure)
+      - [1.1.4.25. What is a Forest in relation with the Tree Data Structure?](#11425-what-is-a-forest-in-relation-with-the-tree-data-structure)
+      - [1.1.4.26. How is a Balanced Binary Tree determined?](#11426-how-is-a-balanced-binary-tree-determined)
+      - [1.1.4.27. What is a Self-balancing Binary Tree?](#11427-what-is-a-self-balancing-binary-tree)
+      - [1.1.4.28. What is a B-Tree Data Structure?](#11428-what-is-a-b-tree-data-structure)
+      - [1.1.4.29. Explain what Jagged Array is?](#11429-explain-what-jagged-array-is)
+      - [1.1.4.30. What is an Algorithm?](#11430-what-is-an-algorithm)
+      - [1.1.4.31. What is an asymptotic analysis of an algorithm?](#11431-what-is-an-asymptotic-analysis-of-an-algorithm)
+      - [1.1.4.32. What are Asymptotic Notations?](#11432-what-are-asymptotic-notations)
+      - [1.1.4.33. What are the common algorithmic runtimes in big O notation?](#11433-what-are-the-common-algorithmic-runtimes-in-big-o-notation)
+      - [1.1.4.34. What are basic operations on Arrays?](#11434-what-are-basic-operations-on-arrays)
+      - [1.1.4.35. What are the basic types of searching? Describe their worst case asymptotic behaviour.](#11435-what-are-the-basic-types-of-searching-describe-their-worst-case-asymptotic-behaviour)
+      - [1.1.4.36. What are some common array sorting algorithms?](#11436-what-are-some-common-array-sorting-algorithms)
+      - [1.1.4.37. Name the main properties of the basic operations on linked lists.](#11437-name-the-main-properties-of-the-basic-operations-on-linked-lists)
+      - [1.1.4.38. How can one detect loops in a Linked Lists, name a few approaches?](#11438-how-can-one-detect-loops-in-a-linked-lists-name-a-few-approaches)
+      - [1.1.4.39. Give some examples of basic Hash Functions that can be used in Hash Table Data Structure?](#11439-give-some-examples-of-basic-hash-functions-that-can-be-used-in-hash-table-data-structure)
+      - [1.1.4.40. How can one possibly avoid Hash Collisions in Hash Tables?](#11440-how-can-one-possibly-avoid-hash-collisions-in-hash-tables)
+      - [1.1.4.41. What are the basic operations on Hash Tables?](#11441-what-are-the-basic-operations-on-hash-tables)
+      - [1.1.4.42. What is a Bipartite Graph?](#11442-what-is-a-bipartite-graph)
+      - [1.1.4.43. What is a Weighted Graph?](#11443-what-is-a-weighted-graph)
+      - [1.1.4.44. What is a Directed Graph?](#11444-what-is-a-directed-graph)
+      - [1.1.4.45. What is a Transpose of a Directed Graph?](#11445-what-is-a-transpose-of-a-directed-graph)
+      - [1.1.4.46. What is a Strongly Connected Graph?](#11446-what-is-a-strongly-connected-graph)
+      - [1.1.4.47. What is a Minimum Spanning Tree of a Graph?](#11447-what-is-a-minimum-spanning-tree-of-a-graph)
+      - [1.1.4.48. Name the ways of representing and storing a Graph Data Structure.](#11448-name-the-ways-of-representing-and-storing-a-graph-data-structure)
+      - [1.1.4.49. What are the basic operations on Graphs?](#11449-what-are-the-basic-operations-on-graphs)
+      - [1.1.4.50. List the ways of Traversing a Graph.](#11450-list-the-ways-of-traversing-a-graph)
+      - [1.1.4.51. List the main applications of Breadth-First-Search.](#11451-list-the-main-applications-of-breadth-first-search)
+      - [1.1.4.52. List the main applications of Depth-First-Search.](#11452-list-the-main-applications-of-depth-first-search)
+      - [1.1.4.53. What are the basic operations on Trees Data Structures?](#11453-what-are-the-basic-operations-on-trees-data-structures)
+      - [1.1.4.54. Explain the mechanism of Self-Balancing in AVL Trees.](#11454-explain-the-mechanism-of-self-balancing-in-avl-trees)
+      - [1.1.4.55. Explain the mechanism of Self-Balancing in Red-Black Trees.](#11455-explain-the-mechanism-of-self-balancing-in-red-black-trees)
+      - [1.1.4.56. What is Recursion?](#11456-what-is-recursion)
+      - [1.1.4.57. What is Dynamic Programming?](#11457-what-is-dynamic-programming)
+      - [1.1.4.58. What is Linear Programming?](#11458-what-is-linear-programming)
+      - [1.1.4.59. What is Backtracking?](#11459-what-is-backtracking)
+      - [1.1.4.60. What is a Greedy Algorithm?](#11460-what-is-a-greedy-algorithm)
+    - [1.1.5. Interview questions for C++.](#115-interview-questions-for-c)
+      - [1.1.5.1. What is C++? What are the advantages of C++?](#1151-what-is-c-what-are-the-advantages-of-c)
+      - [1.1.5.2. What are the differences between C and C++?](#1152-what-are-the-differences-between-c-and-c)
+      - [1.1.5.3. What are the different data types present in C++?](#1153-what-are-the-different-data-types-present-in-c)
+      - [1.1.5.4. Define ‘std’?](#1154-define-std)
+      - [1.1.5.5. What is a Pointer in C++?](#1155-what-is-a-pointer-in-c)
+      - [1.1.5.6. What are references in C++?](#1156-what-are-references-in-c)
+      - [1.1.5.7. What are the differences between References and Pointers?](#1157-what-are-the-differences-between-references-and-pointers)
+      - [1.1.5.8. What is meant by Call by Value and Call by Reference?](#1158-what-is-meant-by-call-by-value-and-call-by-reference)
+      - [1.1.5.9. Define token in C++.](#1159-define-token-in-c)
+      - [1.1.5.10. What are the differences between Structures and Classes?](#11510-what-are-the-differences-between-structures-and-classes)
+      - [1.1.5.11. Discuss prefix and postfix operators.](#11511-discuss-prefix-and-postfix-operators)
+      - [1.1.5.12. What is the difference between new and malloc()?](#11512-what-is-the-difference-between-new-and-malloc)
+      - [1.1.5.13. What are the differences between Program Stack and Heap memory types?](#11513-what-are-the-differences-between-program-stack-and-heap-memory-types)
+      - [1.1.5.14. What is the difference between function overloading and operator overloading?](#11514-what-is-the-difference-between-function-overloading-and-operator-overloading)
+      - [1.1.5.15. What does the Scope Resolution operator do?](#11515-what-does-the-scope-resolution-operator-do)
+      - [1.1.5.16. What is the difference between shallow copy and deep copy?](#11516-what-is-the-difference-between-shallow-copy-and-deep-copy)
+      - [1.1.5.17. Can you compile a program without the main function?](#11517-can-you-compile-a-program-without-the-main-function)
+      - [1.1.5.18. Define inline function. Can we have a recursive inline function in C++?](#11518-define-inline-function-can-we-have-a-recursive-inline-function-in-c)
+      - [1.1.5.19. Define the spicifier 'auto'.](#11519-define-the-spicifier-auto)
+      - [1.1.5.20. Define the specifier 'decltype'.](#11520-define-the-specifier-decltype)
+      - [1.1.5.21. Define the specifier 'constexpr'.](#11521-define-the-specifier-constexpr)
+      - [1.1.5.22. What is the main use of the keyword 'volatile'?](#11522-what-is-the-main-use-of-the-keyword-volatile)
+      - [1.1.5.23. Define storage class in C++ and name some.](#11523-define-storage-class-in-c-and-name-some)
+      - [1.1.5.24. Enlist Value Categories.](#11524-enlist-value-categories)
+      - [1.1.5.25. Explain 'move()' semantics.](#11525-explain-move-semantics)
+      - [1.1.5.26. Explain Perfect Forwarding.](#11526-explain-perfect-forwarding)
+      - [1.1.5.27. What are Range Based For Loops?](#11527-what-are-range-based-for-loops)
+      - [1.1.5.28. Enlist some key advantages of 'switch' over 'if-else' ladders.](#11528-enlist-some-key-advantages-of-switch-over-if-else-ladders)
+      - [1.1.5.29. Which operations are permitted on pointers?](#11529-which-operations-are-permitted-on-pointers)
+      - [1.1.5.30. What are Smart Pointers? Enlist their types.](#11530-what-are-smart-pointers-enlist-their-types)
+      - [1.1.5.31. Give an example of Circular Dependency issues with std::shared\_ptr, and how to resolve it with std::weak\_ptr.](#11531-give-an-example-of-circular-dependency-issues-with-stdshared_ptr-and-how-to-resolve-it-with-stdweak_ptr)
+      - [1.1.5.32. Are Shared Pointers thread safe?](#11532-are-shared-pointers-thread-safe)
+      - [1.1.5.33. What are the various OOPs concepts in C++?](#11533-what-are-the-various-oops-concepts-in-c)
+      - [1.1.5.34. What are Classes and Objects in C++?](#11534-what-are-classes-and-objects-in-c)
+      - [1.1.5.35. What are the C++ access modifiers?](#11535-what-are-the-c-access-modifiers)
+      - [1.1.5.36. What is the difference between 'struct' and 'class'?](#11536-what-is-the-difference-between-struct-and-class)
+      - [1.1.5.37. What is the difference between C and C++ structures?](#11537-what-is-the-difference-between-c-and-c-structures)
+      - [1.1.5.38. What is an Abstract Class and when do you use it?](#11538-what-is-an-abstract-class-and-when-do-you-use-it)
+      - [1.1.5.39. What are the static data members and static member functions?](#11539-what-are-the-static-data-members-and-static-member-functions)
+      - [1.1.5.40. Explain inheritance.](#11540-explain-inheritance)
+      - [1.1.5.41. When should we use multiple inheritance?](#11541-when-should-we-use-multiple-inheritance)
+      - [1.1.5.42. What is virtual inheritance?](#11542-what-is-virtual-inheritance)
+      - [1.1.5.43. What is polymorphism in C++?](#11543-what-is-polymorphism-in-c)
+      - [1.1.5.44. What is Function Overriding?](#11544-what-is-function-overriding)
+      - [1.1.5.45. What is the difference between Virtual Functions and Pure Virtual Functions?](#11545-what-is-the-difference-between-virtual-functions-and-pure-virtual-functions)
+      - [1.1.5.46. Explain Constructors in C++.](#11546-explain-constructors-in-c)
+      - [1.1.5.47. What is the sequence of calling Constructors in a Class Hierarhcy?](#11547-what-is-the-sequence-of-calling-constructors-in-a-class-hierarhcy)
+      - [1.1.5.48. Explain Destructors in C++.](#11548-explain-destructors-in-c)
+      - [1.1.5.49. When is a Destructor in a Base Class should be virtual?](#11549-when-is-a-destructor-in-a-base-class-should-be-virtual)
+      - [1.1.5.50. Is Destructor Overloading possible?](#11550-is-destructor-overloading-possible)
+      - [1.1.5.51. Can a Destructor have parameters?](#11551-can-a-destructor-have-parameters)
+      - [1.1.5.52. What is a Template in programming and why it is useful?](#11552-what-is-a-template-in-programming-and-why-it-is-useful)
+      - [1.1.5.53. What is the difference between a Template Function and Function Overloading in C++?](#11553-what-is-the-difference-between-a-template-function-and-function-overloading-in-c)
+      - [1.1.5.54. How does Template Specialization in C++ work?](#11554-how-does-template-specialization-in-c-work)
+      - [1.1.5.55. What is a Class Template in C++ and how is it different from Function Templates?](#11555-what-is-a-class-template-in-c-and-how-is-it-different-from-function-templates)
+      - [1.1.5.56. Explain how template metaprogramming works.](#11556-explain-how-template-metaprogramming-works)
+      - [1.1.5.57. Can you discuss some of the potential problems or challenges that can occur when working with templates?](#11557-can-you-discuss-some-of-the-potential-problems-or-challenges-that-can-occur-when-working-with-templates)
+      - [1.1.5.58. Enlist Types of Template Parameters.](#11558-enlist-types-of-template-parameters)
+      - [1.1.5.59. Explain the difference between Template Classes and Class Templates.](#11559-explain-the-difference-between-template-classes-and-class-templates)
+      - [1.1.5.60. How can you create a templated function within a class in C++?](#11560-how-can-you-create-a-templated-function-within-a-class-in-c)
+      - [1.1.5.61. Can you explain the term Template Instantiation?](#11561-can-you-explain-the-term-template-instantiation)
+      - [1.1.5.62. What is meant by Template Argument Deduction in C++?](#11562-what-is-meant-by-template-argument-deduction-in-c)
+      - [1.1.5.63. Can you explain the difference between Complete and Incomplete Template Specialization?](#11563-can-you-explain-the-difference-between-complete-and-incomplete-template-specialization)
+      - [1.1.5.64. What are Variadic Templates in C++ and how are they useful?](#11564-what-are-variadic-templates-in-c-and-how-are-they-useful)
+      - [1.1.5.65. Can you discuss a situation when it would be more beneficial to use a virtual function rather than a template?](#11565-can-you-discuss-a-situation-when-it-would-be-more-beneficial-to-use-a-virtual-function-rather-than-a-template)
+      - [1.1.5.66. How can you prevent the instantiation of a template for a particular data type?](#11566-how-can-you-prevent-the-instantiation-of-a-template-for-a-particular-data-type)
+      - [1.1.5.67. Explain the potential challenges of debugging a templated code and how would you overcome them?](#11567-explain-the-potential-challenges-of-debugging-a-templated-code-and-how-would-you-overcome-them)
+      - [1.1.5.68. What are Template Type Traits in C++?](#11568-what-are-template-type-traits-in-c)
+      - [1.1.5.69. How to check a Trait at Compile-Time in a Template?](#11569-how-to-check-a-trait-at-compile-time-in-a-template)
+      - [1.1.5.70. Define a Metafunction.](#11570-define-a-metafunction)
+      - [1.1.5.71. What is a Concept for Templates?](#11571-what-is-a-concept-for-templates)
+      - [1.1.5.72. What is the main advantage of Concepts?](#11572-what-is-the-main-advantage-of-concepts)
+      - [1.1.5.73. What is C++ STL?](#11573-what-is-c-stl)
+      - [1.1.5.74. Enlist Container Types in STL.](#11574-enlist-container-types-in-stl)
+      - [1.1.5.75. What is an Iterator in STL?](#11575-what-is-an-iterator-in-stl)
+      - [1.1.5.76. Give an overview of Algorithms in STL.](#11576-give-an-overview-of-algorithms-in-stl)
+      - [1.1.5.77. What is Concurrency in Programming?](#11577-what-is-concurrency-in-programming)
+      - [1.1.5.78. What is the difference between Concurrency and Parallelism?](#11578-what-is-the-difference-between-concurrency-and-parallelism)
+      - [1.1.5.79. Elist Errors and Risks associated with Concurency.](#11579-elist-errors-and-risks-associated-with-concurency)
+      - [1.1.5.80. Enlist Libraries and Instruments for realizing Concurrency in C++.](#11580-enlist-libraries-and-instruments-for-realizing-concurrency-in-c)
+      - [1.1.5.81. Give an example of a Race Condition in C++.](#11581-give-an-example-of-a-race-condition-in-c)
+      - [1.1.5.82. Enlist types of Mutexes.](#11582-enlist-types-of-mutexes)
+      - [1.1.5.83. Enlist types of RAII(Resource Acquisition Is Initialization) Wrappers of Mutex Locks.](#11583-enlist-types-of-raiiresource-acquisition-is-initialization-wrappers-of-mutex-locks)
+      - [1.1.5.84. Give some examples of Deadlocks and how to avoid them.](#11584-give-some-examples-of-deadlocks-and-how-to-avoid-them)
+      - [1.1.5.85. What is a Condition Variable in C++?](#11585-what-is-a-condition-variable-in-c)
+      - [1.1.5.86. Give an example of using an Atomic Variable in Concurrency.](#11586-give-an-example-of-using-an-atomic-variable-in-concurrency)
+      - [1.1.5.87. Give an example of a Use Case for Futures and Promises.](#11587-give-an-example-of-a-use-case-for-futures-and-promises)
 
 
-## Possible interview questions.
+## 1.1. Possible interview questions.
 
 ---
 
-### Interview questions for probability and statistics.
+### 1.1.1. Interview questions for probability and statistics.
 
-#### Can you give an intuitive definition of probability of an event?
+#### 1.1.1.1. Can you give an intuitive definition of probability of an event?
 Intuitively, probability is the measure of how likely an event is to happen, a value between 0 (impossible) and 1 (certain), often expressed as a fraction or percentage, representing the proportion of times an outcome occurs over many repetitions of an experiment, like a coin landing on heads roughly half the time in many flips.
 
-#### What is the absolute necessery condition for the intuitive definition of probability to be true?
+#### 1.1.1.2. What is the absolute necessery condition for the intuitive definition of probability to be true?
 The intuitive definition of probability (classical/frequentist) says it's the ratio of favorable outcomes to total possible outcomes (P(E) = Favorable/Total). The crucial condition for this simple formula to work is that all possible outcomes must be equally likely (equally probable).
 
-#### What is the difference between probability and statistics?
+#### 1.1.1.3. What is the difference between probability and statistics?
 Probability tells you how to go from a population to a sample, and statistics tells you how to go from a sample to a population. So if one has a bin with red and blue balls and takes a number of balls from it, statistics estimates how many blue and red balls there could be in the bin. The probability estimates how likely it is that you take specific number of blue and red balls knowing the number of it in the bin. 
 
-#### Enlist and explain the most important combinatoric formulas.
+#### 1.1.1.4. Enlist and explain the most important combinatoric formulas.
 * <strong> Number of possible permutations to arrange $n$ distinct objects: </strong> <br/>
 Consider 5 balls of different colors, how many ways are there to put it on a table near each other on a line?
 $$P(n) = n!$$
@@ -506,17 +506,17 @@ $$C(n,r) = \frac{(n+r-1)!}{r!(n-1)!}$$
 Choose r samples out of n available (like choose r = 3 persons from a group of n = 5 people, a person can not be chosen twice).
 $$C(n,r) = \frac{n!}{r!(n-r)!}$$
 
-#### How is probability generally defined in terms of sets?
+#### 1.1.1.5. How is probability generally defined in terms of sets?
 Let $S$ be a sample space, $A \subseteq S$ - an event or a subset from the sample space, then probability $P(A)$ is a function defined between 0 and 1 describing how likely it is for the event to come. Probability function must sutisfy following rules:
 * $P(\emptyset) = 0$, $P(S) = 1$ and $P(A) \geq 0$
 * For disjoint events $A \subset S$ and $B \subset S$, the probability of an overlapping event is a sum of the probabilities of the separate events:
 $$ P(A \cup B) = P(A) + P(B)$$
 
-#### How to express a possible outcome or element of a sample space in terms of sets?
+#### 1.1.1.6. How to express a possible outcome or element of a sample space in terms of sets?
 Let $s$ be a possible outcome or an element of a sample space $S$:
 $$ s \in S $$
 
-#### What are the differences between "element of", "subset" and "proper subset"?
+#### 1.1.1.7. What are the differences between "element of", "subset" and "proper subset"?
 * $\subseteq$ - "subset" means every element of a set is also in another set and these sets may be equal, e.g.:
 $$ \{1,2\} \subseteq \{1,2,3,4\} $$
 $$ \{1,2,3,4\} \subseteq \{1,2,3,4\} $$
@@ -530,7 +530,7 @@ $$ 3 \in \{1,2,3,4\}$$
  A set can also be an element of another set, but only as a single element and not as a combination or permutation of another single elements, e.g:
 $$ \{1,2\} \in \{\{1,2\},1,2,3,4\} $$
 
-#### What is the difference between union and intersection of two sets?
+#### 1.1.1.8. What is the difference between union and intersection of two sets?
 * $A \cup B$ - union, means that elements are in A, or in B, or in both sets, e.g.:
 $$ A=\{1,2,3\},B=\{3,4,5\}$$
 $$ A\cup B=\{1,2,3,4,5\}$$
@@ -539,15 +539,15 @@ $$ A\cup B=\{1,2,3,4,5\}$$
 $$ A=\{1,2,3\},B=\{3,4,5\}$$
 $$ A\cap B = \{3\}$$
 
-#### What is the probability of the union of two non-disjoint event sets?
+#### 1.1.1.9. What is the probability of the union of two non-disjoint event sets?
 Addition rule of probability, or inclusion exclusion formula:
 $$ P(A \cup B) = P(A) + P(B) - P(A \cap B) $$
 
-#### How to calculate a probability that an event won't happen, knowing its probability to happen?
+#### 1.1.1.10. How to calculate a probability that an event won't happen, knowing its probability to happen?
 Because the probability of a sample space is 1 and if we know the probability of an event to happen, we can calculate the needed probability as follows:
 $$ P(A^c) = 1 - P(A) $$
 
-#### What is conditional probability of two events and how it is calculated? Give a simple example.
+#### 1.1.1.11. What is conditional probability of two events and how it is calculated? Give a simple example.
 The conditional probability of an event A given event B is written as:
 $$ P(A|B) $$
 and is defined by:
@@ -571,7 +571,7 @@ $$
 P(A∣B)=\frac{P(A \cap B)}{P(B)}=\frac{\frac{20}{100}}{\frac{50}{100}}=\frac{20}{50}=0.4
 $$
 
-#### What is Bayes' rule?
+#### 1.1.1.12. What is Bayes' rule?
 Bayes' rule describes connection between conditional probabilities of two events:
 $$
 P(A|B) = \frac{P(A)P(B|A)}{P(B)}
@@ -582,18 +582,18 @@ P(A \cap B) = P(B)P(A|B) = P(A)P(B|A)
 $$
 Which in turn follows from the definition of conditional probability.
 
-#### Define the law of total probability.
+#### 1.1.1.13. Define the law of total probability.
 The law of total probability allows to compute the probability of an event A by breaking the sample space into disjoint cases (events that do not overlap) that together cover all possibilities.
 If $\{B_1, B_2, ..., B_n\}$ is a partition of the sample space S (disjoint events that sum to the whole space, $B_1 \cup ... \cup B_n=S$), then:
 $$
 P(A) = \sum_{i=1}^{n}P(A|B_i)P(B_i).
 $$
 
-#### What is the difference between prior and posterior probabilities?
+#### 1.1.1.14. What is the difference between prior and posterior probabilities?
 The prior probability of an event is the initial belief about the event before observing any new evidence. It’s what is known or assumed before seeing data. The prior probability is defined by $P(A)$.
 The posterior probability is the updated belief about an event after observing evidence. It is defined by conditional probability $P(A|B)$.
 
-#### When are two events independent?
+#### 1.1.1.15. When are two events independent?
 Two events are independent when the probability of their intersection is equal to the multiplication of their prior probabilities:
 $$
 P(A \cap B) = P(A)P(B).
@@ -604,45 +604,45 @@ $$
 P(A|B)=P(A).
 $$
 
-#### How is independence of many events defined?
+#### 1.1.1.16. How is independence of many events defined?
 Infintely many events are said to be independent if any finite subset of them is independent. It means that the probabilities of the intersections of the finite subsets is defined by multiplication of their prior probabilities (pairs, triplets, quadruplets and so on).
 
-#### What is conditional independence?
+#### 1.1.1.17. What is conditional independence?
 Events A and B are conditionally independent given E if the following is true:
 $$
 P(A \cap B|E) = P(A|E)P(B|E).
 $$
 
-#### Give a definition of random variables.
+#### 1.1.1.18. Give a definition of random variables.
 A random variable is a function that assigns a numerical value to any possible outcome from a sample space of an experiment, e.g. an experiment with two coin tosses:
 
 Sample space is $S= \{ HH, HT, TH, TT\}$, now define $X(HH)=2$ , $X(HT)=1$, $X(TH)=1$ and $X(TT)=0$, where variable $X$ represents number of heads in a series of two coin tosses. 
 
-#### What is a distribution of a random variable?
+#### 1.1.1.19. What is a distribution of a random variable?
 Distribution of a random variable specifies the probability of all events associated with it. 
 
-#### Name two main types of random variables.
+#### 1.1.1.20. Name two main types of random variables.
 There are two main types of random variables discrete and continuous.
 
-#### Give a formal definition of a discrete random variable.
+#### 1.1.1.21. Give a formal definition of a discrete random variable.
 A random variable X is discrete if there exists a finite or countable set $\{x_1, x_2, x_3,... \} \subset \mathbf{R}$ such that $P(X=x_i)>0$ for each $i$ and $\sum P(X=x_i)=1$.
 
-#### What is support of a discrete random variable?
+#### 1.1.1.22. What is support of a discrete random variable?
 It is a finite or countable set of values, where the probability of a variable taking these values is bigger then zero.
 
-#### What is probability mass function of a discrete random variable?
+#### 1.1.1.23. What is probability mass function of a discrete random variable?
 The probability mass function of a discrete random variable X is a function $p_X(x)=P(X=x)$ that gives probability of the variable to take value $x$ from its support. 
 
-#### Give a formal definition of the Bernoulli distribution.
+#### 1.1.1.24. Give a formal definition of the Bernoulli distribution.
 A random variable $X$ is said to follow a Bernoulli distribution with parameter $p$, where $0 \le p \le 1$, if probability mass function (PMF) is $P(X=x)=p^x(1-p)^{1-x}$, for $x \in \{0,1\}$. Here $X=1$ represents success with probability $p$ and $X=0$ represents failure with probability $1-p$. A Bernoulli distribution models a single binary experiment with success probability $p$.
 
-#### What is an indicator random variable?
+#### 1.1.1.25. What is an indicator random variable?
 An indicator random variable is a function that takes value 1 when a given event occurs and 0 otherwise. It is a Bernoulli-distributed random variable with parameter equal to the probability of the event.
 
-#### What is Bernoulli trial?
+#### 1.1.1.26. What is Bernoulli trial?
 A Bernoulli trial is a single random experiment with exactly two possible outcomes, usually called success and failure, where the probability of success is fixed.
 
-#### Give a formal definition of Binomial distribution.
+#### 1.1.1.27. Give a formal definition of Binomial distribution.
 A random variable $X$ is said to follow a Binomial distribution with parameters $n \in N$ and $p \in [0,1]$ if it represents the number of successes in $n$ independent Bernoulli trials, each with success probability $p$. It is denoted by $X \sim Binomial(n,p)$. A Binomial distribution models the number of successes in a fixed number of independent Bernoulli trials with the same success probability. The PMF of the Binomial distribution is defined as:
 $$
 P(X=k)=
@@ -658,7 +658,7 @@ Here is the visualization of some Binomial distributions:
 
 <img src="./Pictures/BinomialDistributionPlots.png" alt="Image" width="500" style="display:block; margin:auto;" />
 
-#### Give a formal definition of Hypergeometric distribution.
+#### 1.1.1.28. Give a formal definition of Hypergeometric distribution.
 A discrete random variable $X$ has a Hypergeometric distribution if it counts the number of successes in a sample of size $n$ drawn without replacement from a finite population of size $N$ containing exactly $K$ successes. It is denoted by $X \sim HGeom(N,K,n)$, where $N$ is the total population size, $K$ is the total number of sucesses in the population, $n$ - number of draws and $X$ - number of sucesses in the sample. 
 
 The PMF of the Hypergeometric distribution for $k = 0,1,2, ...,min(K,n)$ is defined by:
@@ -690,7 +690,7 @@ where:
 Here are plots of some Hypergeometric distributions:
 <img src="./Pictures/HypergeometricDistributionPlots.png" alt="Image" width="500" style="display:block; margin:auto;" />
 
-#### Is there connection between Binomial and Hypergeometric distributions?
+#### 1.1.1.29. Is there connection between Binomial and Hypergeometric distributions?
 The binomial can actually be seen as a limit or approximation of the hypergeometric under certain conditions.
 | | |
 |:---|:---|
@@ -702,17 +702,17 @@ The binomial can actually be seen as a limit or approximation of the hypergeomet
 
 When the population is very large compared to the sample size, sampling without replacement behaves almost like sampling with replacement.
 
-#### Give a formal definition of a discrete uniform distribution.
+#### 1.1.1.30. Give a formal definition of a discrete uniform distribution.
 A discrete random variable $X$ is said to have a discrete uniform distribution over a finite set of $n$ values $\{x_1,x_2,...,x_n\}$ if each value is equally likely.
 $$
 P(X=x_i) = \frac{1}{n},
 $$
 for $i = 1,2,...,n$.
 
-#### What is Cumulative Distribution Function (CDF)?
+#### 1.1.1.31. What is Cumulative Distribution Function (CDF)?
 For a random variable $X$ the CDF is a function $F_X(x) = P(X \le x)$, for all $x \in R$.
 
-#### Enlist and explain key properties of a CDF.
+#### 1.1.1.32. Enlist and explain key properties of a CDF.
 
 * **Non-decreasing:** 
 If $x_1 \le x_2$, then
@@ -736,7 +736,7 @@ $$
 $$
 P(a < X \le b) = F_X(b) - F_X(a)
 $$
-#### How are PMF and CDF of a discrete random variable related?
+#### 1.1.1.33. How are PMF and CDF of a discrete random variable related?
 The relation between PMF and CDF of a discrete random variable can be described as:
 $$
 F_X(x) = \sum_{t \le x}p_X(t).
@@ -744,7 +744,7 @@ $$
 Here are the plots of PMF and CDF for $X \sim Bin(4, 1/2)$:
 <img src="./Pictures/PMFvsCDFOfBinomial.png" alt="Image" width="800" style="display:block; margin:auto;" />
 
-#### Give a formal definition of a function of random variables.
+#### 1.1.1.34. Give a formal definition of a function of random variables.
 A function of a random variable $X$ is a new random variable $Y$, defined by applying deterministic function $g: R \rightarrow R$ to $X$:
 $$
 Y = g(X).
@@ -754,7 +754,7 @@ $$
 Y(s) = g(X(s)).
 $$
 
-#### How to calculate PMF of a function of a random variable?
+#### 1.1.1.35. How to calculate PMF of a function of a random variable?
 For a discrete random variable $X$ an $Y = g(X)$, the PMF of $Y$ is given by:
 $$
 p_Y(y) = P(Y=y) = \sum_{x \in g^{-1}(\{y\})}P(X=x) = \sum_{x:g(x) = y}p_X(x)
@@ -768,34 +768,34 @@ $$
 p_Y(y) = P(Y=y) = P(x = \sqrt{y}) = 1/6
 $$
 
-#### Define when two random variables are independent.
+#### 1.1.1.36. Define when two random variables are independent.
 Two random variables $X$ and $Y$ are independent if:
 $$
 P(X \le x, Y \le y) = P(X \le x)P(Y \le y)
 $$
 
-#### What is the distribution of the sum of two independent variables with binomial distributions?
+#### 1.1.1.37. What is the distribution of the sum of two independent variables with binomial distributions?
 If $X \sim Bin(n,p)$ and $Y \sim Bin(m,p)$ and they are independent, then:
 $$
 X+Y \sim Bin(n+m,p)
 $$
 
-#### Give a definition of conditional independence of two random variables given a third random variable.
+#### 1.1.1.38. Give a definition of conditional independence of two random variables given a third random variable.
 Random variables $X$ and $Y$ are conditionally independent given a random variable $Z$ for all $x,y \in R$ and $z$ in support of $Z$ if:
 $$
 P(X \le x, Y \le y| Z = z) = P(X \le x| Z = z)P(Y \le y| Z = z).
 $$
 
-#### What is expectation of a discrete random variable?
+#### 1.1.1.39. What is expectation of a discrete random variable?
 Expectation or mean value of a discrete random variable is defined as a weighted average:
 $$
 E(X) = \sum_{x}xP(X=x).
 $$
 
-#### How do expectations of two random variables with the same distribution relate to each other?
+#### 1.1.1.40. How do expectations of two random variables with the same distribution relate to each other?
 Expectations of two random variables with the same distribution are equal.
 
-#### How is the expectation of a sum of two random variables or a product of a constant and a random variable defined?
+#### 1.1.1.41. How is the expectation of a sum of two random variables or a product of a constant and a random variable defined?
 Due to linearity of expectations, these values for any random variables $X$ and $Y$ and a constatnt $c$  are defined as:
 $$
 E(X+Y) = E(X) + E(Y)
@@ -805,10 +805,10 @@ $$
 E(cX) = cE(X).
 $$
 
-#### How is monotonicity of expectation is defined?
+#### 1.1.1.42. How is monotonicity of expectation is defined?
 For two random variables for which the enaquality $X \ge Y$ is true with probability 1, the expectation relation is as follows: $E(X) \ge E(Y)$, where equality holds only if $X=Y$ with probability 1.
 
-#### What is Geometric distribution of a discrete random variable?
+#### 1.1.1.43. What is Geometric distribution of a discrete random variable?
 Let $(X_1, X_2, ...)$ be a sequence of independent and equaly distributed Bernoulli trials with 
 $$
 P(X_i = 1) = p, \quad P(X_i = 0) = 1 - p, \quad 0 < p \le 1.
@@ -836,7 +836,7 @@ $$
 Here are some plots of Geometric distributions for different probabilities:
 <img src="./Pictures/GeometricDistributionPlots.png" alt="Image" width="500" style="display:block; margin:auto;" />
 
-#### Give a formal definition of the Cumulative Distribution Function of Geometric distribution.
+#### 1.1.1.44. Give a formal definition of the Cumulative Distribution Function of Geometric distribution.
 The CDF of a discrete random variable $X$ with $Geom(p)$ distribution is defined for $k=1,2,3,...$ by:
 $$
 F_X(k)=P(X \le k)=1-(1-p)^{k}
@@ -844,14 +844,14 @@ $$
 Here is a plot of PMF versus CDF of Geometric distribution:
 <img src="./Pictures/PMFvsCDFOfGeometric.png" alt="Image" width="800" style="display:block; margin:auto;" />
 
-#### How is the Negative Binomial distribution defined?
+#### 1.1.1.45. How is the Negative Binomial distribution defined?
 If a random variable $X$ counts the number of trials to get $r$-th success in a series of independent Bernoulli trials, then the variable has the Negative Binomial distribution, which is denoted by:
 $$
 X \sim NBin(r,p),
 $$ 
 where $p$ is the probability of success.
 
-#### How does PMF of the Negative Binomial distribution look like?
+#### 1.1.1.46. How does PMF of the Negative Binomial distribution look like?
 For $k=r, r+1, r+2,...$ the PMF of the Negative Binomial Distribution is defined by:
 $$
 P(X = k)= 
@@ -862,31 +862,31 @@ r - 1
 p^r(1-p)^{k-r}.
 $$
 
-#### How is the Expectation of the Negative Binomial distribution defined?
+#### 1.1.1.47. How is the Expectation of the Negative Binomial distribution defined?
 The expectation of a random variable with the Negative Binomial distribution is defined by:
 $$
 E(X) = \frac{r}{p}.
 $$
 
-#### What are the main properties of indicator variables?
+#### 1.1.1.48. What are the main properties of indicator variables?
 * $(I_A)^k = I_A$ for any positive integer $k$
 * $I_{A^c} = 1 - I_A$
 * $I_{A \cap B} = I_AI_B$
 * $I_{A \cup B} = I_A + I_B - I_AI_B$
 
-#### How is the Fundamental Bridge between probability and expection defined?
+#### 1.1.1.49. How is the Fundamental Bridge between probability and expection defined?
 The probability of an event $A$ is the expected value of its indicator variable:
 $$
 P(A) = E(T_A).
 $$
 
-#### Give the formal definition of the Low of Unconcious Statistician (LOTUS).
+#### 1.1.1.50. Give the formal definition of the Low of Unconcious Statistician (LOTUS).
 If $X$ is a discrete random variable and $g$ is a function of real numbers, then:
 $$
 E(g(X)) = \sum_{x}g(x)P(X=x).
 $$
 
-#### Define the Variance of a discrete random variable.
+#### 1.1.1.51. Define the Variance of a discrete random variable.
 The variance of a discrete random variable $X$ is given by:
 $$
 Var(X) = E((X - E(X))^2).
@@ -901,7 +901,7 @@ E(X^2) = \sum_{x}x^2p_X(x),
 $$
 with $p_X(x)$ be the PMF of $X$.
 
-#### What are the main properties of Variance?
+#### 1.1.1.52. What are the main properties of Variance?
 * <strong>Non-negativity:</strong><br>
 $Var(X) \ge 0$.
 
@@ -914,31 +914,31 @@ $Var(cX) = c^2Var(X)$, for any constant $c$.
 * <strong>Additivity for independent random variables $X$ and $Y$:</strong><br>
 $Var(X+Y) = Var(X)+Var(Y).$
 
-#### Give the formula of the variance of a discrete random variable with Binomial distribution.
+#### 1.1.1.53. Give the formula of the variance of a discrete random variable with Binomial distribution.
 If $X \sim Bin(n,p)$, then the variance of such variable is given by:
 $$
 Var(X) = np(1-p).
 $$
 
-#### Give the formula of the variance of a discrete random variable with Hypergeometric distribution.
+#### 1.1.1.54. Give the formula of the variance of a discrete random variable with Hypergeometric distribution.
 If $X \sim Hypergeometric(N,K,n)$, then the variance of such variable is given by:
 $$
 Var(X) = n \frac{K}{N}\left( 1 - \frac{K}{N} \right)\frac{N -n}{N-1}.
 $$
 
-#### Give the formula of the variance of a discrete random variable with Negative Binomial distribution.
+#### 1.1.1.55. Give the formula of the variance of a discrete random variable with Negative Binomial distribution.
 If $X \sim NegBin(r,p)$, then the variance of such variable is given by:
 $$
 Var(X) = \frac{r(1-p)}{p^2}.
 $$
 
-#### Give the formula of the variance of a discrete random variable with Geometric distribution.
+#### 1.1.1.56. Give the formula of the variance of a discrete random variable with Geometric distribution.
 If $X \sim Geom(p)$, then the variance of such variable is given by:
 $$
 Var(X) = \frac{(1-p)}{p^2}.
 $$
 
-#### Give a formal definition and interpretation of Poisson distribution.
+#### 1.1.1.57. Give a formal definition and interpretation of Poisson distribution.
 Let $\lambda > 0$ be a fixed real number. A discrete random variable $X$ is said to have a Poisson distribution with parameter $\lambda$, denoted: 
 $$
 X \sim Poisson(\lambda),
@@ -961,46 +961,46 @@ and cannot occur simultaneously.<br>
 Here are the plots of PMF and CDF of $X \sim Poisson(2)$:
 <img src="./Pictures/PMFvsCDFofPoisson.png" alt="Image" width="800" style="display:block; margin:auto;" />
 
-#### How is the expectation of Poisson distribution is defined?
+#### 1.1.1.58. How is the expectation of Poisson distribution is defined?
 If $X \sim Poisson(\lambda)$, then its expectation is given by:
 $$
 E(X) = \lambda.
 $$
 
-#### How is the variance of Poisson distribution is defined?
+#### 1.1.1.59. How is the variance of Poisson distribution is defined?
 If $X \sim Poisson(\lambda)$, then its variance is given by:
 $$
 Var(X) = \lambda.
 $$
 
-#### How is the sum of two independent  Poissons defined?
+#### 1.1.1.60. How is the sum of two independent  Poissons defined?
 If $X \sim Poisson(\lambda_1)$ and $Y \sim Poisson(\lambda_2)$ and $X$ independent of $Y$ then:
 $$
 X+Y \sim Poisson(\lambda_1 + \lambda_2).
 $$
 
-#### How is the conditional distribution of a variable with Poisson distribution given a sum with another independent variable with Poisson defined?
+#### 1.1.1.61. How is the conditional distribution of a variable with Poisson distribution given a sum with another independent variable with Poisson defined?
 If $X \sim Poisson(\lambda_1)$ and $Y \sim Poisson(\lambda_2)$ and $X$ independent of $Y$, then the conditional distribution of $X$ given $X+Y=n$ is $Bin(n, \lambda_1/(\lambda_1 + \lambda_2))$.
 
-#### How are Binomial and Poisson distributions related?
+#### 1.1.1.62. How are Binomial and Poisson distributions related?
 If $X \sim Bin(n,p)$ with $n \to \infty$ and $p \to 0$ such that $\lambda = np$ remains finite, then $X$ can be approximated by $Poisson(\lambda)$.
 
-#### Give a formal definition of a continuous random variable in terms of distribution.
+#### 1.1.1.63. Give a formal definition of a continuous random variable in terms of distribution.
 A random variable has a continuous distribution if its CDF is differentiable. The function is allowed to be continuous but not differentiable at the end points as long as it differentiable at the rest of the points.
 
-#### What is the main difference between discrete and continuous variables in terms of probability?
+#### 1.1.1.64. What is the main difference between discrete and continuous variables in terms of probability?
 For a continuous random variable the probability $P(X=x)=0$ in contrast to a discrete random variable. One can only define probability of a continuous random variable to fall into some range of values.
 
-#### What is the Probability Density Function of a continuous random variable?
+#### 1.1.1.65. What is the Probability Density Function of a continuous random variable?
 The probability density function (PDF) $f$ of a continuous random variable $X$ is defined by derivative of the CDF of this variable. The support of the variable is the set of all $x$, where $f(x) > 0$. The CDF $f(x)$ itself is not a probability and it must be integrated for a range of values in order to calculate probability that a corresponding random variable falls into this range.
 
-#### How to calculate CDF from PDF of a continuous random variable?
+#### 1.1.1.66. How to calculate CDF from PDF of a continuous random variable?
 The CDF of a continuous random variable can be calculated from PDF as follows:
 $$
 F(x) = \int_{-\infty}^{x}f(t)dt.
 $$
 
-#### Which criteria must be sutisfied by a function to be a valid PDF?
+#### 1.1.1.67. Which criteria must be sutisfied by a function to be a valid PDF?
 In order to be a valid PDF a function must be:
 * Non-negative: 
 $$
@@ -1011,20 +1011,20 @@ $$
 \int_{-\infty}^{\infty}f(x)dx = 1.
 $$
 
-#### How is the expectation of a continuous random variable defined?
+#### 1.1.1.68. How is the expectation of a continuous random variable defined?
 The expectation, or mean value of a continuous random variable is defined as follows:
 $$
 E(X) = \int_{-\infty}^{\infty}xf(x)dx.
 $$
 It can be thought of as a balancing point of a continuous distribution. The expectation in this case has also the property of linearity as for discrete variables.
 
-#### Define the Low of the Unconcious Statistician (LOTUS) for continuous random variables.
+#### 1.1.1.69. Define the Low of the Unconcious Statistician (LOTUS) for continuous random variables.
 If $X$ is a continuous random variable and $g$ is a function of real numbers, then:
 $$
 E(g(X))=\int_{-\infty}^{\infty}g(x)f(x)dx.
 $$
 
-#### Give a formal definition of the Continuous Uniform distribution.
+#### 1.1.1.70. Give a formal definition of the Continuous Uniform distribution.
 A continuous random variable has a Uniform distribution $X \sim Uniform(a,b)$ on the interval $[a,b]$, where $a < b$, if its PDF is
 $$
 f(x)=\Biggl\{
@@ -1045,25 +1045,25 @@ $$
 Here are the plots of PDF and CDF of $X \sim Uniform(0,1)$:
 <img src="./Pictures/PDFvsCDFforUniform.png" alt="Image" width="800" style="display:block; margin:auto;" />
 
-#### How is the Expectation of the continuous Uniform distribution defined?
+#### 1.1.1.71. How is the Expectation of the continuous Uniform distribution defined?
 The expectation of a random variable $X \sim Uniform(a,b)$ is defined as follows:
 $$
 E(X)=\frac{a + b}{2}.
 $$
 
-#### How is Variance of the continuous Uniform distribution defined?
+#### 1.1.1.72. How is Variance of the continuous Uniform distribution defined?
 The variance of a random variable $X \sim Uniform(a,b)$ is defined as follows:
 $$
 E(X)=\frac{(b - a)^2}{12}.
 $$
 
-#### Give a formal definition of the Standard Normal Distribution.
+#### 1.1.1.73. Give a formal definition of the Standard Normal Distribution.
 A continuous random variable $X$ is said to have the standard normal distribution $X \sim N(0,1)$ if its PDF is
 $$
 f_X(x) = \frac{1}{\sqrt{2\pi}}e^{-x^2/2}, \quad x \in R.
 $$
 
-#### How does the CDF of the Standard Normal distribution is defined?
+#### 1.1.1.74. How does the CDF of the Standard Normal distribution is defined?
 The CDF of the standard normal distribution is defined as:
 $$
 F_X(x) = P(X \le x) = \int_{- \infty}^{x}\frac{1}{\sqrt{2\pi}}e^{-t^2/2}dt.
@@ -1071,29 +1071,29 @@ $$
 Here are the plots of PDF and CDF of the standard normal distribution:
 <img src="./Pictures/PDFvsCDFforStandardNormal.png" alt="Image" width="800" style="display:block; margin:auto;" />
 
-#### Give the values of the expectation and variance of the Standard Normal Distribution.
+#### 1.1.1.75. Give the values of the expectation and variance of the Standard Normal Distribution.
 The expectation of the standard normal distribution is $E(X)=0$ and the variance is $Var(X)=1$.
 
-#### Give the formal definition of the Normal Distribution.
+#### 1.1.1.76. Give the formal definition of the Normal Distribution.
 A continuous random variable $X$ is said to have a normal distribution with parameters mean $\mu \in R$ and variance $\sigma^2 > 0$, denoted by $X \sim N(\mu, \sigma^2)$, if its PDF is
 $$
 f_X(x) = \frac{1}{\sqrt{2\pi \sigma^2}}exp\left(\frac{-(x - \mu)^2}{2\sigma^2}\right), \quad x \in R.
 $$
 
-#### How is the CDF of the Normal distribution is defined?
+#### 1.1.1.77. How is the CDF of the Normal distribution is defined?
 The CDF of the normal distribution is defined as:
 $$
 F_X(x) = P(X \le x) = \int_{- \infty}^{x}\frac{1}{\sqrt{2\pi \sigma^2}}exp\left(\frac{-(t - \mu)^2}{2\sigma^2}\right)dt.
 $$
 
-#### Give a formal definition of the Exponential distribution.
+#### 1.1.1.78. Give a formal definition of the Exponential distribution.
 A continuous random variable $X$ is said to have an exponential distribution with a rate parameter $\lambda > 0$, denoted by $X \sim Exp(\lambda)$, if its PDF is
 $$
 f_X(x) = \lambda e^{-\lambda x}, \quad x \ge 0. 
 $$
 The exponential distribution models the waiting time until the first event in a process where events occur continuously and independently at a constant average rate.
 
-#### How is the CDF of the Exponential distribution defined?
+#### 1.1.1.79. How is the CDF of the Exponential distribution defined?
 The CDF of the exponential distribution is defined as
 $$
 F_X(x) = P(X \le x) =1 - e^{-\lambda x}, \quad x \ge 0. 
@@ -1101,40 +1101,40 @@ $$
 Here are the plots of PDF and CDF of the exponential distribution:
 <img src="./Pictures/PDFvsCDFforExponential.png" alt="Image" width="800" style="display:block; margin:auto;" />
 
-#### How does Expectation of the Exponential distribution look like?
+#### 1.1.1.80. How does Expectation of the Exponential distribution look like?
 The expectation of the exponential distribution is defined as:
 $$
 E(X) = \frac{1}{\lambda}.
 $$
 
-#### How does Variance of the Exponential distribution look like?
+#### 1.1.1.81. How does Variance of the Exponential distribution look like?
 The variance of the exponential distribution is defined as:
 $$
 E(X) = \frac{1}{\lambda^2}.
 $$
 
-#### What does memoryless property of a continuous distribution mean?
+#### 1.1.1.82. What does memoryless property of a continuous distribution mean?
 A continuous variable $X$ with support $[0,\infty)$ is said to be memoryless, if for all $s,t \ge 0$,
 $$
 P(X > s + t|X > s) = P(X > t).
 $$
 The future does not depend on the past.
 
-#### Which distribution does a memoryless continuous variable have?
+#### 1.1.1.83. Which distribution does a memoryless continuous variable have?
 If $X$ is a positive continuous random variable with memoryless property, then it has an exponential distribution.
 
-#### Give a formal definition of a Poisson process.
+#### 1.1.1.84. Give a formal definition of a Poisson process.
 A process of events occuring in continuous time is called a Poisson process with the rate $\lambda$, if two conditions hold:
 * The number of occurances that take place in an interval of length $t$ is a random variable with $Pois(\lambda)$ distribution.
 * The number of occurances in disjoint intervals are independent of each other.
 
-#### How are interarrival times in a Poisson process defined?
+#### 1.1.1.85. How are interarrival times in a Poisson process defined?
 An interarrival time $T_n$ in a Poisson process is the waiting time between the $(n - 1)$-st and $n$-th event. E.g. $T_1$ is the time until the first event, $T_2$ - is the time between the first and the second event, etc. The interarrival times in a Poisson process have Exponentioal distribution and are independent of each other. The average waiting time is $1/\lambda$.
 
-#### Give a formal definition of the Mean value of a distribution.
+#### 1.1.1.86. Give a formal definition of the Mean value of a distribution.
 The mean value, or the center of mass of a distribution is defined by the expectation of the distribution (weighted average).
 
-#### Give a formal definition of the Median value of a distribution.
+#### 1.1.1.87. Give a formal definition of the Median value of a distribution.
 Let $X$ be a real valued random variable. A real number $m \in R$ is called median of distribution of $X$ if
 $$
 P(X \le m) \ge \frac{1}{2}
@@ -1144,19 +1144,19 @@ $$
 P(X \ge m) \ge \frac{1}{2}.
 $$
 
-#### Give a formal definition of the Mode value of a distribution.
+#### 1.1.1.88. Give a formal definition of the Mode value of a distribution.
 For any real valued random variable $X$, a real number $m \in R$ is called mode value if it maximizes the PMF in a discrete case, $P(X=m) \ge P(X=x)$ and the PDF for continuous variable, $f_X(m) \ge f_X(x)$ for all $x$. 
 
-#### What is the Skewness of a distribution.
+#### 1.1.1.89. What is the Skewness of a distribution.
 The Skewness of a real-valued random variable $X$ with mean value $\mu$ and standard deviation $\sigma$ is the third standardized moment of a distribution, which is defined as:
 $$
 Skew(X) = E\left[\left(\frac{X - \mu}{\sigma}\right)^3\right].
 $$
 
-#### Which summary values are more appropriate for symmetric and non-symmetric distributions.
+#### 1.1.1.90. Which summary values are more appropriate for symmetric and non-symmetric distributions.
 For non-symetric distributions mean and standard deviation values are missleading and median and interquartile range should (IQR) be used for skewed distributions. For a distribution with several peaks (multimodal distribution) mode value and intermodal spread (standard deviation within a peak) should be used.
 
-#### Give a formal definition of interquartile range (IQR).
+#### 1.1.1.91. Give a formal definition of interquartile range (IQR).
 Let $X$ be a real-valued random variable with CDF $F_X$.
 Define:
 * the first quartile (lower quartile):
@@ -1172,14 +1172,14 @@ $$
 IQR(X) = Q_3 - Q_1.
 $$
 
-#### Give a formal definition of the Kurtosis of a distribution.
+#### 1.1.1.92. Give a formal definition of the Kurtosis of a distribution.
 The Kurtosis of a real-valued random variable $X$ with mean value $\mu$ and standard deviation $\sigma$ is the fourth standardized moment of a distribution, which is defined as:
 $$
 Kurt(X) = E\left[\left(\frac{X - \mu}{\sigma}\right)^4\right] - 3.
 $$
 Kurtosis measures the weight of the tails and the frequency of extreme deviations relative to a normal distribution. High Kurtosis (heavy tails) implies more frequent outliers and thus higher probability of extreme events. Lower Kurtosis means that the data are more evenly spread and thus there are fewer extreme values.
 
-#### Give a formal definition and interpretation of a Moment Generating Function.
+#### 1.1.1.93. Give a formal definition and interpretation of a Moment Generating Function.
 Let $X$ be a real-valued random variable. The Moment Generating Function (MGF) is:
 $$
 M_X(t)=E(e^{tX}),
@@ -1196,14 +1196,14 @@ If the MGF exists in a neighborhood of $0$, it uniquely determines the distribut
 Example:<br>
 For X~Bern(p), the MGF is: $M(t) = E(e^{tX}) = pe^t+q$.
 
-#### Give a formal definition of joint CDF of two discrete random variables.
+#### 1.1.1.94. Give a formal definition of joint CDF of two discrete random variables.
 The joint CDf of two discrete random variables $X$ and $Y$ is the function $F_{X,Y}(x,y)$ given by:
 $$
 F_{X,Y} = P(X \le x, Y \le y).
 $$
 For $n$ variables the joint CDF is defined analogously.
 
-#### Give a formal definition of joint PMF of two discrete random variables.
+#### 1.1.1.95. Give a formal definition of joint PMF of two discrete random variables.
 The joint PMF of two discrete random variables $X$ and $Y$ is the function $p_{X,Y}(x,y)$ given by:
 $$
 p_{X,Y}(x,y) = P(X=x,Y=y).
@@ -1213,40 +1213,40 @@ $$
 \sum_{x}\sum_{y}P(X=x,Y=y)=1.
 $$
 
-#### What is the marginal PMF of two discrete random variables?
+#### 1.1.1.96. What is the marginal PMF of two discrete random variables?
 For two discrete random variables $X$ and $Y$ the marginal PMF of $X$ is:
 $$
 P(X=x)=\sum_{y}P(X=x,Y=y).
 $$
 
-#### How is the conditional PMF of two discrete random variables defined?
+#### 1.1.1.97. How is the conditional PMF of two discrete random variables defined?
 For two discrete random variables $X$ and $Y$ the conditional distribution PMF of $Y$ given $X=x$ is 
 $$
 P(Y=y|X=x)=\frac{P(X=x,Y=y)}{P(X=x)}.
 $$
 It is seen as a function of $y$ for fixed $x$.
 
-#### How is the joint PDF of two continuous random variables defined?
+#### 1.1.1.98. How is the joint PDF of two continuous random variables defined?
 If two random variables $X$ and $Y$ are continuous with joint CDF $F_{X,Y}(x,y)$, their joint PDF is the derivative of the joint CDF with respect to $x$ and $y$:
 $$
 f_{X,Y}(x,y)=\frac{\partial^2}{\partial x \partial y}F_{X,Y}(x,y).
 $$
 In order the joint PDF to be valid it is required it to be positive and integrate to 1.
 
-#### How is the marginal PDF of two continuous random variables defined?
+#### 1.1.1.99. How is the marginal PDF of two continuous random variables defined?
 For two continuous random variables $X$ and $Y$ with joint PDF $f_{X,Y}(x,y)$, the marginal PDF of X is:
 $$
 f_{X}(x)=\int_{-\infty}^{\infty}f_{X,Y}(x,y)dy.
 $$
 
-#### How is the conditional PDF of two continuous random variables defined?
+#### 1.1.1.100. How is the conditional PDF of two continuous random variables defined?
 For two continuous variables $X$ and $Y$ with joint PDF $f_{X,Y}(x,y)$ the conditional PDF of $Y$ given $X=x$ is
 $$
 f_{Y|X}(y|x)=\frac{f_{X,Y}(x,y)}{f_{X}(x)},
 $$
 for all $x$ with $f_{X}(x) > 0$.
 
-#### How is the 2D LOTUS defined?
+#### 1.1.1.101. How is the 2D LOTUS defined?
 Let $g$ be a function from $R^2$ to $R$. If $X$ and $Y$ are discrete then the expectation of this function is:
 $$
 E(g(X,Y))=\sum_{x}\sum_{y}g(x,y)P(X=x,Y=y).
@@ -1256,14 +1256,14 @@ $$
 E(g(X,Y))=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}g(x,y)f_{X,Y}(x,y)dxdy.
 $$
 
-#### Give a formal definition of the Covariance between two random variables.
+#### 1.1.1.102. Give a formal definition of the Covariance between two random variables.
 The covariance between two random variables $X$ and $Y$ is:
 $$
 Cov(X,Y) = E(XY)-E(X)E(Y).
 $$
 The two variables with zero covariance are independent and thus uncorrelated.
 
-#### Emlist the main properties of Covariance.
+#### 1.1.1.103. Emlist the main properties of Covariance.
 * $Cov(X,X)=Var(X)$.
 * $Cov(X,Y)=Cov(Y,X)$.
 * $Cov(X,c) = 0$, for any constant $c$
@@ -1272,14 +1272,14 @@ The two variables with zero covariance are independent and thus uncorrelated.
 * $Cov(X + Y, Z + W) = Cov(X, Z) + Cov(X, W) + Cov(Y, Z) + Cov(Y, W)$.
 * $Var(X+Y)=Var(X)+Var(Y)+2Cov(X,Y)$. For $X_1,...,X_n$: $Var(X_1+...+X_n)=Var(X_1)+...+Var(X_n)+2\sum_{i<j}^{}Cov(X_i,X_j)$.
 
-#### How is Correlation between two random variables defined?
+#### 1.1.1.104. How is Correlation between two random variables defined?
 The correlation between two random variables $X$ and $Y$ is defined as:
 $$
 Corr(X,Y)=\frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}.
 $$
 Correlation is defined between $-1$ and $1$.
 
-#### Give a formal definition of Multinomial distribution.
+#### 1.1.1.105. Give a formal definition of Multinomial distribution.
 Let $n \in N$ be the number of independent trials and let
 $$
 \mathbf{p} = (p_1,p_2,...,p_k)
@@ -1298,7 +1298,7 @@ $$
 $$
 if $X_i$ is a number of outcomes of category $i$ in $n$ independent trials, where each trial results in one of the categories $k$ with probabilities $p_1,p_2,...,p_k$.
 
-#### How is the joint PMF of Multinomial distribution is defined?
+#### 1.1.1.106. How is the joint PMF of Multinomial distribution is defined?
 For non-negative integers $x_1,x_2,...,x_k$, such that:
 $$
 x_1+x_2+...x_n = n
@@ -1308,20 +1308,20 @@ $$
 P(X_1=x_1,...,X_k=x_k)=\frac{n!}{x_1!x_2!...x_k!}\prod_{i=1}^{k}p_{i}^{x_i}
 $$
 
-#### Define multinomial conditioning.
+#### 1.1.1.107. Define multinomial conditioning.
 If $\mathbf{X} \sim Multinomial(n, \mathbf{p})$ then
 $$
 (X_2,...,X_k)|X_1=n_1 \sim Multinomial(n - n_1; p_{2}^{'},...,p_{k}^{'}),
 $$
 where $p_{j}^{'} = p_{j}/(p_2+...+p_k)$.
 
-#### Define Covariance for Multinomial distribution.
+#### 1.1.1.108. Define Covariance for Multinomial distribution.
 Let $\mathbf{X} \sim Multinomial(n, \mathbf{p})$, then for $i \ne j$, $Cov(X_i,X_j)=-np_ip_j$.
 
-#### Give a formal definition of the Multivariate Normal distribution.
+#### 1.1.1.109. Give a formal definition of the Multivariate Normal distribution.
 A vector of rundom variables $X=(X_1,X_2,...,X_n)$ is said to have multivariate normal distribution if every linear combination of its components has a Normal distribution.
 
-#### How is the joint PDF of the Multivariate Normal distribution defined?
+#### 1.1.1.110. How is the joint PDF of the Multivariate Normal distribution defined?
 Let $X=(X_1,X_2,...,X_n)$ be an n-dimensional rundom vector with mean vector $\bm{\mu}$ $\in R^n$ and covariance matrix $\bm{\Sigma}$ $\in R^{n \times n}$, then $X$ is said to have Multivariate Normal distribution if its joint PDF is defined as:
 $$
 f_{\mathbf{X}}(\mathbf{x}) = \frac{1}{(2 \pi)^{n/2} |\bm{\Sigma}|^{1/2}  }exp\left[-\frac{1}{2}(\bm{\mathbf{x} - \mu})^T \bm{\Sigma} ^{-1}(\bm{\mathbf{x} - \mu})\right], \mathbf{x} \in R^{n},
@@ -1330,7 +1330,7 @@ where:
 * $|\bm{\Sigma}|$ is the determinant of the covariance matrix
 * $\bm{\Sigma}$ is symmetric and positive definite.
 
-#### How is the joint Moment Generating Function defined?
+#### 1.1.1.111. How is the joint Moment Generating Function defined?
 Let $X=(X_1,X_2,...,X_n)$ be an n-dimensional rundom vector. The joint moment generating function of $X$ is the function:
 $$
 M_{\mathbf{X}}(\mathbf{t})=E\left[e^{\mathbf{t}^T \mathbf{X}}\right], t = (t_1,t_2,...,t_n) \in R^n
@@ -1338,7 +1338,7 @@ $$
 if the expectation exists in a neighborhood of $\mathbf{t = 0}$. </br>
 * Here $\mathbf{t}^T \mathbf{X} = t_1X_1 + t_2X_2 + ....+ t_nX_n$.
 
-#### Give a formal definition of the Beta Distribution.
+#### 1.1.1.112. Give a formal definition of the Beta Distribution.
 Let $X$ be a continuous random variable defined on the interval $[0,1]$. It is that $X$ has a Beta bistribution with parameters $a > 0$ and $b > 0$, written
 $$
 X \sim Beta(a,b),
@@ -1352,7 +1352,7 @@ $$
 B(a,b)=\int^{1}_{0}t^{a-1}(1-t)^{b-1}dt.
 $$
 
-#### Give a short interpretation of Beta Distribution.
+#### 1.1.1.113. Give a short interpretation of Beta Distribution.
 1. **Shape flexibility:**
     * Beta distribution is bounded between 0 and 1
     * Its shape depends on $a$ and $b$ values:
@@ -1364,7 +1364,7 @@ $$
 2. **Probability Interpretation:** </br>
     Often used to model random proportions, e.g., fraction of successes in Bayesian inference.
 
-#### Give definitions for mean, variance and mode values of the Beta distribution.
+#### 1.1.1.114. Give definitions for mean, variance and mode values of the Beta distribution.
 * **Mean:**
 $$
 E(X)=\frac{a}{a+b}
@@ -1380,12 +1380,12 @@ $$
 Mode(X)=\frac{a-1}{a+b-2}
 $$
 
-#### Give some examples of usage of Beta distribution.
+#### 1.1.1.115. Give some examples of usage of Beta distribution.
 * Bayesian posterior for a Bernoulli parameter p (Beta prior).
 * Modeling proportions, probabilities, or rates between 0 and 1.
 * Random variables constrained in a finite interval.
 
-#### Give a formal definition of the Gamma Distribution.
+#### 1.1.1.116. Give a formal definition of the Gamma Distribution.
 Let $X$ be a continuous random variable with support $(0, \infty)$. One says $X$ has a Gamma distribution with shape parameter $a > 0$ and rate parameter $\lambda > 0$, written
 $$
 X \sim Gamma(a,\lambda),
@@ -1399,7 +1399,7 @@ $$
 \Gamma(a) = \int^{\infty}_{0}t^{a-1}e^{-t}dt.
 $$
 
-#### Give a short interpretation of the Gamma distribution.
+#### 1.1.1.117. Give a short interpretation of the Gamma distribution.
 1. **Waiting time:**<br>
 If events occur according to a Poisson process with rate $\lambda$, then $X$ is the time until $a$-th event and has Gamma distribution $Gamma(a,\lambda)$. 
 
@@ -1409,7 +1409,7 @@ $$
 X = \sum^{a}_{i=1}X_i \sim Gamma(a, \lambda)
 $$
 
-#### Give definitions for mean, variance and mode values of the Gamma distribution.
+#### 1.1.1.118. Give definitions for mean, variance and mode values of the Gamma distribution.
 * **Mean:**
 $$
 E(X)=\frac{a}{\lambda}
@@ -1425,7 +1425,7 @@ $$
 Mode(X)=\frac{a-1}{\lambda}
 $$
 
-#### How are Beta and Gamma distributions connected?
+#### 1.1.1.119. How are Beta and Gamma distributions connected?
 The Beta distribution can be constructed from Gamma distributions. Let $X \sim Gamma(a,\lambda)$ and $Y \sim Gamma(b,\lambda)$ be two independent random variables with the same rate $\lambda > 0$. Define
 $$
 U = \frac{X}{X +Y}.
@@ -1443,7 +1443,7 @@ $$
 B(a,b)=\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}.
 $$
 
-#### Give a formal definition of a Conditional Expectation given an event.
+#### 1.1.1.120. Give a formal definition of a Conditional Expectation given an event.
 Let $A$ be an event with non-zero probability. If $X$ is a random variable then conditional Expectation in a discrete case is defined as
 $$
 E(X|A)=\sum_{x}xP(X=x|A).
@@ -1457,24 +1457,24 @@ $$
 f(x|A)=\frac{P(A|X=x)f(x)}{P(A)}.
 $$
 
-#### How is the Low of Total Expectation defined?
+#### 1.1.1.121. How is the Low of Total Expectation defined?
 Let $A_1,A_2,...,A_n$ be partition of events with non-zero probability from a sample space. Let $X$ be a random variable with support in this sample space. Then
 $$
 E(X)=\sum^{n}_{i=1}E(X|A_i)P(A_i)
 $$
 is a total expectation of variable $X$.
 
-#### Give a definition of Conditional Expectation given a random variable.
+#### 1.1.1.122. Give a definition of Conditional Expectation given a random variable.
 If we have a function $g(x)=E(Y|X=x)$, then the conditional expectation of $Y$ given $X$, denoted $E(Y|X)$ is defined as a random variable $g(X)$. It means if $X$ takes the value of $x$ then $E(Y|X)$ becomes $g(x)$.
 
-#### Enlist the properties of Conditional Expectation.
+#### 1.1.1.123. Enlist the properties of Conditional Expectation.
 * If $X$ and $Y$ are independent, then $E(Y|X)=E(Y)$.
 * For any function $h$, $E(h(X)Y|X) = h(X)E(Y|X)$.
 * Linearity: $E(Y_1+Y_2|X)=E(Y_1|X)+E(Y_2|X)$ and $E(cY|X)=cE(Y|X)$ for any constant $c$.
 * Adam's low: $E(E(X|Y))=E(Y)$.
 * The random variable $Y - E(Y|X)$ is uncorrelated with $h(X)$ for any function $h$.
 
-#### Define the Conditional Variance.
+#### 1.1.1.124. Define the Conditional Variance.
 The conditional variance of $Y$ given $X$ is 
 $$
 Var(Y|X)=E((Y - E(Y|X))^2|X),
@@ -1484,19 +1484,19 @@ $$
 Var(Y|X)=E(Y^2|X) - (E(Y|X))^2.
 $$
 
-#### Give a definition of the law of the total variance (Eve's law).
+#### 1.1.1.125. Give a definition of the law of the total variance (Eve's law).
 The law of the total variance is defined by the following formula:
 $$
 Var(Y)=E(Var(Y|X))+Var(E(Y|X)).
 $$
 
-#### Give a definition of Couchy-Schwarz inequality for marginal bound on a joint expectation.
+#### 1.1.1.126. Give a definition of Couchy-Schwarz inequality for marginal bound on a joint expectation.
 For any random variables $X$ and $Y$ with finite variances the following inequality is true:
 $$
 |E(XY)| \leq \sqrt{E(X^2)E(Y^2)}.
 $$
 
-#### Give a definition for Jensen's inequality for convexity.
+#### 1.1.1.127. Give a definition for Jensen's inequality for convexity.
 Let $X$ be a random variable with existing finite expectation value. If a function $f$ is convex, then
 $$
 f(E(X)) \leq E(f(X)).
@@ -1505,45 +1505,45 @@ Equality holds here only if:
 * all $x_i$ are equal, or
 * $f$ is linear on a convex hull of $\{x_1,x_2,...,x_n\}$
 
-#### Give a definition for Markov's bound on tail probabilities. 
+#### 1.1.1.128. Give a definition for Markov's bound on tail probabilities. 
 For any random variable $X$ and a constant $a>0$,
 $$
 P(|X| \geq a) \leq \frac{E|X|}{a}
 $$
 If $X$ frequently takes large values (i.e. large tail probability), then its expected value must also be large.
 
-#### Give a definition for Chebyshev's bound on tail probabilities.
+#### 1.1.1.129. Give a definition for Chebyshev's bound on tail probabilities.
 Let a random variable $X$ have mean $\mu$ and variance $\sigma^2$, then for any positive non-zero constant $a$
 $$
 P(|X-\mu| \geq a) \leq \frac{\sigma^2}{a^2}.
 $$
 
-#### Give a definition for Chernoff's bound on tail probabilities.
+#### 1.1.1.130. Give a definition for Chernoff's bound on tail probabilities.
 For any variable $X$ and constants $a>0$ and $t>0$,
 $$
 P(X \geq a) \leq \frac{E(e^{tX})}{e^{ta}}
 $$
 
-#### Give a formal definition of the Weak Law of Large Numbers.
+#### 1.1.1.131. Give a formal definition of the Weak Law of Large Numbers.
 Let $X_1,X_2,...,X_n$ be independent and identically distributed random variables with sample mean $E(\bar{X}_n) = \mu$ and sample variance $Var(\bar{X}_n) < \infty$. Then for all $\epsilon > 0$
 $$
 \lim_{n\to\infty}P(|\bar{X}_n - \mu| > \epsilon) \to 0
 $$
 
-#### Give a formal definition of the Strong Law of Large Numbers.
+#### 1.1.1.132. Give a formal definition of the Strong Law of Large Numbers.
 Let $X_1,X_2,...,X_n$ be independent and identically distributed random variables with sample mean $E(\bar{X}_n) = \mu$ and sample variance $Var(\bar{X}_n) < \infty$. Then for sample mean
 $$
 P(\bar{X}_n \to \mu) = 1
 $$
 
-#### Give a formal definition of the Central Limit Theorem.
+#### 1.1.1.133. Give a formal definition of the Central Limit Theorem.
 Let $X_1,X_2,...,X_n$ be independent and identically distributed random variables with sample mean $E(\bar{X}_n) = \mu$ and sample variance $Var(\bar{X}_n) < \infty$. Then with $n \to \infty$
 $$
 \sqrt{n} \left(\frac{\bar{X}_n - \mu}{\sigma} \right) \to N(0,1),
 $$
 where $N(0,1)$ is the Standard Normal distribution.
 
-#### Give a formal definition of the Chi-Square distribution.
+#### 1.1.1.134. Give a formal definition of the Chi-Square distribution.
 Let $Z_1,Z_2,...,Z_n$ be independent standard normal random variables, i.e. $Z_i \sim N(0,1)$. The random variable
 $$
 X = \sum^{n}_{i=1}Z^{2}_{i}
@@ -1554,7 +1554,7 @@ f_X(x)=\frac{1}{2^{n/2}\Gamma(n/2)}x^{\frac{n}{2} - 1}e^{-x/2}, \quad x \geq 0
 $$
 and for $x<0$ the function is zero. The Chi-square distribution is a special case of the Gamma distribution $\chi^2_{n} \equiv Gamma(n/2,2)$.
 
-#### Give a formal definition of the Student-t distribution.
+#### 1.1.1.135. Give a formal definition of the Student-t distribution.
 Let $Z \sim N(0,1)$ be a standard normal random variable, $U \sim \chi^2_{\nu}$ a chi-square distributed random variable with $\nu > 0$ degrees of freedom and both are independent. Then the random variable 
 $$
 T = \frac{Z}{\sqrt{U/\nu}} 
@@ -1575,17 +1575,17 @@ The key properties of the Student-t distribution are as follows:
 * **Heavy tails:** heavier tails than the normal distribution.
 * **Limit:** $t_{\nu} \to N(0,1)$ as $\nu \to \infty$.
 
-#### Give a formal definition of a Markov chain.
+#### 1.1.1.136. Give a formal definition of a Markov chain.
 A sequence of random variables $X_0,X_1,...,X_n$ taking values from a state space $\{1,2,...,M\}$ is called Markov chain, if for all positive non-zero values of $n$ the following is true:
 $$
 P(X_{n+1}=j|X_n=i,X_{n-1}=i_{n-1},...,X_0=i_0)=P(X_{n+1}=j|X_n=i).
 $$
 The quantity $P(X_{n+1}=j|X_n=i)$ is called transition probability from the state $i$ to $j$.
 
-#### Give a definition of the Transition Martrix of a Markov Chain.
+#### 1.1.1.137. Give a definition of the Transition Martrix of a Markov Chain.
 Let $X_0,X_1,...,X_n$ be a Markov chain with a state space $\{1,2,...,M\}$ and let $q_{ij}=P(X_{n+1}=j|X_n=i)$ be the transition probability from the state $i$ to $j$. The $M \times M$ matrix $Q = (q_{ij})$ is called the transition matrix of the chain.
 
-#### Give a formal defintion of $n$-step transition probability.
+#### 1.1.1.138. Give a formal defintion of $n$-step transition probability.
 The $n$-step transition probability from the state $i$ to $j$ is the probability of being in the state $j$ after exactly $n$ transitions after being at $i$. It is denoted by $q^{(n)}_{ij}$:
 $$
 q^{(n)}_{ij} = P(X_n=j|X_0=i).
@@ -1596,16 +1596,16 @@ q^{(2)}_{ij}=\sum_{k}q_{ik}q_{kj},
 $$
 since the transitions $q_{ik}$ and $q_{kj}$ are independent due to Markov chain property.
 
-#### What are recurrent and transient states in Markov chains?
+#### 1.1.1.139. What are recurrent and transient states in Markov chains?
 State $i$ of a Markov chain is recurrent if starting from $i$ the probability of the chain returning to the state again is 1. Otherwise the state is transient, which means there is a positive probability of chain never returning to that state. Number of returns to a transient state has a Geometric distribution.
 
-#### How are irreducible and reducible Markov chains defined?
+#### 1.1.1.140. How are irreducible and reducible Markov chains defined?
 A Markov chain with a transition matrix $Q$ called irreducible if for any two states $i$ and $j$ there is a positive probability of getting from state $i$ to $j$ in a finitie number of steps. It means that for any two states $i$ and $j$ the entry $Q^n$ of the transition matrix is positive. The Markov chain that is not irreducible is called reducible. In an irreducible Markov chain with finite state space all states are recurrent.
 
-#### How is a period of a state in a Markov chain defined?
+#### 1.1.1.141. How is a period of a state in a Markov chain defined?
 The period of a state i is defined as a great common divisor of all possible return times back to the state $i$. If the period of a state $i$ is 1 the state is called aperiodic, which happens for states with self loops. In an irreducible Markov chain all states have the same period.
 
-#### What is stationary distribution of a Markov chain?
+#### 1.1.1.142. What is stationary distribution of a Markov chain?
 Consider a Markov chain with finite or countable state space $S$ and transition matrix $Q=(q_{ij})$. A probability distribution $s=(s_i)_{i \in S}$ is called stationary if
 $$
 s_j = \sum_{i \in S}s_i q_{ij}
@@ -1620,14 +1620,14 @@ The main properties of the stationary distribution are:
 * For an irreducible, aperiodic Markov chain with stationary distribution $s$ the transition matrix converges with $n \to \infty$ to a matrix where each row is $s$ .
 * For an irreducible Markov chain with stationary distribution $s$, the value of $s_i$ is a reciprocal of an expected time to return to the state $i$.
 
-#### What is reversibility of a Markov chain.
+#### 1.1.1.143. What is reversibility of a Markov chain.
 Let $Q = (q_{ij})$ be the transition matrix of a Markov chain. Let there be $s=(s_1,...,s_M)$ with $s_i \geq 0$ and $\sum s_i = 1$ such that 
 $$
 s_iq_{ij} = s_jq_{ji},
 $$
 for all $i$ and $j$, then this equation is called reversibility condition and the Markov chain is called reversible. If the condition satisfies, then $s$ is the stationary distribution. If each column of the transition matrix sums to 1, then the Uniform distribution over all states is a stationary distribution of this Markov chain.
 
-#### What problem does a Markov Chain Monte-Carlo Simulation solve?
+#### 1.1.1.144. What problem does a Markov Chain Monte-Carlo Simulation solve?
 Suppose you want to sample from a target distribution $\pi(x)$.<br/>
 Example situations:
 * A complicated posterior distribution in Bayesian inference.
@@ -1639,7 +1639,7 @@ $$
 $$
 If direct sampling is hard a Monte-Carlo simulation can create a Markov's chain whose long-run distribution equals $\pi(x)$. Some MCMC algorithms are **Metropolis-Hastings** and **Gibbs sampling**.
 
-#### Explain Metropolis-Hastings MCMC algorithm.
+#### 1.1.1.145. Explain Metropolis-Hastings MCMC algorithm.
 The core idea of the Metropolis-Hastings MCMC algorithm is:
 * Start from a current state $x_t$
 * Propose a new candidate state $x'$
@@ -1664,7 +1664,7 @@ The algorithm steps are as follows:<br/>
 
 After a burn-in period, the samples approximate the target distribution. The core strength of this method is that **you do not need to know the normalization constant of the target distribution** in order to conduct the simulation.
 
-#### Explain the Gibbs sampling MCMC algorithm.
+#### 1.1.1.146. Explain the Gibbs sampling MCMC algorithm.
 The Gibbs sampling algorithm is a special case of MCMC methods used to generate samples from a joint probability distribution when direct sampling is difficult but sampling from conditional distributions is easy. It is closely related to the Metropolis–Hastings algorithm, but it simplifies the acceptance step by always accepting proposals.<br/>
 Suppose you want samples from a joint distribution:
 $$
@@ -1704,10 +1704,10 @@ x^{(t)}_d \sim p(x_d|x^{(t)}_1, x^{(t)}_2,...,x^{(t)}_{d-1})
 $$
 After one full cycle you obtain the next sample vector.
 
-#### Give a definition of Poisson processes in one dimension.
+#### 1.1.1.147. Give a definition of Poisson processes in one dimension.
 A Poisson process in one dimension is a stochastic process that models random points occurring along a line (usually time) where events happen independently and at a constant average rate $\lambda$. The number of arrivals in a constant time $t$ has $Pois(\lambda t)$ distribution. The numbers of arrivals in disjoint time intervals are independent.
 
-#### Explain the conditioning property of one-dimensional Poisson processes.
+#### 1.1.1.148. Explain the conditioning property of one-dimensional Poisson processes.
 Let $N(t)$ be a Poisson process with rate $\lambda$. Suppose we condition on:
 $$
 N(t) = n,
@@ -1719,7 +1719,7 @@ N(s)|N(t)=n \sim Binomial(n, \frac{s}{t}).
 $$
 In a Poisson process with the rate $\lambda$ conditional on $N(t)=n$ the joint distribution of the arival times $T_1,T_2,...,T_n$ is the same as the joint distribution of the order statistics of $n$ independent and equally distributed with $Unif(0,t)$ random variables.
 
-#### Explain the superposition property of one-dimensional Poisson processes.
+#### 1.1.1.149. Explain the superposition property of one-dimensional Poisson processes.
 Suppose we have $k$ independent Poisson processes:
 $$
 N_1(t),N_2(t),...,N_k(t)
@@ -1746,10 +1746,10 @@ Think of events coming from multiple independent sources:
 
 If each source produces events randomly at rate $\lambda_i$, then the combined stream of events is still random with rate equal to the sum of the rates.
 
-#### Explain the thinning property of one-dimensional Poisson processes.
+#### 1.1.1.150. Explain the thinning property of one-dimensional Poisson processes.
 Let $N(t)$ be a Poisson process with rate $\lambda$. Suppose that each event is independently kept with probability $p$ and removed with probability $1-p$. Define a new counting process $N_1(t)$ as a number of kept events. Then $N_1(t)$ is itself a Poisson process with rate $\lambda_1 = p\lambda$. Similarly, the removed events form another process $N_2(t)$ with rate $\lambda_2 = (1-p)\lambda$ and the two processes $N_1(t)$ and $N_2(t)$ are independent Poisson processes.
 
-#### Give a definition of two-dimensional Poisson processes.
+#### 1.1.1.151. Give a definition of two-dimensional Poisson processes.
 Let $N(A)$ denote the number of points in a region $A \subset R^2$. A point process on the plane is a two-dimensional Poisson process with intensity $\lambda > 0$ if it satisfies:
 1. Poisson distribution of counts:<br/>
     For any bounded region $A$,
@@ -1769,7 +1769,7 @@ Let $N(A)$ denote the number of points in a region $A \subset R^2$. A point proc
 
 Such properties of one-dimensional Poisson processes as conditioning, superposition and thinning are also valid for two-dimansional Poesson processes.
 
-#### What is data reduction of a distribution in statistical inference?
+#### 1.1.1.152. What is data reduction of a distribution in statistical inference?
 In statistical inference, data reduction of a distribution refers to the process of summarizing the information contained in a full dataset in a smaller, simpler form that still retains all the relevant information for estimating the parameters of interest. Essentially, it’s about compressing the data without losing information needed for inference.<br/>
 Let $X = (X_1,X_2,...,X_n)$ be a sample from a distribution with parameter $\theta$ and $T(X)$ a function of the data. Data reduction is the process of replacing the full dataset $X$ with a statistic $T(X)$ such that inference about $\theta$ can be based on $T(X)$ instead of the full $X$.<br/>
 **Example:**<br/>
@@ -1779,14 +1779,14 @@ T(X)=\sum^{n}_{i=1}X_i
 $$
 contains all information about $\lambda$, so you can do inference using only the sum instead of all $X_n$.
 
-#### How is sufficient statistic defined?
+#### 1.1.1.153. How is sufficient statistic defined?
 A statistic $T(X)$ containing all information about parameter $\theta$ is called sufficient if the conditional distribution of the sample $X$ given the value $T(X)$ does not depend on $\theta$. E.g. the summation statistic for a Poisson sample is sufficient, because it is a smallest summary of the sample containing all information about the parameter $\lambda$.
 
-#### Explain what minimal sufficient statistic is.
+#### 1.1.1.154. Explain what minimal sufficient statistic is.
 In statistical inference, a minimal sufficient statistic is the most compressed statistic that still contains all the information about a parameter in the sample. It represents the maximum possible data reduction without losing any information relevant to the parameter.<br/>
 Let $X = (X_1,X_2,...,X_n)$ be a sample from a distribution with parameter $\theta$. A statistic $T(X)$ is minimal sufficient for $\theta$ if it is sufficient, and for any other sufficient statistic $S(X)$, it can be written as a function of $S(X)$, e.g. **sample mean and variance of a normal distribution**.
 
-#### Explain what ancillary statistic is.
+#### 1.1.1.155. Explain what ancillary statistic is.
 An ancillary statistic is a statistic whose probability distribution does not depend on the unknown parameter of the model. So it contains no information about the parameter, even though it is computed from the data.<br/>
 Let $X = (X_1,X_2,...,X_n)$ be a sample from a distribution with parameter $\theta$.Let $X = (X_1,X_2,...,X_n)$ be a sample from a distribution with parameter $\theta$. A statistic $A(X)$ is ancillary if its distribution is independent of $\theta$.<br/>
 Formally:
@@ -1809,10 +1809,10 @@ $$
 $$
 its distribution is $N(0,2)$ and its independent of $\mu$.
 
-#### Explain what complete statistic is.
+#### 1.1.1.156. Explain what complete statistic is.
 Let $X = (X_1,X_2,...,X_n)$ be a sample from a distribution with parameter $\theta$. $T(X)$ is complete if a function $g$ satisfies $E_{\theta}[g(T)] = 0$ for all $\theta$ only if $g(T) = 0$ with probability 1. If the expected value of a function of $T$ is zero for every parameter value, then the function must be identically zero. There are no non-trivial unbiased functions of $T$ that vanish for all parameters. Completeness means that the statistic contains no hidden redundancy. If you try to construct a function of the statistic whose expected value is always zero, the only possibility is the trivial function. So the statistic is informationally tight: it does not allow cancellation of information across parameter values.
 
-#### What is the likelihood function in statistical inference?
+#### 1.1.1.157. What is the likelihood function in statistical inference?
 The likelihood function describes how plausible different parameter values are given the observed data. Suppose $X_1,X_2,...,X_n$ is a random sample from a distribution with parameter $\theta$ and probability density (or mass) function $f(x|\theta)$. After observing the data
 $$
 x_1,x_2,...,x_n,
@@ -1847,14 +1847,14 @@ L(\mu) = \prod^{n}_{i=1}\frac{1}{\sqrt{2\pi \sigma^2}}e^{\frac{(x_i - \mu)^2}{2\
 $$
 This function tells us which values of $\mu$ make the observed data most likely.
 
-#### Explain the principle of equivariance in statistical inference.
+#### 1.1.1.158. Explain the principle of equivariance in statistical inference.
 Let $\theta$ be a parameter and $T(X)$ an estimator of $\theta$ based on a sample $X$. Suppose we apply a transformation $g(*)$ to the parameter, giving a new parameter
 $$
 \phi = g(\theta).
 $$
 The principle of equivariance states that the estimator of the transformed parameter $g(\theta)$ should be the same transformation applied to the estimator of $\theta$. So if $T(X)$ is an estimator of $\theta$ then the estimator of $g(\theta)$ should be $g(T(X))$.
 
-#### What is a point estimator in statistical inference?
+#### 1.1.1.159. What is a point estimator in statistical inference?
 A point estimator is a statistic used to estimate an unknown parameter of a population by a single numerical value based on sample data. <br/>
 Let
 $$
@@ -1873,7 +1873,7 @@ $$
 $$
 is a point estimator of $\mu$.
 
-#### Explain method of moments (MOM) for point estimation.
+#### 1.1.1.160. Explain method of moments (MOM) for point estimation.
 This method equates sample moments with population moments.<br/>
 Steps:
 * Compute population moments in terms of parameters.
@@ -1887,7 +1887,7 @@ $$
 \hat{\theta} = \bar{X}.
 $$
 
-#### Explain Maximum Likelihood point estimator (MLE).
+#### 1.1.1.161. Explain Maximum Likelihood point estimator (MLE).
 This method chooses the parameter value that maximizes the likelihood function.
 
 If the likelihood function is
@@ -1902,7 +1902,7 @@ $$
 \hat{\mu}_{MLE} = \bar{X}.
 $$
 
-#### Explain Bayes point estimator.
+#### 1.1.1.162. Explain Bayes point estimator.
 In Bayesian inference, the parameter $\theta$ is treated as a random variable with a prior distribution $\pi(\theta)$.
 After observing data $x$, we compute the posterior distribution:
 $$
@@ -1948,14 +1948,14 @@ Different loss functions lead to different estimators.
     $$
     The Bayes estimator becomes the posterior mode, also called the MAP estimator (Maximum A Posteriori).
 
-#### Explain principal difference between classical and Bayesian statistical inference.
+#### 1.1.1.163. Explain principal difference between classical and Bayesian statistical inference.
 The main difference between classical and Bayesian approaches in Statistical Inference concerns how the unknown parameter is treated.
 
 In classical (frequentist) inference, the parameter is considered a fixed but unknown constant, and probability describes the randomness of the sample data. Inference is based only on the likelihood derived from the observed data.
 
 In Bayesian Statistics, the parameter is treated as a random variable with a prior distribution representing prior knowledge. Using Bayes' Theorem, the prior is updated with the observed data to obtain the posterior distribution, which is then used for estimation and inference.
 
-#### Enlist methods of evaluating the point estimators.
+#### 1.1.1.164. Enlist methods of evaluating the point estimators.
 **1. Classical Properties**<br/>
 
 * **Unbiasedness** - the estimators expected value equals the true parameter:
@@ -1996,7 +1996,7 @@ In Bayesian Statistics, the parameter is treated as a random variable with a pri
 * Absolute error → posterior median
 * 0–1 loss → posterior mode (MAP)
 
-#### Give a definition of what is hypothesis and its testing in inference statistics.
+#### 1.1.1.165. Give a definition of what is hypothesis and its testing in inference statistics.
 In Statistical Inference, a **hypothesis** is a statement or assumption about a population parameter that we want to evaluate based on sample data.
 * Null hypothesis ($H_0$): the default assumption, usually representing no effect or no difference.
 * Alternative hypothesis ($H_1$): represents the claim we want to test, usually indicating an effect or difference.
@@ -2012,7 +2012,7 @@ In Statistical Inference, a **hypothesis** is a statement or assumption about a 
 
 Hypothesis testing does not prove $H_1$ true, it only evaluates whether data provide enough evidence to reject $H_0$. Decisions are made with a predefined significance level ($\alpha$), controlling the probability of rejecting true $H_0$.
 
-#### Explain Critical Region / Rejection Region Method for Hypothesis testing.
+#### 1.1.1.166. Explain Critical Region / Rejection Region Method for Hypothesis testing.
 In the frequentist framework, the Critical Region (or Rejection Region) Method is a way to perform hypothesis testing by defining a region of the sample space where, if the observed value of the test statistic falls inside, we reject the null hypothesis $H_0$.
 * The test statistic summarizes the sample data in a way that is sensitive to deviations from $H_0$
 * The critical region is determined using a significance level $\alpha$, which is the maximum probability of rejecting true $H_0$.
@@ -2034,7 +2034,7 @@ In the frequentist framework, the Critical Region (or Rejection Region) Method i
 * Likelihood Ratio Test (General Parametric Models).
 * Non-Parametric / Rank-Based Tests.
 
-#### Explain the Z-test statistic for hypothesis testing.
+#### 1.1.1.167. Explain the Z-test statistic for hypothesis testing.
 A Z-test is a parametric hypothesis test used to determine whether a sample mean is significantly different from a hypothesized population mean. It is based on the standard normal distribution ($Z \sim N(0,1)$), when the population variance is known or when the sample size is large ($n\geq 30$) due to the Central Limit Theorem.
 
 **One-sample Z-test statistic:**
@@ -2090,7 +2090,7 @@ $$
 **Step 6: Conclusion**<br/>
 At 5% significance level, there is sufficient evidence to conclude that the mean lifetime of the bulbs is less than 1200 hours.
 
-#### Explain the t-test statistic for hypothesis testing.
+#### 1.1.1.168. Explain the t-test statistic for hypothesis testing.
 A t-test is a statistical test used to determine whether a sample mean is significantly different from a hypothesized population mean when the population standard deviation is unknown.
 * It uses the Student’s t-distribution, which accounts for extra variability due to estimating $\sigma$ from the sample.
 * The shape of the t-distribution depends on the degrees of freedom (df = n – 1).
@@ -2148,7 +2148,7 @@ Degrees of freedom: $df = n - 1 = 14$
 **Step 6: Conclusion**<br/>
 At 5% significance level, there is sufficient evidence that the average sodium content differs from 500 mg.
 
-#### Explain the Chi-Square test statistic for hypothesis testing.
+#### 1.1.1.169. Explain the Chi-Square test statistic for hypothesis testing.
 A Chi-Square test ($\chi^2$ test) is a non-negative test statistic used to evaluate hypotheses about:
 * Variances of a normally distributed population.
 * Goodness-of-fit: whether observed frequencies match expected frequencies.
@@ -2330,7 +2330,7 @@ Therefore we reject the null hypethesis.
 **Conclusion**<br/>
 There is significant evidence that gender and product preference are associated (not independent).
 
-#### Explain the F-test statistic for comparing two variances.
+#### 1.1.1.170. Explain the F-test statistic for comparing two variances.
 The F-test is used in Statistical Inference to determine whether two populations have the same variance. It compares the variability of two independent samples. The test statistic follows the F-distribution, introduced by Ronald A. Fisher, which is the distribution of the ratio of two independent scaled chi-square random variables.<br/>
 The F-test answers questions such as:
 * Do two production machines produce items with the same variability?
@@ -2432,7 +2432,7 @@ Therefore do not reject the null hypothesis.
 
 There is no sufficient evidence that the two machines have different variances.
 
-#### Explain Likelihood Ratio Test (LRT) for General Parametric Models.
+#### 1.1.1.171. Explain Likelihood Ratio Test (LRT) for General Parametric Models.
 The Likelihood Ratio Test (LRT) is a general method in Statistical Inference for testing hypotheses about parameters in parametric statistical models.
 
 The main idea is to compare:
@@ -2547,7 +2547,7 @@ Therefore reject $H_0$
 **Conclusion**<br/>
 There is significant evidence that the mean is different from 0.
 
-#### Explain Non-Parametric / Rank-Based Tests.
+#### 1.1.1.172. Explain Non-Parametric / Rank-Based Tests.
 Non-parametric (rank-based) tests are hypothesis tests that do not assume a specific parametric distribution for the population (e.g., normal distribution). Instead of relying on the raw values, they typically use ranks of the data.
 
 They are especially useful when:
@@ -2576,7 +2576,7 @@ Instead of using the raw data values $x_i$, we:<br/>
 
 Statistical tests are then performed on ranks rather than values. This makes the tests robust to distributional assumptions.
 
-#### Explain p-value method for Hypotheses testing.
+#### 1.1.1.173. Explain p-value method for Hypotheses testing.
 The p-value method is a common procedure in Statistical Inference for deciding whether to reject or not reject a null hypothesis based on observed data. Instead of comparing the test statistic directly with a critical value, we compute the probability of observing a result at least as extreme as the one obtained, assuming the null hypothesis is true.
 
 The $p$-value is:<br/>
@@ -2640,7 +2640,7 @@ p=0.0027 < 0.05
 $$
 Therefore reject $H_0$.
 
-#### What are Union Intersection and Intersection Union tests?
+#### 1.1.1.174. What are Union Intersection and Intersection Union tests?
 In Statistical Inference, Union–Intersection (UI) and Intersection–Union (IU) tests are general frameworks used when hypotheses involve multiple parameters or multiple conditions. They describe how a global hypothesis test can be constructed from several simpler tests.
 
 **1. Union–Intersection Test (UIT)**
@@ -2675,7 +2675,7 @@ Interpretation:
 Decision Rule<br/>
 Reject $H_0$ only if all individual tests reject.
 
-#### Explain Analysis of Variance (ANOVA) method.
+#### 1.1.1.175. Explain Analysis of Variance (ANOVA) method.
 ANOVA (Analysis of Variance) is a statistical method used to test whether the means of several populations are equal. It extends the idea of the two-sample t-test to more than two groups. ANOVA tests whether differences among sample means are statistically significant or simply due to random variation. Typical question is if several groups have the same population mean. It can be interpreted as a Union–Intersection Test (UIT).
 
 Example applications:
@@ -2749,7 +2749,7 @@ F \sim F(k-1,N-k)
 $$
 A large F value suggests the group means are different.
 
-#### Explain Bayesian method for hypothesis testing.
+#### 1.1.1.176. Explain Bayesian method for hypothesis testing.
 In Bayesian hypothesis testing, hypotheses are treated as probabilistic models, and inference is based on updating beliefs using Bayes’ theorem. This approach belongs to Bayesian Statistics. Unlike classical testing, where hypotheses are rejected or not rejected, Bayesian methods evaluate how probable each hypothesis is after observing the data.
 
 Suppose we have two competing hypotheses:
@@ -2836,7 +2836,7 @@ $$
 BF < \frac{1}{10}
 $$
 
-#### Enlist and explain main methods of evaluation of hypothesis tests.
+#### 1.1.1.177. Enlist and explain main methods of evaluation of hypothesis tests.
 **1. Type I Error Probability (Significance Level)<br/>**
 A Type I error occurs when we reject the null hypothesis $H_0$ even though it is true.
 $$
@@ -2890,7 +2890,7 @@ $$
 
 Thus with large samples, the test will almost surely detect the false null hypothesis.
 
-#### What are the interval estimators in statistical inference?
+#### 1.1.1.178. What are the interval estimators in statistical inference?
 Interval estimators (confidence intervals) provide a range of plausible values for an unknown parameter rather than a single estimate.
 
 Several methods exist for constructing interval estimators.<br/>
@@ -2901,7 +2901,7 @@ Several methods exist for constructing interval estimators.<br/>
 5. Bayesian Credible Intervals.
 6. Bootstrap Method.
 
-#### Explain and give a simple example for Pivot (Pivotal Quantity) Method.
+#### 1.1.1.179. Explain and give a simple example for Pivot (Pivotal Quantity) Method.
 The Pivot Method is one of the classical approaches to constructing confidence intervals in Statistical Inference. It is based on a pivotal quantity, which is a function of the sample and the parameter whose probability distribution does not depend on the unknown parameter.
 
 **Definition of a Pivot**<br/>
@@ -2953,7 +2953,7 @@ $$
 $$
 This is the 95% confidence interval for $\mu$.
 
-#### Explain Test Inversion method for finding confidence intervals.
+#### 1.1.1.180. Explain Test Inversion method for finding confidence intervals.
 The Test Inversion Method is a classical approach in Statistical Inference for constructing confidence intervals by inverting a family of hypothesis tests. Instead of directly finding a formula for the interval, you identify all parameter values that would not be rejected by a suitable hypothesis test.<br/>
 **Idea:**<br/>
 1. Consider a parameter $\theta$.
@@ -2972,7 +2972,7 @@ $$
 3. Invert the test: find all $\theta$ such that $T(X,\theta_0)$ does not fall in the rejection region.
 4. The resulting set of $\theta_0$ values is the $(1-\alpha)$ confidence interval.
 
-#### Explain Likelihood-Based Method for Interval Estimation.
+#### 1.1.1.181. Explain Likelihood-Based Method for Interval Estimation.
 The Likelihood-Based Method constructs confidence intervals using the likelihood function of the parameter. It is widely used in Statistical Inference and is closely related to maximum likelihood estimation (MLE) and likelihood ratio tests. 
 
 Parameter values that produce likelihoods close to the maximum likelihood are considered plausible values for the parameter.
@@ -2995,7 +2995,7 @@ where
 
 This set of $\theta$ values forms the confidence interval.
 
-#### Explain Asymptotic (Normal Approximation) Method for Interval Estimation.
+#### 1.1.1.182. Explain Asymptotic (Normal Approximation) Method for Interval Estimation.
 The Asymptotic Method constructs confidence intervals using the fact that many estimators become approximately normally distributed for large sample sizes. This method is widely used in Statistical Inference. The word asymptotic means that the result becomes accurate as the sample size $n$ becomes large.
 
 **Key Idea:**<br/>
@@ -3020,7 +3020,7 @@ where
 
 If the variance is unknown, we replace it with an estimate.
 
-#### Explain Bootstrap Method for Interval Estimation.
+#### 1.1.1.183. Explain Bootstrap Method for Interval Estimation.
 The Bootstrap Method is a computational technique used to estimate confidence intervals when the sampling distribution of an estimator is difficult to derive analytically. It is widely used in Statistical Inference. The idea is to approximate the sampling distribution of an estimator by resampling from the observed data.<br/>
 
 **Basic Idea:**<br/>
@@ -3051,7 +3051,7 @@ For a 95% confidence interval:
 * lower bound $\to$ 2.5th percentile (position of the value in the order statistic is $0.025 \times n$)
 * upper bound $\to$ 97.5th percentile (position of the value in the order statistic is $0.975 \times n$).
 
-#### Explain Bayesian Credible Intervals estimation.
+#### 1.1.1.184. Explain Bayesian Credible Intervals estimation.
 In Bayesian Statistics, an interval estimator is called a credible interval. It represents a range of parameter values that contains a specified posterior probability given the observed data. Unlike classical confidence intervals, credible intervals are derived from the posterior distribution of the parameter.
 
 **Definition**<br/>
@@ -3113,7 +3113,7 @@ $$
     $$
     for some constant $c$.
 
-#### What are the methods of evaluating interval estimators?
+#### 1.1.1.185. What are the methods of evaluating interval estimators?
 In Statistical Inference, interval estimators (confidence intervals) are evaluated by how well they capture the true parameter and how precise they are. The main evaluation criteria are the following.<br/>
 
 **1. Coverage Probability (Confidence Level)**<br/>
@@ -3178,91 +3178,91 @@ These intervals provide the most precise estimation.
 ---
 ---
 
-### Interview questions for Databases.
+### 1.1.2. Interview questions for Databases.
 **Sources:** <br>
 www.softwaretestinghelp.com/database-interview-questions/ <br>
 www.mindmajix.com/nosql-interview-questions <br>
 www.ibm.com/docs/en/ida/9.1.1?topic=entities-primary-foreign-keys <br>
 
-#### How is a Database defined?
+#### 1.1.2.1. How is a Database defined?
 Database is an organized collection of related data where the data is stored and organized to serve some specific purpose.
 
-#### Define DBMS.
+#### 1.1.2.2. Define DBMS.
 DBMS stands for Database Management System. It is a collection of application programs which allow the user to organize, restore and retrieve information about data as effectively as possible. Some of the popular DBMS’s are MySql, Oracle, PostgreSql, SqLite, etc.
 
-#### Define RDBMS.
+#### 1.1.2.3. Define RDBMS.
 Relational Database Management System (RDBMS) is based on a relational model of data that is stored in databases in separate tables and they are related to the use of a common column. Data can be accessed easily from the relational database using Structured Query Language (SQL).
 
-#### Enlist the advantages of DBMS.
+#### 1.1.2.4. Enlist the advantages of DBMS.
 The advantages of DBMS includes:
 * Data is stored in a structured way and hence redundancy is controlled.
 * Validates the data entered and provide restrictions on unauthorized access to the database.
 * Provides backup and recovery of the data when required.
 * It provides multiple user interfaces.
 
-#### What is the Database Transaction?
+#### 1.1.2.5. What is the Database Transaction?
 Sequence of operation performed which changes the consistent state of the database to another is known as the database transaction. After the completion of the transaction, either the successful completion is reflected in the system or the transaction fails and no change is reflected.
 
-#### Enlist four fundamental Properties of Transactions in RDBMS.
+#### 1.1.2.6. Enlist four fundamental Properties of Transactions in RDBMS.
 Four crucial properties define relational database transactions: atomicity, consistency, isolation, and durability—typically referred to as ACID.
 * **Atomicity** defines all the elements that make up a complete database transaction.
 * **Consistency** defines the rules for maintaining data points in a correct state after a transaction.
 * **Isolation** keeps the effect of a transaction invisible to others until it is committed, to avoid confusion.
 * **Durability** ensures that data changes become permanent once the transaction is committed.
 
-#### Explain the terms ‘Record’, ‘Field’ and ‘Table’ in terms of database.
+#### 1.1.2.7. Explain the terms ‘Record’, ‘Field’ and ‘Table’ in terms of database.
 **Record:** Record is a collection of values or fields of a specific entity. For Example, An employee, Salary account, etc. <br>
 **Field:** A field refers to an area within a record that is reserved for specific data. For Example, Employee ID.<br>
 **Table:** Table is the collection of records of specific types. For Example, the Employee table is a collection of records related to all the employees.<br>
 
-#### What do you understand by Data Redundancy?
+#### 1.1.2.8. What do you understand by Data Redundancy?
 Duplication of data in the database is known as data redundancy. As a result of data redundancy, duplicated data is present at multiple locations, hence it leads to wastage of the storage space and the integrity of the database is destroyed.
 
-####  What is a Primary Key in a Relational Database?
+####  1.1.2.9. What is a Primary Key in a Relational Database?
 A Primary Key is a column or a set of columns in a table whose values uniquely identify a row in the table. A relational database is designed to enforce the uniqueness of primary keys by allowing only one row with a given primary key value in a table.
 
-#### What is a Foreign Key in a Relational Database?
+#### 1.1.2.10. What is a Foreign Key in a Relational Database?
 A Foreign Key is a column or a set of columns in a table whose values correspond to the values of the primary key in another table. In order to add a row with a given foreign key value, there must exist a row in the related table with the same primary key value.
 
-#### What are Non-key Attributes?
+#### 1.1.2.11. What are Non-key Attributes?
 Non-key attributes are attributes that are not part of any key. Generally, most attributes are simply descriptive, and fall into this category. Consider an Employee entity type that has attributes for first name, last name, birth date; these attributes would serve to describe an employee but would not serve to uniquely identify employees.
 
-#### Categorize Data Modification Anomalies in a Database.
+#### 1.1.2.12. Categorize Data Modification Anomalies in a Database.
 * **Insertion Anomaly**: Insertion Anomaly refers to when one cannot insert a new tuple into a relationship due to lack of data.
 * **Deletion Anomaly**: The delete anomaly refers to the situation where the deletion of data results in the unintended loss of some other important data.
 * **Updatation Anomaly**: The update anomaly is when an update of a single data value requires multiple rows of data to be updated.
 
-#### What are the various types of relationships in Database? Define them.
+#### 1.1.2.13. What are the various types of relationships in Database? Define them.
 There are 3 types of relationships in Database:
 * **One-to-one**: One table has a relationship with another table having the similar kind of column. Each primary key relates to only one or no  record in the related table.
 * **One-to-many**: One table has a relationship with another table that has primary and foreign key relations. The primary key table contains only one record that relates to none, one or many records in the related table.
 * **Many-to-many**: Each record in both the tables can relate to many numbers of records in another table.
 
-#### Explain Normalization and De-Normalization.
+#### 1.1.2.14. Explain Normalization and De-Normalization.
 **Normalization** is the process of removing redundant data from the database by splitting the table in a well-defined manner in order to maintain data integrity. This process saves much of the storage space. It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.
 
 **De-normalization** is the process of adding up redundant data on the table in order to speed up the complex queries and thus achieve better performance.
 
-#### What are the different types of Normalization?
+#### 1.1.2.15. What are the different types of Normalization?
 Different types of Normalization are:
 * **First Normal Form (1NF)**: A relation is said to be in 1NF only when all the entities of the table contain unique or atomic values. It meens all rows must be unique, each cell must contain only single value (not a list) and each value should be non-divisible (can't be split down further).
 * **Second Normal Form (2NF)**: A relation is said to be in 2NF only if it is in 1NF and all the non-key attribute of the table is fully dependent on the primary key. For example we have a table with columns composed of Student ID, Course ID and Course Fee. Course Fee does not depend fully on the primary key represented by Student ID. In order to achieve 2NF on splits the table in one that contains Student ID and Course ID and another that contains Course ID and Course Fee.
 * **Third Normal Form (3NF)**: A relation is said to be in 3NF only if it is in 2NF and every non-key attribute of the table is not transitively dependent on the primary key. For example if we have a table containing Tournament Name, Year, Winner's Name and Winner's Date of Birth. Winners date of birth can be defined by winner's name and not by the primary key represented by tournament name and year, so the table must be split.
 
-#### What is BCNF?
+#### 1.1.2.16. What is BCNF?
 BCNF is the Boyce Code Normal form. It is the higher version of 3Nf which does not have any multiple overlapping candidate keys. For example if we have a table with Student ID, Corse ID and Professor ID, where the same course could be held by different professors, we have to split the table into table eith Student ID and professor ID and the table with professor ID and Course ID.
 
-#### What is SQL?
+#### 1.1.2.17. What is SQL?
 Structured Query language, SQL is an ANSI (American National Standard Institute) standard programming language that is designed specifically for storing and managing the data in the relational database management system (RDBMS) using all kinds of data operations.
 
-#### How many SQL statements are used? Define them.
+#### 1.1.2.18. How many SQL statements are used? Define them.
 SQL statements are basically divided into three categories, DDL, DML, and DCL. <br>
 They can be defined as:
 * **Data Definition Language (DDL)** commands are used to define the structure that holds the data. These commands are auto-committed i.e. changes done by the DDL commands on the database are saved permanently.
 * **Data Manipulation Language (DML)** commands are used to manipulate the data of the database. These commands are not auto-committed and can be rolled back.
 * **Data Control Language (DCL)** commands are used to control the visibility of the data in the database like revoke access permission for using data in the database.
 
-#### Enlist some commands of DDL, DML and DCL.
+#### 1.1.2.19. Enlist some commands of DDL, DML and DCL.
 * **Data Definition Language (DDL) commands:** <br>
     CREATE to create a new table or database.<br>
     ALTER for alteration.<br>
@@ -3281,39 +3281,39 @@ They can be defined as:
     ROLLBACK to undo the change.<br>
     SAVEPOINT to save temporarily.<br>
 
-#### What is Quaery Processor in DBMS?
+#### 1.1.2.20. What is Quaery Processor in DBMS?
 The Query Processor receives the queries (requests) from the user and interprets them in the form of instructions. It has four components: **DML Compiler**, **DDL Interpreter**, **Query Optimizer** and **Embedded DML Pre-compiler**.
 
-#### Define DML Compiler.
+#### 1.1.2.21. Define DML Compiler.
 It converts the DML (Data Manipulation Language) Instructions into Machine Language (low-level language).
 
-#### What is DDL interpreter?
+#### 1.1.2.22. What is DDL interpreter?
 It interprets the DDL (Data Definition Language) Instructions and stores the record in a data dictionary (in a table containing meta-data).
 
-#### What is Query Optimizer?
+#### 1.1.2.23. What is Query Optimizer?
 It executes the DML Instructions and picks the lowest cost evaluation plan out of all the alternatives present.
 
-#### What is Embedded DML Pre-compiler?
+#### 1.1.2.24. What is Embedded DML Pre-compiler?
 It translates the DML statements embedded in Application Programs into procedural function calls.
 
-#### Enlist the advantages of SQL.
+#### 1.1.2.25. Enlist the advantages of SQL.
 * Simple SQL queries can be used to retrieve a large amount of data from the database very quickly and efficiently.
 * SQL is easy to learn and almost every DBMS supports SQL.
 * It is easier to manage the database using SQL as no large amount of coding is required.
 
-#### What is a Relational Database Schema?
+#### 1.1.2.26. What is a Relational Database Schema?
 A database schema refers to the logical and visual configuration of the entire relational database. The database objects are often grouped and displayed as tables, functions, and relations. A schema describes the organization and storage of data in a database and defines the relationship between various tables.
 
-#### What is a Physical Level in a Relational Database.
+#### 1.1.2.27. What is a Physical Level in a Relational Database.
 The concept of Physical Level in a database refers to the lowest level of organization and representation of data in a database management system. At the physical level, data is represented in the form of bits, bytes, and blocks of data stored on a storage device (such as a hard drive or solid-state drive).
 
-#### What is a Conceptual (Logical) Level in a Relational Database.
+#### 1.1.2.28. What is a Conceptual (Logical) Level in a Relational Database.
 The conceptual level is a way of describing what data is stored within the whole database and how the data is inter-related. The conceptual level does not specify how the data is physically stored.
 
-#### What is a View Level in a Relational Database?
+#### 1.1.2.29. What is a View Level in a Relational Database?
 Views are virtual tables. They are only a structure, and contain no data. Their purpose is to allow a user to see a subset of the actual data. A view can consist of a subset of one table. A View can be considered as a template query.
 
-#### What are the advantages and disadvantages of views in the database?
+#### 1.1.2.30. What are the advantages and disadvantages of views in the database?
 **Advantages of Views:**
 * As there is no physical location where the data in the view is stored, it generates output without wasting resources.
 * Data access is restricted as it does not allow commands like insertion, updation, and deletion.<br>
@@ -3323,73 +3323,73 @@ Views are virtual tables. They are only a structure, and contain no data. Their 
 * Much memory space is occupied when the view is created for large tables.
 
 
-#### What do you understand by Data Independence? What are its two types?
+#### 1.1.2.31. What do you understand by Data Independence? What are its two types?
 Data Independence refers to the ability to modify the schema definition in one level in such a way that it does not affect the schema definition in the next higher level.<br>
 The 2 types of Data Independence are:
 * **Physical Data Independence:** It modifies the schema at the physical level without affecting the schema at the conceptual level.
 * **Logical Data Independence:** It modifies the schema at the conceptual level without affecting or causing changes in the schema at the view level.
 
-#### What do you understand by Functional dependency?
+#### 1.1.2.32. What do you understand by Functional dependency?
 A relation is said to be in functional dependency when one attribute uniquely defines another attribute. For Example, R is a Relation, X and Y are two attributes. T1 and T2 are two tuples. Then,<br>
 T1[X]=T2[X] and T1[Y]=T2[Y] <br>
 Means, the value of component X uniquely define the value of component Y. Also, X->Y means Y is functionally dependent on X.
 
-#### What is a Fully Functional Dependancy?
+#### 1.1.2.33. What is a Fully Functional Dependancy?
 To fulfill the criteria of fully functional dependency, the relation must meet the requirement of functional dependency. A functional dependency ‘A’ and ‘B’ are said to be fully functional dependent when removal of any attribute say ‘X’ from ‘A’ means the dependency does not hold anymore.
 
-#### What do you understand by the E-R model?
+#### 1.1.2.34. What do you understand by the E-R model?
 E-R model is an Entity-Relationship model which defines the Conceptual View of the database. The E-R model basically shows the real-world entities and their association/relations. Entities here represent the set of attributes in the database.
 
-#### Define Entity, Entity type, and Entity set.
+#### 1.1.2.35. Define Entity, Entity type, and Entity set.
 **Entity** can be anything, be it a place, class or object which has an independent existence in the real world. <br>
 **Entity Type** represents a set of entities that have similar attributes.<br>
 **Entity Set** in the database represents a collection of entities having a particular entity type.<br>
 
-#### What is a Weak Entity?
+#### 1.1.2.36. What is a Weak Entity?
 In a relational database, a weak entity is an entity that cannot be uniquely identified by its attributes alone; therefore, it must use a foreign key in conjunction with its attributes to create a primary key. The foreign key is typically a primary key of an entity it is related to. 
 
-#### Explain the terms ‘Attribute’ and ‘Relations’.
+#### 1.1.2.37. Explain the terms ‘Attribute’ and ‘Relations’.
 **Attribute** is described as the properties or characteristics of an entity. For Example, Employee ID, Employee Name, Age, etc., can be attributes of the entity Employee. <br>
 **Relation** is a two-dimensional table containing a number of rows and columns where every row represents a record of the relation. Here, rows are also known as ‘Tuples’ and columns are known as ‘Attributes’. <br>
 
-#### What are VDL and SDL?
+#### 1.1.2.38. What are VDL and SDL?
 **VDL** is **View Definition Language** which represents user views and their mapping to the conceptual schema. <br>
 **SDL** is **Storage Definition Language** which specifies the mapping between two schemas.<br>
 
-#### Define Cursor and its types. 
+#### 1.1.2.39. Define Cursor and its types. 
 Cursor is a temporary work area that stores the data, as well as the result set, occurred after manipulation of data retrieved. A cursor can hold only one row at a time. <br>
 The 2 types of Cursor are:
 * **Implicit cursors** are declared automatically when DML statements like INSERT, UPDATE, DELETE is executed.
 * **Explicit cursors** have to be declared when SELECT statements that are returning more than one row are executed.
 
-#### Define Database Lock and its types.
+#### 1.1.2.40. Define Database Lock and its types.
 Database lock basically signifies the transaction about the current status of the data item i.e. whether that data is being used by other transactions or not at the present point of time. <br>
 There are two types of Database lock: **Shared Lock** and **Exclusive Lock**. <br>
 **Shared Lock** exist when two transactions are granted read access. One transaction gets the shared lock on data and when the second transaction requests the same data it is also given a shared lock. Both transactions are in a read-only mode, updating the data is not allowed until the shared lock is released. <br>
 An **Exclusive Lock** means that no other users can update or delete the item until the database server removes the lock.
 
-#### What is Data Warehousing?
+#### 1.1.2.41. What is Data Warehousing?
 Data Warehousing integrates data and information collected from various sources into one comprehensive database. For example, a data warehouse might combine customer information from an organization's point-of-sale systems, its mailing lists, website, and comment cards.
 
-#### What do you understand by Join?
+#### 1.1.2.42. What do you understand by Join?
 Join is the process of deriving the relationship between different tables by combining columns from one or more tables having common values in each. When a table joins with itself, it is known as Self Join.
 
-#### What do you understand by Index Hunting?
+#### 1.1.2.43. What do you understand by Index Hunting?
 Index hunting is the process of boosting the collection of indexes which helps in improving the query performance as well as the speed of the database (in analogy with direct access by index in a lookup table).
 
-#### How to improve query performance using Index hunting?
+#### 1.1.2.44. How to improve query performance using Index hunting?
 Index hunting help in improving query performance by: <br>
 * Using a query optimizer to coordinate queries with the workload.
 * Observing the performance and effect of index and query distribution.
 
-#### Differentiate between ‘Cluster’ and ‘Non-cluster’ index.
+#### 1.1.2.45. Differentiate between ‘Cluster’ and ‘Non-cluster’ index.
 **Clustered Index** alters the table and re-order the way in which the records are stored in the table. Data retrieval is made faster by using the clustered index. SQL Server clustered index creates a physical sorted data structure of the table rows according to the defined index key. This sorted data structure is called a B-tree (balanced tree). B-tree structure enables us to find the queried rows faster to using the sorted key value(s). <br>
 A **Non-clustered Index** does alter the records that are stored in the table but creates a completely different object within the table.
 
-#### What do you understand by Fragmentation?
+#### 1.1.2.46. What do you understand by Fragmentation?
 Fragmentation is a feature that controls the logical data units, also known as fragments that are stored at different sites of a distributed database system.
 
-#### Define Join types.
+#### 1.1.2.47. Define Join types.
 Given below are the types of Join, which are explained with respect to the tables as an example. <br>
 
 **employee Table** 
@@ -3519,55 +3519,55 @@ SELECT * from employee FULL OUTER JOIN employee_info on (employee.EmpID = employ
 |Null| Null |1006| Tomsk |
 |Null| Null |1007| Almaty |
 
-#### What do you understand by ‘Atomicity’ and ‘Aggregation’?
+#### 1.1.2.48. What do you understand by ‘Atomicity’ and ‘Aggregation’?
 **Atomicity** is the condition where either all the actions of the transaction are performed or none. This means, when there is an incomplete transaction, the database management system itself will undo the effects done by the incomplete transaction. <br>
 **Aggregation** is the concept of expressing the relationship with the collection of entities and their relationships.
 
-#### Define Phantom Deadlock.
+#### 1.1.2.49. Define Phantom Deadlock.
 Phantom deadlock detection is the condition where the deadlock does not actually exist but due to a delay in propagating local information, deadlock detection algorithms identify the deadlocks.
 
-#### Define Checkpoint.
+#### 1.1.2.50. Define Checkpoint.
 Checkpoint declares a point before which all the logs are stored permanently in the storage disk and the database is in consistent state. In the case of crashes, the amount of work and time is saved as the system can restart from the checkpoint.
 
-#### What is Database Partitioning?
+#### 1.1.2.51. What is Database Partitioning?
 Database partitioning is the process of partitioning tables, indexes into smaller pieces in order to manage and access the data at a finer level. This process of partitioning reduces the cost of storing a large amount of data as well as enhances the performance and manageability.
 
-####  Explain the importance of Database Partitioning.
+####  1.1.2.52. Explain the importance of Database Partitioning.
 * Improves query performance and manageability.
 * Simplifies common administration tasks.
 * Acts as a key tool for building systems with extremely high availability requirements.
 * Allows accessing a large part of a single partition.
 
-#### Explain the Data Dictionary.
+#### 1.1.2.53. Explain the Data Dictionary.
 Data Dictionary is a set of information describing the content and structure of the tables and database objects. The job of the information stored in the data dictionary is to control, manipulate and access the relationship between database elements.
 
-#### Explain the Primary Key and Composite Key.
+#### 1.1.2.54. Explain the Primary Key and Composite Key.
 **Primary Key** is that column of the table whose every row data is uniquely identified. Every row in the table must have a primary key and no two rows can have the same primary key. Primary key value can never be null nor can it be modified or updated. <br>
 **Composite Key** is a form of the candidate key where a set of columns will uniquely identify every row in the table.
 
-#### What do you understand by the Unique key?
+#### 1.1.2.55. What do you understand by the Unique key?
 A Unique key is the same as the primary key whose every row data is uniquely identified with a difference of null value i.e. Unique key allows one value as a NULL value.
 
-#### What do you understand by Database Triggers?
+#### 1.1.2.56. What do you understand by Database Triggers?
 A set of commands that automatically get executed when an event like Before Insert, After Insert, On Update, On Delete of row occurs in a table is called a Database Trigger.
 
-#### Define Stored Procedures.
+#### 1.1.2.57. Define Stored Procedures.
 A Stored procedure is a collection of pre-compiled SQL Queries, which when executed denotes a program taking input, process and gives the output.
 
-#### What do you understand by B-Trees?
+#### 1.1.2.58. What do you understand by B-Trees?
 B-Tree represents the data structure in the form of a tree for external memory that reads and writes large blocks of data. It is commonly used in databases and file systems where all the insertions, deletions, sorting, etc., are done in logarithmic time.
 
-#### Name the different Data Models that are available for database systems.
+#### 1.1.2.59. Name the different Data Models that are available for database systems.
 * Relational model
 * Network model
 * Hierarchical model
 
-#### Differentiate between ‘DELETE’, ‘TRUNCATE’ and ‘DROP’ commands.
+#### 1.1.2.60. Differentiate between ‘DELETE’, ‘TRUNCATE’ and ‘DROP’ commands.
 After the execution of **DELETE** operation, **COMMIT** and **ROLLBACK** statements can be performed to retrieve the lost data. <br>
 After the execution of **TRUNCATE** operation, **COMMIT**, and **ROLLBACK** statements cannot be performed to retrieve the lost data. <br>
 **DROP** command is used to drop the table or key like the primary key/foreign key.
 
-#### Based on the given table, solve the following queries.
+#### 1.1.2.61. Based on the given table, solve the following queries.
 **employee Table** <br>
 | | | | |
 |:---|:---|:---|:---|
@@ -3615,21 +3615,21 @@ SELECT EmpId, EmpName, Age from Employee&amp;nbsp; ORDER BY Age;
 ``` sql
 SELECT EmpId, EmpName, Age from Employee&amp;nbsp; ORDER BY Age Desc;
 ```
-#### What do you understand by NoSQL?
+#### 1.1.2.62. What do you understand by NoSQL?
 Nowadays, developers are dealing with a large volume of data which is called Big Data. So naturally, big complexity and big issues will be there. Once most of the systems are getting online, so data load increases. NoSQL helps to manage unstructured, messy, and complicated data. This is not a traditional database or relational database management.
 
-#### How many types of NoSQL Databases are there?
+#### 1.1.2.63. How many types of NoSQL Databases are there?
 * **Graph Database** - stores nodes and relationships instead of tables or documents. Data is stored just like you might sketch ideas on a whiteboard. Your data is stored without restricting it to a pre-defined model, allowing a very flexible way of thinking about and using it. For example **Neo4j** is a Graph Database.
 * **Key Value Calculation** - stores data as a collection of key-value pairs in which a key serves as a unique identifier. Both keys and values can be anything, ranging from simple objects to complex compound objects. Key-value databases (or key-value stores) are highly partitionable and allow horizontal scaling at a level that other types of databases cannot achieve. Examples are DynamoDB, Cassandra, Redis, etc.
 * **Document Oriented** - a special type of Key-Value Store where keys can only be Strings. Moreover, the document is encoded using standards like JSON or related languages like XML (Semi-Structured Data). You can also store PDFs, image files, or text documents directly as values. Examples are CouchDB, MongoDB, etc.
 * **Column View Presentation** - represents data in columnar form reducing the number of I/O operations on hardrives. Used in warehouses for big data analytics.
 
-#### Write down the difference between vertical and horizontal databases.
+#### 1.1.2.64. Write down the difference between vertical and horizontal databases.
 **Horizontal Scaling** means that you scale by adding more machines into your pool of resources whereas **Vertical Scaling** means that you scale by adding more power (CPU, RAM) to an existing machine.<br>
 An easy way to remember this is to think of a machine on a server rack, we add **more machines** across the **horizontal direction** and add **more resources** to a machine in the **vertical direction**. <br>
 In the database world, horizontal-scaling is often based on the partitioning of the data i.e. each node contains only part of the data, in vertical-scaling the data resides on a single node and scaling is done through multi-core i.e. spreading the load between the CPU and RAM resources of that machine.
 
-#### When should one use NoSQL in place of the normal database?
+#### 1.1.2.65. When should one use NoSQL in place of the normal database?
 If you are looking for key-value stores with massive high-speed performances, you can use NoSQL. Because in the relational databases, we use ACID transactions. Once we use this kind of transaction, the schema-based process will slow down the database performance. 
 
 Suggestive possible situations to use NoSQL are:
@@ -3637,58 +3637,58 @@ Suggestive possible situations to use NoSQL are:
 * If the client wants high traffic site.
 * If you are using denormalized data.
 
-#### What do you know about polyglot persistence in NoSQL?
+#### 1.1.2.66. What do you know about polyglot persistence in NoSQL?
 Polyglot persistence is a hybrid approach enabling usage of multiple databases in a single application/software. A Software that is capable of using more than one type of data storage is referred to as Polyglot-persistent software.
 
-#### Clarify the Key-Value Approach in a NoSQL Database.
+#### 1.1.2.67. Clarify the Key-Value Approach in a NoSQL Database.
 Key-Value Approach implies storing data in a **Hash Table**. Searching data in a hash table is of constant time complexity, which makes it very fast.
 
-#### Explain the CAP theorem in NoSQL.
+#### 1.1.2.68. Explain the CAP theorem in NoSQL.
 CAP theorem or Eric Brewers theorem states that we can only achieve at most two out of three guarantees for a database: Consistency, Availability, and Partition Tolerance.
 
-#### What is Sharding an a NoSQL Database?
+#### 1.1.2.69. What is Sharding an a NoSQL Database?
 Sharding is a method of storing data records across many server instances. This is done through storage area networks to make hardware perform like a single server. The NoSQL framework is natively designed to support automatic distribution of the data across multiple servers including the query load.
 
-#### What is Big SQL?
+#### 1.1.2.70. What is Big SQL?
 IBM Db2 Big SQL is a high performance massively parallel processing (MPP) SQL engine for Hadoop (software framework for distributed storage and processing of big data) that makes querying enterprise data from across the organization an easy and secure experience. A Db2 Big SQL query can quickly access a variety of data sources including HDFS (Hadoop Distributed File Scheme), GPFS (General Parallel File System), RDBMS, NoSQL databases, object stores, and WebHDFS by using a single database connection or single query for best-in-class analytic capabilities.
 
-#### How does Impedance Mismatch Happening in a Database?
+#### 1.1.2.71. How does Impedance Mismatch Happening in a Database?
 A Programming Impedance Mismatch occurs when data needs to be transformed into a different architectural paradigm. The most prominent example involves object-oriented codebases and relational databases.
 An impedance mismatch arises when data is fetched from or inserted into a database. The properties of objects or classes within the codebase need to be mapped to their corresponding database table fields. 
 
-#### What is an Aggregate-Oriented Database
+#### 1.1.2.72. What is an Aggregate-Oriented Database
 Typical Aggregate-Oriented NoSQL databases will store an aggregation in the form of strings or entire documents. That is usually in plain text, often in a specific format or notation, such as JSON or XML. In the case of document NoSQL databases, the “value” portion of the entry can get much larger.
 
-#### What is eventual consistency in the context of NoSQL?
+#### 1.1.2.73. What is eventual consistency in the context of NoSQL?
 Eventual consistency is a data modeling concept that ensures that updates made to distributed NoSQL databases will eventually be reflected across all nodes. This ensures that identical database queries will return the same results after some period of time.
 
-#### What are the BASE Properties in NoSQL?
+#### 1.1.2.74. What are the BASE Properties in NoSQL?
 BASE Properties aim to handle large volumes of data and enable scalability and flexibility in distributed systems. Here is a breakdown of what each property means:
 * **Basically Available:** BASE systems prioritize availability over strong consistency. This means that even in the face of failures or concurrent updates, the system remains operational and accessible to users.
 * **Soft State:** BASE systems allow for temporary inconsistency or partial updates. The state of the system can be transiently inconsistent during concurrent updates, but the system is eventually brought back to a consistent state.
 * **Eventual Consistency:** BASE systems guarantee that updates will eventually propagate and reach a consistent state across all replicas or nodes. However, immediate consistency is not a requirement, and there may be a delay in achieving consistency.
 
-#### Can Normalization be used in a NoSQL Database?
+#### 1.1.2.75. Can Normalization be used in a NoSQL Database?
 Yes, normalization can be used by a NoSQL database. One of the famous NoSQL named Cassandra (key-value database) is based on normalization to finding stored data. It creates a series of tables related to the different fields.
 
 ---
 ---
 
-### Interview questions for Python.
+### 1.1.3. Interview questions for Python.
 **Sources:**<br>
 www.interviewbit.com/python-interview-questions/ <br>
 www.geeksforgeeks.org/python-interview-questions/ <br>
 
-#### What is Python? What are the benfits of using it?
+#### 1.1.3.1. What is Python? What are the benfits of using it?
 Python is a high-level, interpreted, dynamically typed, general-purpose programming language. It can be used to build almost any type of application with the right tools/libraries. Python supports objects, modules, threads, exception-handling, and automatic memory management which help in modelling real-world problems and building applications to solve these problems.<br>
 Benefits of using Python:
 * Python is a general-purpose programming language that has a simple, easy-to-learn syntax that emphasizes readability and therefore reduces the cost of program maintenance. Moreover, the language is capable of scripting, is completely open-source, and supports third-party packages encouraging modularity and code reuse.
 * Its high-level data structures, combined with dynamic typing and dynamic binding, attract a huge community of developers for Rapid Application Development and deployment.
 
-#### Explain Interpreted Programming Language.
+#### 1.1.3.2. Explain Interpreted Programming Language.
 An interpreted language executes its statements line by line. Languages such as Python, Javascript, R, PHP, and Ruby are prime examples of Interpreted languages. Programs written in an interpreted language runs directly from the source code, with no intermediary compilation step.
 
-#### What is a dynamically typed language?
+#### 1.1.3.3. What is a dynamically typed language?
 Typing refers to type-checking in programming languages. In a strongly-typed language, such as Python, "1" + 2 will result in a type error since these languages don't allow for "type-coercion" (implicit conversion of data types). On the other hand, a weakly-typed language, such as Javascript, will simply output "12" as a result.<br>
 Type-checking can be done at two stages:
 * Static - Data Types are checked before execution.
@@ -3696,23 +3696,23 @@ Type-checking can be done at two stages:
 
 Python is an interpreted language, executes each statement line by line and thus type-checking is done on the fly, during execution. Hence, Python is a Dynamically Typed Language.
 
-#### What is PEP 8 and why is it important?
+#### 1.1.3.4. What is PEP 8 and why is it important?
 PEP stands for **Python Enhancement Proposal**. A PEP is an official design document providing information to the Python community, or describing a new feature for Python or its processes. PEP 8 is especially important since it documents the style guidelines for Python Code. Apparently contributing to the Python open-source community requires you to follow these style guidelines sincerely and strictly.
 
-#### What is Scope in Python?
+#### 1.1.3.5. What is Scope in Python?
 Every object in Python functions within a scope. A scope is a block of code where an object in Python remains relevant. Namespaces uniquely identify all the objects inside a program. However, these namespaces also have a scope defined for them where you could use their objects without any prefix. A few examples of scope created during code execution in Python are as follows:
 * A **Local Scope** refers to the local objects available in the current function.
 * A **Global Scope** refers to the objects available throughout the code execution since their inception.
 * A **Module-level Scope** refers to the global objects of the current module accessible in the program.
 * An **Outermost Scope** refers to all the built-in names callable in the program. The objects in this scope are searched last to find the name referenced.
 
-#### What is the difference between Mutable and Immutable Data Types in Pyhon?
+#### 1.1.3.6. What is the difference between Mutable and Immutable Data Types in Pyhon?
 Mutable data types can be edited i.e., they can change at runtime. Eg – List, Dictionary, etc. Immutable data types can not be edited i.e., they can not change at runtime. Eg – String, Tuple, Byte and all single value built-in types.
 
-#### What are lists and tuples? What is the key difference between the two?
+#### 1.1.3.7. What are lists and tuples? What is the key difference between the two?
 Lists and Tuples are both sequence data types that can store a collection of objects in Python. The objects stored in both sequences can have different data types. Lists are represented with square brackets ['sara', 6, 0.19], while tuples are represented with parantheses ('ansh', 5, 0.97). The key difference between the two is that while lists are mutable, tuples on the other hand are immutable objects. This means that lists can be modified, appended or sliced on the go but tuples remain constant and cannot be modified in any manner.
 
-#### What are the common built-in data types in Python?
+#### 1.1.3.8. What are the common built-in data types in Python?
 There are several built-in data types in Python. Although, Python doesn't require data types to be defined explicitly during variable declarations type errors are likely to occur if the knowledge of data types and their compatibility with each other are neglected. Python provides ``type()`` and ``isinstance()`` functions to check the type of these variables. These data types can be grouped into the following categories:
 * **None Type:** represents the null values in Python. Boolean equality operation can be performed using these NoneType objects.
 * **Numeric Types:** there are three distinct numeric types - **integers**, **floating-point numbers**, and **complex numbers**. Additionally, **booleans** are a sub-type of integers.
@@ -3722,20 +3722,20 @@ There are several built-in data types in Python. Although, Python doesn't requir
 * **Modules:** is an additional built-in type supported by the Python Interpreter. It supports one special operation, i.e., attribute access: ``mymod.myobj``, where ``mymod`` is a module and ``myobj`` references a name defined in m's symbol table. The module's symbol table resides in a very special attribute of the module __dict__, but direct assignment to this module is neither possible nor recommended.
 * **Callable Types:** Callable types are the types to which function call can be applied. They can be **user-defined functions**, **instance methods**, **generator functions** and some other built-in functions, methods and classes.
  
-#### What is ``pass`` in Python?
+#### 1.1.3.9. What is ``pass`` in Python?
 The ``pass`` keyword represents a null operation in Python. It is generally used for the purpose of filling up empty blocks of code which may execute during runtime but has yet to be written.
 
-#### How are arguments passed by value or by reference in Python?
+#### 1.1.3.10. How are arguments passed by value or by reference in Python?
 Everything in Python is an object and all variables hold references to the objects. The reference values are according to the functions; as a result, you cannot change the value of the references. However, you can change the objects if it is mutable.
 
-#### What is List Comprehension? Give an Example.
+#### 1.1.3.11. What is List Comprehension? Give an Example.
 List comprehension is a syntax construction to ease the creation of a list based on existing iterable.<br>
 For Example:<br>
 ```python
 my_list = [i for i in range(1, 10)]
 ```
 
-#### What is a lambda function?
+#### 1.1.3.12. What is a lambda function?
 A lambda function is an anonymous function. This function can have any number of parameters but, can have just one statement. <br>
 For Example:
 ```python
@@ -3743,7 +3743,7 @@ a = lambda x, y : x*y
 print(a(7, 19))
 ```
 
-#### What is the difference between / and // in Python?
+#### 1.1.3.13. What is the difference between / and // in Python?
 ``/`` represents precise division (result is a floating point number) whereas ``//`` represents floor division (result is an integer).<br>
 For Example:
 ```python
@@ -3751,11 +3751,11 @@ For Example:
 5/2 = 2.5
 ```
 
-#### How is Exceptional handling done in Python?
+#### 1.1.3.14. How is Exceptional handling done in Python?
 There are 3 main keywords i.e. ``try``, ``except``, and ``finally`` which are used to catch exceptions and handle the recovering mechanism accordingly. ``try`` is the block of a code that is monitored for errors. Except block gets executed when an error occurs.<br>
 The beauty of the ``final`` block is to execute the code after trying for an error. This block gets executed irrespective of whether an error occurred or not. ``final`` block is used to do the required cleanup activities of objects/variables.
 
-#### What is swapcase function in Python?
+#### 1.1.3.15. What is swapcase function in Python?
 It is a string’s function that converts all uppercase characters into lowercase and vice versa. It is used to alter the existing case of the string. This method creates a copy of the string which contains all the characters in the swap case. <br> 
 For Example:
 ```python
@@ -3763,42 +3763,42 @@ string = "PythonRules"
 string.swapcase() ---> "pYTHONrULES"
 ```
 
-#### Can we pass a function as an argument in Python?
+#### 1.1.3.16. Can we pass a function as an argument in Python?
 Yes, Several arguments can be passed to a function, including objects, variables (of the same or distinct data types), and functions. Functions can be passed as parameters to other functions because they are objects. Higher-order functions are functions that can take other functions as arguments.
 
-#### What are ``*args`` and ``*kwargs``?
+#### 1.1.3.17. What are ``*args`` and ``*kwargs``?
 To pass a variable number of arguments to a function in Python, use the special syntax ``*args`` and ``**kwargs`` in the function specification. It is used to pass a variable-length, keyword-free argument list. By using the *, the variable we associate with the * becomes iterable, allowing you to do operations on it such as iterating over it and using higher-order operations like map and filter.
 
-#### Is Indentation Required in Python?
+#### 1.1.3.18. Is Indentation Required in Python?
 Yes, indentation is required in Python. A Python interpreter can be informed that a group of statements belongs to a specific block of code by using Python indentation. Indentations make the code easy to read for developers in all programming languages but in Python, it is very important to indent the code in a specific order.
 
-#### What is docstring in Python?
+#### 1.1.3.19. What is docstring in Python?
 Python documentation strings (or docstrings) provide a convenient way of associating documentation with Python modules, functions, classes, and methods.
 * **Declaring Docstrings:** The docstrings are declared using ”’triple single quotes”’ or “””triple double quotes””” just below the class, method, or function declaration. All functions should have a docstring.
 * **Accessing Docstrings:** The docstrings can be accessed using the ``__doc__`` method of the object or using the help function.
 
-#### What is a ``break``, ``continue``, and ``pass`` in Python? 
+#### 1.1.3.20. What is a ``break``, ``continue``, and ``pass`` in Python? 
 The ``break`` statement is used to terminate the loop or statement in which it is present. After that, the control will pass to the statements that are present after the break statement, if available.<br>
 ``continue`` is also a loop control statement just like the break statement. ``continue`` statement is opposite to that of the break statement, instead of terminating the loop, it forces to execute the next iteration of the loop.<br>
 ``pass`` means performing no operation or in other words, it is a placeholder in the compound statement, where there should be a blank left and nothing has to be written there.
 
-#### How do you floor a number in Python?
+#### 1.1.3.21. How do you floor a number in Python?
 The Python math module includes a method that can be used to calculate the floor of a number.
 * ``floor()`` method in Python returns the floor of x i.e., the largest integer not greater than x. 
 * Also, The method ``ceil(x)`` in Python returns a ceiling value of x i.e., the smallest integer greater than or equal to x.
 
-#### What are global, protected and private attributes in Python?
+#### 1.1.3.22. What are global, protected and private attributes in Python?
 * **Global** variables are public variables that are defined in the global scope. To use the variable in the global scope inside a function, we use the global keyword.
 * **Protected** attributes are attributes defined with an underscore prefixed to their identifier eg. _sara. They can still be accessed and modified from outside the class they are defined in but a responsible developer should refrain from doing so.
 * **Private** attributes are attributes with double underscore prefixed to their identifier eg. __ansh. They cannot be accessed or modified from the outside directly and will result in an AttributeError if such an attempt is made.
 
-#### What is the use of ``self`` in Python?
+#### 1.1.3.23. What is the use of ``self`` in Python?
 ``self`` is used to represent the instance of the class. With this keyword, you can access the attributes and methods of an object inside the class definition in Python.
 
-#### What is ``__init__`` in Python?
+#### 1.1.3.24. What is ``__init__`` in Python?
 ``__init__`` is a contructor method in Python and is automatically called to allocate memory when a new object/instance is created. All classes have a ``__init__`` method associated with them. It helps in distinguishing methods and attributes of a class from local variables.
 
-#### What is slicing in Python?
+#### 1.1.3.25. What is slicing in Python?
 * As the name suggests, ‘slicing’ is taking parts of a container.
 * Syntax for slicing is ``[start : stop : step]``
 * ``start`` is the starting index from where to slice a list or tuple
@@ -3807,7 +3807,7 @@ The Python math module includes a method that can be used to calculate the floor
 * Default value for start is 0, stop is number of items, step is 1.
 * Slicing can be done on strings, arrays, lists, and tuples.
 
-#### What is the difference between Python Arrays and Lists?
+#### 1.1.3.26. What is the difference between Python Arrays and Lists?
 * **Arrays** in Python can only contain elements of same data types i.e., data type of array should be homogeneous. It is a thin wrapper around C language arrays and consumes far less memory than lists.
 * **Lists** in Python can contain elements of different data types i.e., data type of lists can be heterogeneous. It has the disadvantage of consuming large memory.<br>
 Example:
@@ -3822,11 +3822,11 @@ for i in a:
    print(i, end=' ')    #OUTPUT: 1 2 string
 ```
 
-#### How is memory managed in Python?
+#### 1.1.3.27. How is memory managed in Python?
 * Memory management in Python is handled by the Python Memory Manager. The memory allocated by the manager is in form of a private heap space dedicated to Python. All Python objects are stored in this heap and being private, it is inaccessible to the programmer. Though, python does provide some core API functions to work upon the private heap space.
 * Additionally, Python has an in-built garbage collection to recycle the unused memory for the private heap space.
 
-#### What are Python namespaces? Why are they used?
+#### 1.1.3.28. What are Python namespaces? Why are they used?
 A namespace in Python ensures that object names in a program are unique and can be used without any conflict. Python implements these namespaces as dictionaries with 'name as key' mapped to a corresponding 'object as value'. This allows for multiple namespaces to use the same name and map it to a separate object. A few examples of namespaces are as follows:
 * **Local Namespace** includes local names inside a function. The namespace is temporarily created for a function call and gets cleared when the function returns.
 * **Global Namespace** includes names from various imported packages/ modules that are being used in the current project. This namespace is created when the package is imported in the script and lasts until the execution of the script.
@@ -3834,7 +3834,7 @@ A namespace in Python ensures that object names in a program are unique and can 
 
 The lifecycle of a namespace depends upon the scope of objects they are mapped to. If the scope of an object ends, the lifecycle of that namespace comes to an end. Hence, it isn't possible to access inner namespace objects from an outer namespace.
 
-#### What are Decorators in Python?
+#### 1.1.3.29. What are Decorators in Python?
 Decorators in Python are essentially functions that add functionality to an existing function in Python without changing the structure of the function itself. They are represented the ``@decorator_name`` in Python and are called in a bottom-up fashion. <br>
 For example:
 ```python
@@ -3873,7 +3873,7 @@ def say_hello(name1, name2):
    return 'Hello ' + name1 + '! Hello ' + name2 + '!'
 say_hello('sara', 'ansh')   # output => 'Hello Sara! Hello Ansh!'
 ```
-#### How do you copy an object in Python?
+#### 1.1.3.30. How do you copy an object in Python?
 In Python, the assignment statement (``=`` operator) does not copy objects. Instead, it creates a binding between the existing object and the target variable name. To create copies of an object in Python, we need to use the copy module. Moreover, there are two ways of creating copies for the given object using the ``copy`` module:
 * **Shallow Copy** is a bit-wise copy of an object. The copied object created has an exact copy of the values in the original object. If either of the values is a reference to other objects, just the reference addresses for the same are copied.
 * **Deep Copy** copies all values recursively from source to target object, i.e. it even duplicates the objects referenced by the source object.<br>
@@ -3895,10 +3895,10 @@ list_3    # output => [1, 2, [3, 5, 6, 7], 8]
 list_1    # output => [1, 2, [3, 5, 6], 4]
 ```
 
-#### What is pickling and unpickling?
+#### 1.1.3.31. What is pickling and unpickling?
 Python library ``pickle`` offers a feature - serialization out of the box. Serializing an object refers to transforming it into a format that can be stored, so as to be able to deserialize it, later on, to obtain the original object. Here, the pickle module comes into play.
 
-#### What are Generators in Python?
+#### 1.1.3.32. What are Generators in Python?
 Generators are functions that return an iterable collection of items, one at a time, in a set manner. Generators, in general, are used to create iterators with a different approach. They employ the use of ´´yield´´ keyword rather than ´´return`` to return a generator object.<br>
 Let's try and build a generator for fibonacci numbers:
 ```python
@@ -3925,18 +3925,18 @@ for i in fib(10):
    print(i)    # output => 0 1 1 2 3 5 8
 ```
 
-#### What is the difference between .py and .pyc files?
+#### 1.1.3.33. What is the difference between .py and .pyc files?
 * .py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program. We get bytecode after compilation of .py file (source code). .pyc files are not created for all the files that you run. It is only created for the files that you import.
 * Before executing a python program python interpreter checks for the compiled files. If the file is present, the virtual machine executes it. If not found, it checks for .py file. If found, compiles it to .pyc file and then python virtual machine executes it.
 * Having .pyc file saves you the compilation time.
 
-#### How Python is interpreted?
+#### 1.1.3.34. How Python is interpreted?
 * Python as a language is not interpreted or compiled. Interpreted or compiled is the property of the implementation. Python is a bytecode(set of interpreter readable instructions) interpreted generally.
 * Source code is a file with .py extension.
 * Python compiles the source code to a set of instructions for a virtual machine. The Python interpreter is an implementation of that virtual machine. This intermediate format is called “bytecode”.
 * .py source code is first compiled to give .pyc which is bytecode. This bytecode can be then interpreted by the official CPython or JIT(Just in Time compiler) compiled by PyPy.
 
-#### What are iterators in Python?
+#### 1.1.3.35. What are iterators in Python?
 * An iterator is an object.
 * It remembers its state i.e., where it is during iteration (see code below to see how)
 * ``__iter__()`` method initializes an iterator.
@@ -3969,7 +3969,7 @@ print(next(it))
 #StopIteration
 ```
 
-#### What are negative indexes and why are they used?
+#### 1.1.3.36. What are negative indexes and why are they used?
 * Negative indexes are the indexes from the end of the list or tuple or string.
 * Arr[-1] means the last element of array Arr[]. <br>
 
@@ -3982,10 +3982,10 @@ print(arr[-1]) #output 6
 print(arr[-2]) #output 5
 ```
 
-#### Which sorting technique is used by ``sort()`` and ``sorted()`` functions of python?
+#### 1.1.3.37. Which sorting technique is used by ``sort()`` and ``sorted()`` functions of python?
 Python uses the TimSort algorithm for sorting. It’s a stable sorting whose worst case is O(N log N). It’s a hybrid sorting algorithm, derived from MergeSort and InsertionSort, designed to perform well on many kinds of real-world data.
 
-#### How do you create a class in Python?
+#### 1.1.3.38. How do you create a class in Python?
 To create a class in python, we use the keyword “class” as shown in the example below:
 ```python
 class Employee:
@@ -4014,7 +4014,7 @@ The ``self`` parameter has to be the first parameter of any method defined insid
 emp_1.introduce()
 ```
 
-#### How does inheritance work in python? Explain it with an example.
+#### 1.1.3.39. How does inheritance work in python? Explain it with an example.
 Inheritance gives the power to a class to access all attributes and methods of another class. It aids in code reusability and helps the developer to maintain applications without redundant code. The class inheriting from another class is a child class or also called a derived class. The class from which a child class derives the members are called parent class or superclass.<br>
 Python supports different kinds of inheritance, they are:
 * **Single Inheritance:** Child class derives members of one parent class.
@@ -4113,7 +4113,7 @@ obj2.a_func()
 obj2.c_func()    #child 2 method
 ```
 
-#### How do you access parent members in the child class?
+#### 1.1.3.40. How do you access parent members in the child class?
 Following are the ways using which you can access parent class members within a child class:
 * **By using Parent class name:** You can use the name of the parent class to access the attributes as shown in the example below:
 ```python
@@ -4161,31 +4161,31 @@ obj = Child("Interviewbit", 6)
 obj.display()
 ```
 
-#### Are access specifiers used in python?
+#### 1.1.3.41. Are access specifiers used in python?
 Python does not make use of access specifiers specifically like private, public, protected, etc. However, it does not derive this from any variables. It has the concept of imitating the behaviour of variables by making use of a single (protected) or double underscore (private) as prefixed to the variable names. By default, the variables without prefixed underscores are public.
 
-#### Is it possible to call parent class without its instance creation?
+#### 1.1.3.42. Is it possible to call parent class without its instance creation?
 Yes, it is possible if the base class is instantiated by other child classes or if the base class is a static method.
 
-#### How is an empty class created in python?
+#### 1.1.3.43. How is an empty class created in python?
 An empty class does not have any members defined in it. It is created by using the ``pass`` keyword (the pass command does nothing in python). We can create objects for this class outside the class.
 
-#### What is Polymorphism in Python?
+#### 1.1.3.44. What is Polymorphism in Python?
 Polymorphism means the ability to take multiple forms. So, for instance, if the parent class has a method named ABC then the child class also can have a method with the same name ABC having its own parameters and variables. Python allows polymorphism.
 
-#### Differentiate between new and override modifiers.
+#### 1.1.3.45. Differentiate between new and override modifiers.
 The ``new`` modifier is used to instruct the compiler to use the new implementation and not the base class function. The ``override`` modifier is useful for overriding a base class function inside the child class.
 
-#### How will you check if a class is a child of another class?
+#### 1.1.3.46. How will you check if a class is a child of another class?
 This is done by using a method called ``issubclass()`` provided by python. The method tells us if any class is a child of another class by returning true or false accordingly. 
 
-#### Define encapsulation in Python?
+#### 1.1.3.47. Define encapsulation in Python?
 Encapsulation means binding the code and the data together. A Python class is an example of encapsulation.
 
-#### How do you do data abstraction in Python?
+#### 1.1.3.48. How do you do data abstraction in Python?
 Data Abstraction is providing only the required details and hides the implementation from the world. It can be achieved in Python by using interfaces and abstract classes.
 
-#### Give an example of Multithreading with Threads Synchronization in Python.
+#### 1.1.3.49. Give an example of Multithreading with Threads Synchronization in Python.
 The following code gives an example of threads synchronaization in Python:
 ```python
 
@@ -4249,7 +4249,7 @@ Iteration 7: x = 200000<br>
 Iteration 8: x = 200000<br>
 Iteration 9: x = 200000<br>
 
-#### Give an example of Threads Synchronization with Condition Variables.
+#### 1.1.3.50. Give an example of Threads Synchronization with Condition Variables.
 Consider the following example:
 ```python
 import threading
@@ -4296,7 +4296,7 @@ if __name__ == '__main__':
 (consumer1) Consumer consumed the resource<br>
 (consumer2) Consumer consumed the resource<br>
 
-#### Give an example of using ThreadPoolExecuter in Python.
+#### 1.1.3.51. Give an example of using ThreadPoolExecuter in Python.
 Consider the following:
 ```python
 import concurrent.futures
@@ -4327,7 +4327,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
             print('%r page is %d bytes' % (url, len(data)))
 ```
 
-#### Give an example of using ProcessPoolExecuter.
+#### 1.1.3.52. Give an example of using ProcessPoolExecuter.
 The following code describes such a use case:
 ```python
 import concurrent.futures
@@ -4364,7 +4364,7 @@ if __name__ == '__main__':
     main()
 ```
 
-#### Explain the difference between Thread and Process in Python.
+#### 1.1.3.53. Explain the difference between Thread and Process in Python.
 A **Process** is an instance of a program, e.g. a Python interpreter. They are independent from each other and do not share the same memory.<br>
 **Key facts:** - A new process is started independently from the first process - Takes advantage of multiple CPUs and cores - Separate memory space - Memory is not shared between processes - One GIL (Global interpreter lock) for each process, i.e. avoids GIL limitation - Great for CPU-bound processing - Child processes are interruptable/killable
 * Starting a process is slower that starting a thread
@@ -4378,14 +4378,14 @@ A **Thread** is an entity within a process that can be scheduled for execution (
 * Not interruptible/killable -> be careful with memory leaks.
 * Increased potential for race conditions.
 
-#### What is the Python Global Interpreter Lock (GIL)?
+#### 1.1.3.54. What is the Python Global Interpreter Lock (GIL)?
 Python Global Interpreter Lock (GIL) is a type of process lock which is used by python whenever it deals with processes. Generally, Python only uses only one thread to execute the set of written statements. This means that in python only one thread will be executed at a time. The performance of the single-threaded process and the multi-threaded process will be the same in python and this is because of GIL in python. We can not achieve multithreading in python because we have global interpreter lock which restricts the threads and works as a single thread.
 
 
 ---
 ---
 
-### Interview questions for algorithms and data structures.
+### 1.1.4. Interview questions for algorithms and data structures.
 **Sources:**<br>
 www.wikipedia.com <br>
 www.geeksforgeeks.org <br>
@@ -4395,10 +4395,10 @@ www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm <br>
 www.masaischool.com/blog/tree-data-structure-types-operations-applications/ <br>
 www.vinayakd.com/articles/delete-n-ary-tree-node <br>
 
-#### What is a Data Structure?
+#### 1.1.4.1. What is a Data Structure?
 In computer science, a data structure is a **data organization**, and storage format that is usually chosen **for efficient access** to data.<br>
 
-#### Describe the types of Data Structures?
+#### 1.1.4.2. Describe the types of Data Structures?
 * **Array** - an array is a number of elements in a specific order, typically all of the same type. Elements are accessed using an integer index to specify which element is required.<br>
 * **List** - a linked list is a linear collection of data elements of any type, called nodes, where each node has itself a value, and points to the next node in the linked list. The principal advantage of a linked list over an array is that values can always be efficiently inserted and removed without relocating the rest of the list. Certain other operations, such as random access to a certain element, are however slower on lists than on arrays.<br>
 * **Record** - a record (also **called tuple** or **struct**) is an **aggregate data structure**. A record is a value that contains other values, typically in fixed number and sequence and typically indexed by names. The elements of records are usually called fields or members. In the context of object-oriented programming, records are known as plain old data structures to distinguish them from objects. <br>
@@ -4408,21 +4408,21 @@ In computer science, a data structure is a **data organization**, and storage fo
 * **Trees** - represent a hierarchical organization of elements. A tree consists of nodes connected by edges, with one node being the root and all other nodes forming subtrees. **Binary trees** (particularly heaps), **AVL trees**, and **B-trees** are some popular types of trees. They enable efficient and optimal searching, sorting, and hierarchical representation of data.
 * **Trie** - also known as a **prefix tree**, is a specialized tree data structure used for the efficient retrieval of strings. Tries store characters of a string as nodes, with each edge representing a character. They are particularly useful in text processing scenarios like autocomplete, spell-checking, and dictionary implementations. Tries enable fast searching and prefix-based operations on strings.<br>
 
-#### What is a Linear Data Structure? Name a few examples.
+#### 1.1.4.3. What is a Linear Data Structure? Name a few examples.
 A data structure is linear if all its elements or data items are arranged in a sequence or a linear order. The elements are stored in a **non-hierarchical way** so that each item has successors and predecessors except the first and last element in the list.
 Examples of linear data structures are **Array**, **Stack**, **Queue**, and **Linked List**.<br>
 
-#### How are the elements of a 2D Array stored in the memory.
+#### 1.1.4.4. How are the elements of a 2D Array stored in the memory.
 * **Row-Major Order**: In row-major ordering, the first row of a 2D array is entirely stored in memory, followed by the second row of the array, and so on until the final row.
 * **Column-Major Order**: In column-major ordering, the first column of the array is entirely saved in memory, followed by the second row of the array, and so on until the last column of the array is fully recorded in the memory.
 
-#### What are some use cases for Row-Major and Column-Major storing of 2D Arrays?
+#### 1.1.4.5. What are some use cases for Row-Major and Column-Major storing of 2D Arrays?
 **Row-Major** stored arrays are more efficient for row-wise access like in **Image Processing**. **Column-Major** stored arrays are more efficient for column-wise access like for **Matrix Multiplication**.<br>
 
-#### How can you possibly choose between Row-Major and Column-Major 2D Arrays storing implementations?
+#### 1.1.4.6. How can you possibly choose between Row-Major and Column-Major 2D Arrays storing implementations?
 By choosing a **programming language**. **Row-Major** is implemented in languages like C/C++ and **Column-Major** - in Fortran.
 
-#### What is a Linked List Data Structure?
+#### 1.1.4.7. What is a Linked List Data Structure?
 It’s a both **linear and non-linear Data Structure**, depending on application, or a sequence of data objects where **elements are not stored in adjacent memory locations**. The elements are linked using pointers to form a chain. Each element is a separate object, called a node.  Each node has two items: a data field and a reference to the next node. The entry point in a linked list is called the head. Where the list is empty, the head is a null reference and the last node has a reference to null. A linked list is a dynamic data structure, where the number of nodes is not fixed, and the list has the ability to grow and shrink on demand.
 It is applied in cases where:
 * We deal with an unknown number of objects or don’t know how many items are in the list
@@ -4432,10 +4432,10 @@ It is applied in cases where:
 * We need to insert items in the middle of the list as in a priority queue
 <br>
 
-#### Are Linked Lists considered Linear or Non-linear Data Structures?
+#### 1.1.4.8. Are Linked Lists considered Linear or Non-linear Data Structures?
 Linked lists are considered both linear and non-linear data structures depending upon the application they are used for. When used for access strategies, it is considered as a linear data-structure. When used for data storage, it is considered a non-linear data structure.
 
-#### What are the advantages of a Linked List over an Array? In which scenarios do we use Linked List and when Array?
+#### 1.1.4.9. What are the advantages of a Linked List over an Array? In which scenarios do we use Linked List and when Array?
 Advantages of a linked list over an array are:
 * **Insertion and Deletion**<br>
 Insertion and deletion of nodes is an easier process, as we only update the address present in the next pointer of a node. It’s expensive to do the same in an array as the room has to be created for the new elements and existing elements must be shifted.<br>
@@ -4458,40 +4458,40 @@ Data structures like stack and queues are more easily implemented using a linked
     * When memory is a concern; filled arrays use less memory than linked lists, as each element in the array is the data but each linked list node requires the data as well as one or more pointers to the other elements in the linked list
 <br>
 
-#### What is a Doubly-Linked List?
+#### 1.1.4.10. What is a Doubly-Linked List?
 It is a complex type (double-ended LL) of a linked list in which a node has two links, one that connects to the next node in the sequence and another that connects to the previous node. This allows traversal across the data elements in both directions.<br>
 
-#### What are Dynamic Data Structures? Name a few.
+#### 1.1.4.11. What are Dynamic Data Structures? Name a few.
 They are collections of data in memory that expand and contract to grow or shrink in size as a program runs. This enables the programmer to control exactly how much memory is to be utilized. Examples are the **dynamic array**, **linked list**, **stack**, **queue**, and **heap**.<br>
 
-#### What is a Stack?
+#### 1.1.4.12. What is a Stack?
 A stack is an abstract data type that specifies a linear data structure, as in a real physical stack or piles where you can only take the top item off the stack in order to remove things. Thus, insertion (push) and deletion (pop) of items take place only at one end called top of the stack, with a particular order: LIFO (Last In First Out) or FILO (First In Last Out).
 
-#### Where are Stacks used?
+#### 1.1.4.13. Where are Stacks used?
 * Expression, evaluation, or conversion of evaluating prefix, postfix, and infix expressions
 * Syntax parsing
 * String reversal
 * Parenthesis checking
 * Backtracking
 
-#### What are the operations that can be performed on a Stack?
+#### 1.1.4.14. What are the operations that can be performed on a Stack?
 A stack may perform three fundamental operations:
 * PUSH: The push action inserts a new element into the stack. The new feature is placed at the top of the stack. 
 * POP: The pop operation is performed to remove the stack's topmost element.
 * PEEK: A peek action returns the value of the stack's topmost element without removing it from the stack.
 
-#### What is a queue Data Structure?
+#### 1.1.4.15. What is a queue Data Structure?
 A queue is an abstract data type that specifies a linear data structure or an ordered list,  using the First In First Out (FIFO) operation to access elements. Insert operations can be performed only at one end called REAR and delete operations can be performed only at the other end called FRONT.
 
-#### List some applications of the Queue Data Structure.
+#### 1.1.4.16. List some applications of the Queue Data Structure.
 To prioritize jobs as in the following scenarios:
 * As waiting lists for a single shared resource (like printer, CPU, call center systems).
 * In the asynchronous transfer of data (file IO, sockets).
 
-#### What is a Dequeue?
+#### 1.1.4.17. What is a Dequeue?
 It is a double-ended queue, or a data structure, where the elements can be inserted or deleted at both ends (FRONT and REAR).
 
-#### What operations can be performed on Queues?
+#### 1.1.4.18. What operations can be performed on Queues?
 * enqueue() adds an element to the end of the queue
 * dequeue() removes an element from the front of the queue
 * init() is used for initializing the queue
@@ -4499,16 +4499,16 @@ It is a double-ended queue, or a data structure, where the elements can be inser
 * The front is used to get the value of the first data item but does not remove it
 * The rear is used to get the last item from a queue
 
-#### Define the Graph Data Structure.
+#### 1.1.4.19. Define the Graph Data Structure.
 It is a type of non-linear data structure that consists of vertices or nodes connected by edges or arcs to enable storage or retrieval of data. Edges may be directed or undirected.
 
-#### What are the applications of Graph Data Structures?
+#### 1.1.4.20. What are the applications of Graph Data Structures?
 * Transport grids where stations are represented as vertices and routes as the edges of the graph
 * Utility graphs of power or water, where vertices are connection points and edge the wires or pipes connecting them
 * Social network graphs to determine the flow of information and hotspots (edges and vertices)
 * Neural networks where vertices represent neurons and edge the synapses between them
 
-#### List the types of Trees?
+#### 1.1.4.21. List the types of Trees?
 * **The General Tree** <br>
 A tree is referred to as a generic tree if its hierarchy is not constrained. In the General Tree, each node can have an endless number of offspring, and all other trees are subsets of the tree.<br>
 
@@ -4533,40 +4533,40 @@ An octree is a tree data structure in which each internal node has exactly eight
 * **Heap** <br>
 A heap is a tree-based data structure that satisfies the heap property: in a max heap, for any given node C, if P is a parent node of C, then the key (the value) of P is greater than or equal to the key of C. In a min heap, the key of P is less than or equal to the key of C.
 
-#### How is a Node Height in the Tree Data Structure determined?
+#### 1.1.4.22. How is a Node Height in the Tree Data Structure determined?
 The height of a node is the number of edges from that node to the leaf node (the lowermost node in the hierarchy).
 
-#### How is a Node Depth in the Tree Data Structure determined?
+#### 1.1.4.23. How is a Node Depth in the Tree Data Structure determined?
 The depth of a node is the number of edges it takes from the root (the uppermost node in the hierarchy) node to that particular node.
 
-#### What is a Node Degree in the Tree Data Structure?
+#### 1.1.4.24. What is a Node Degree in the Tree Data Structure?
 The total number of branches coming out of a node is considered to be the degree of that node.
 
-#### What is a Forest in relation with the Tree Data Structure?
+#### 1.1.4.25. What is a Forest in relation with the Tree Data Structure?
 A collection of disconnected trees is called a forest. If you cut the root of a tree, the disjoint trees hence formed make up a forest. 
 
-#### How is a Balanced Binary Tree determined?
+#### 1.1.4.26. How is a Balanced Binary Tree determined?
 A balanced binary tree, also referred to as a height-balanced binary tree, is defined as a binary tree in which the height of the left and right subtree of any node differ by not more than 1.
 
-#### What is a Self-balancing Binary Tree?
+#### 1.1.4.27. What is a Self-balancing Binary Tree?
 Self-Balancing Binary Search Trees are height-balanced binary search trees that automatically keep the height as small as possible when insertion and deletion operations are performed on the tree. Most prominent examples are AVL Trees and Red-Black Trees.
 
-#### What is a B-Tree Data Structure?
+#### 1.1.4.28. What is a B-Tree Data Structure?
 A B-tree is a sort of self-balancing search tree whereby each node could have more than two children and hold multiple keys.
 
-#### Explain what Jagged Array is?
+#### 1.1.4.29. Explain what Jagged Array is?
 It is an array whose elements themselves are arrays and may be of different dimensions and sizes.
 
-#### What is an Algorithm?
+#### 1.1.4.30. What is an Algorithm?
 An algorithm is a step by step method of solving a problem or manipulating data. It defines a set of instructions to be executed in a certain order to get the desired output.
 
-#### What is an asymptotic analysis of an algorithm?
+#### 1.1.4.31. What is an asymptotic analysis of an algorithm?
 Asymptotic analysis is the technique of determining an algorithm's running time in mathematical units to determine the program's limits, also known as "run-time performance." The purpose is to identify the best case, worst case, and average-case times for completing a particular activity.
 
-#### What are Asymptotic Notations?
+#### 1.1.4.32. What are Asymptotic Notations?
 Asymptotic Notation represents an algorithm's running time - how long an algorithm takes with a given input, n. Big O, big Theta, and big Omega are the three distinct notations. When the running time is the same in all circumstances, big-Theta is used, big-O for the worst-case running time, and big-Omega for the best case running time.
 
-#### What are the common algorithmic runtimes in big O notation?
+#### 1.1.4.33. What are the common algorithmic runtimes in big O notation?
 * **Constant** - O(1) (Insertion in a linked list)
 * **Logarithmic** - O(log(N)) (Binary Search)
 * **Linear** - O(N) (Linear Search)
@@ -4574,18 +4574,18 @@ Asymptotic Notation represents an algorithm's running time - how long an algorit
 * **Exponential** - O(b^N) (Fibonacci series (each element is a sum of previous two) without Dynamic Programming, (O(N) with dynamic programming))
 * **Factorial** - O(N!) (Generation of all possible permutations of N objects)
 
-#### What are basic operations on Arrays?
+#### 1.1.4.34. What are basic operations on Arrays?
 * **Traversing** - looping through each element in the array and processing each element one at a time.<br>
 * **Insertion** - the process of adding new elements into an existing array. This can be done by providing an index for where the insertion should occur and then shifting other elements in the array to make space for the insertion.<br>
 * **Deletion** - the opposite of insertion and involves removing elements from an existing array. After deleting an element, all other elements in the array must be shifted to fill any gaps left from deletion.
 * **Searching** - process of identifying an element from within an array by comparing it to your desired value until you find a match. 
 * **Sorting** - process of arranging elements of an array in either ascending or descending order.
 
-#### What are the basic types of searching? Describe their worst case asymptotic behaviour.
+#### 1.1.4.35. What are the basic types of searching? Describe their worst case asymptotic behaviour.
 * **Linear Search** - compares each element one after another until a match is found, or all elements have been searched. It has O(n) time complexity, because in worst case the searched element is the last one, or there is no such elements and you go through whole array.
 * **Binary Search** - can be done in sorted arrays by comparing the middle element with the target and if they are not equal, the half where the target cannot lie is elemenated. The time complexity is O(log2(N)), because with each step you divide the number of elements N by 2, like N/2, N/4, N/8... until you reach 1. So N/2^k = 1 and thus k = log2(N).
 
-#### What are some common array sorting algorithms?
+#### 1.1.4.36. What are some common array sorting algorithms?
 * **PermutationSort** - most ineffective sorting algorithm. It works by generating permutations of an array and checking if it is in the right sorted order. The worst case time complexity is O(?) undefined, since it has no upper bound and could run forever.
 * **BubbleSort** - simple and easy to understand sorting algorithm. Consists of two loops. In the case of sorting in ascending order, the inner loop goes over elements and if an element is bigger than the next one, they are swapped. The outer loop repeats the procedure. The time complexity is O(N^2). Still too slow for real life problems.
 * **QuickSort** - the fastest sorting algorithm based on divide and conquer principle. The key process in **QuickSort** is a **Partition**. The target of partitions is to place the pivot (any element can be chosen to be a pivot) at its correct position in the sorted array and put all smaller elements to the left of the pivot, and all greater elements to the right of the pivot. Partition is done recursively on each side of the pivot after the pivot is placed in its correct position and this finally sorts the array. The time complexity is O(N*log(N)).
@@ -4598,50 +4598,50 @@ Asymptotic Notation represents an algorithm's running time - how long an algorit
         * Heapify the remaining elements of the heap in top-down order.
     * The sorted array is obtained by reversing the order of the elements in the input array.
 
-#### Name the main properties of the basic operations on linked lists.
+#### 1.1.4.37. Name the main properties of the basic operations on linked lists.
 * **Traversing** - this operation has a time complexity of O(N), the same as for arrays. But one can not access elemnts of a linked list by direct indexing.
 * **Insertion** - this operation has a constant time complexity in contrast to arrays, where the worst case time complexity of the operation is O(N). It needs only to modify pointers in the chain at the place of insertion.
 * **Deletion** - the mechanism is the same as for **Insertion**.
 * **Search** - the same as for an Array in the case of an unsorted list, the worst case time complexity of searching an element is O(N). Binary search can be done only for sorted lists.
 * **Sort** - the same algorithms as for Arrays can be applied for linked lists with the time complexity depending on the chosen algorithm.
 
-#### How can one detect loops in a Linked Lists, name a few approaches?
+#### 1.1.4.38. How can one detect loops in a Linked Lists, name a few approaches?
 * **Floyd's Loop Detection Algorithm** - uses two pointers running over a linked list with different velocities, like first goes over each element, the second jumps over one element. If there are loops in the linked list, the two pointers will be equal at some point in the loop. Otherwise, the both reach the last element in the list. 
 * **Using Hashing** - traverse the linked list and save the calculated hash of each node's adress. If the current node's hash points to one of the previously calculated hashes, then the list has loops. If the last element is reached without pointing to the previous hashes, then there are no loops.
 
-#### Give some examples of basic Hash Functions that can be used in Hash Table Data Structure?
+#### 1.1.4.39. Give some examples of basic Hash Functions that can be used in Hash Table Data Structure?
 * **Division** - a modulus function that returns the division remainder is used in this case. A key value is divided by the table length and the remainder is used as an index in the table.
 * **Mid Square** - in this case the key value is squared and the middle N digits are extracted as a hash value.
 * **Digit Folding** - divide the key value into a number of parts, where each part has the same number of digits, except for the last one. Addition of the parts gives a hash number.
 * **Multiplication** - choose a constant value between 0 and 1. Multiply it with the key value. Extract the fractional part of the multiplication product. Multiply it by the hash table length and take the floor of the result. This produces the hash.
 
-#### How can one possibly avoid Hash Collisions in Hash Tables?
+#### 1.1.4.40. How can one possibly avoid Hash Collisions in Hash Tables?
 One could solve the problem of hash collisions by for example **Linear Probing**. If the calculated index in a hash table is already in use, one just searches for the next empty cell in the table.
 
-#### What are the basic operations on Hash Tables?
+#### 1.1.4.41. What are the basic operations on Hash Tables?
 * **Search** - compute the hash of a passed key and locate the value by hash code as an array index. If the element is not found use linear probing to get the element ahead.
 * **Insert** - compute the hash code of a passed key. Use cash code as an index in the array. If the cell is not empty use linear probing to get to the next empty cell.
 * **Delete** - the same as for previous operations hash code is used as an array index. If the cell is empty use linear probing to get to the element ahead. Once the lement is found store a dummy element there.
 
-#### What is a Bipartite Graph?
+#### 1.1.4.42. What is a Bipartite Graph?
 A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint and independent sets U and V, that is, every edge connects a vertex in U to one in V . Vertex sets U and V are usually called the parts of the graph. Equivalently, a bipartite graph is a graph that does not contain any odd-length cycles.
 
-#### What is a Weighted Graph?
+#### 1.1.4.43. What is a Weighted Graph?
 A graph whose vertices or edges have been assigned weights. A vertex-weighted graph has weights on its vertices and an edge-weighted graph has weights on its edges.
 
-#### What is a Directed Graph?
+#### 1.1.4.44. What is a Directed Graph?
 A directed graph (or digraph) is a graph that is made up of a set of vertices connected by directed edges, often called arcs.
 
-#### What is a Transpose of a Directed Graph?
+#### 1.1.4.45. What is a Transpose of a Directed Graph?
 Transpose of a directed graph G is another directed graph on the same set of vertices with all of the edges reversed compared to the orientation of the corresponding edges in G.
 
-#### What is a Strongly Connected Graph?
+#### 1.1.4.46. What is a Strongly Connected Graph?
 A directed graph is called strongly connected if there is a path from each vertex in the graph to every other vertex.
 
-#### What is a Minimum Spanning Tree of a Graph?
+#### 1.1.4.47. What is a Minimum Spanning Tree of a Graph?
 A minimum spanning tree (MST) is defined as a spanning tree that has the minimum weight among all the possible spanning trees. A **Spanning Tree** is a subset of the edges of the graph that forms a tree (acyclic) where every node of the graph is a part of the tree.
 
-#### Name the ways of representing and storing a Graph Data Structure.
+#### 1.1.4.48. Name the ways of representing and storing a Graph Data Structure.
 * **Adjacency Matrix** - in this method a graph is represented in the form of a 2D matrix, where rows and columns denote vertices. And the values in the cells describe reletionships (edges) between vertices.
 * **Adjacency List** - here a Graph is represented as a collection of linked lists. There is an array of pointers for all vertices. Each pointer shows connections to all other vertices in a chain that have edges to the reference vertice.
 When a Graph has a lot of edges, then it is better to represent it in the form of Adjacency Matrix.<br>
@@ -4653,23 +4653,23 @@ When a Graph has a lot of edges, then it is better to represent it in the form o
 |Removing Edge| O(1) | O(N) |
 |Initializing| O(N*N) | O(N) |
 
-#### What are the basic operations on Graphs?
+#### 1.1.4.49. What are the basic operations on Graphs?
 * **Insertion of Nodes/Edges** in the graph.
 * **Deletion of Nodes/Edges** in the graph.
 * **Searching on Graphs** – Search an entity in the graph.
 * **Traversal of Graphs** – Traversing all the nodes in the graph.
 
-#### List the ways of Traversing a Graph.
+#### 1.1.4.50. List the ways of Traversing a Graph.
 * **Breadth-First-Search** - is a graph traversal algorithm that explores all the vertices in a graph at the current depth before moving on to the vertices at the next depth level. It starts at a specified vertex and visits all its neighbors before moving on to the next level of neighbors. To avoid processing a node more than once, we divide the vertices into two categories: Visited and Not visited. It has time complexity of O(V+E), where V is a number of vertices and E - of edges.
 * **Depth-First-Search** - the algorithm starts selecting some arbitrary node as the root node and explores as far as possible along each branch before backtracking. To avoid processing a node more than once, we divide the vertices into two categories: Visited and Not visited. It has time complexity of O(V+E), where V is a number of vertices and E - of edges.
 
-#### List the main applications of Breadth-First-Search.
+#### 1.1.4.51. List the main applications of Breadth-First-Search.
 * **Shortest Path Finding** - Breadth-First-Search can be used to find the shortest path between two nodes in an unweighted graph. By keeping track of the parent of each node during the traversal, the shortest path can be reconstructed.
 * **Cycle Detection** - Breadth-First-Search can be used to detect cycles in a graph. If a node is visited twice during the traversal, it indicates the presence of a cycle.
 * **Connected Components** - Breadth-First-Search can be used to identify connected components in a graph. Each connected component is a set of nodes that can be reached from each other.
 * **Topological Sorting** - BFS can be used to perform topological sorting on a directed acyclic graph (DAG). Topological sorting arranges the nodes in a linear order such that for any edge (u, v), u appears before v in the order.
 
-#### List the main applications of Depth-First-Search.
+#### 1.1.4.52. List the main applications of Depth-First-Search.
 * **Detecting Cycle in a Graph** - A graph has a cycle if and only if we see a back edge during DFS. So we can run DFS for the graph and check for back edges.
 * **Path Finding** - Depth-First-Search can be used to find a path between any two vertices. Choose one vertex es a start. Use stack in order to save the path between starting and current vertex. As son as destination vertex is reached, return the path.
 * **Topological Sorting** - the same like for Breadth-First-Search, it is used mainly for jobs scheduling from the given dependencies among jobs. 
@@ -4677,7 +4677,7 @@ When a Graph has a lot of edges, then it is better to represent it in the form o
 * **Finding Strongly Connected Components in a Graph** - for example brute-force checking if the definition of a strongly connected component fits the vertices of a graph.
 * **Backtracking** - Depth-first search can be used in backtracking algorithms.
 
-#### What are the basic operations on Trees Data Structures?
+#### 1.1.4.53. What are the basic operations on Trees Data Structures?
 * **Traversal** - a hierarchical data structure like a tree can have different ways of traversal. Simplifying to a **Binary Tree**, one can distinguish between three types of traversal:
     1. **In-order** - it starts with visiting all the nodes in the left subtree. Then visits the root node. And finally, all the nodes in the right subtree are visited.
     2. **Pre-order** - first the root node is visited. Then all the nodes in the left subtree. And finally visits all the nodes in the right subtree.
@@ -4691,10 +4691,10 @@ When a Graph has a lot of edges, then it is better to represent it in the form o
     3. Has more than 1 child and we want to promote them all. The root of the deleted node will become the root of all children nodes of the deleted one.
     4. Has more than 1 child and we want to promote only one of them. Thus only one node takes the place of the deleted one and becomes root for the rest of the children nodes.
 
-#### Explain the mechanism of Self-Balancing in AVL Trees.
+#### 1.1.4.54. Explain the mechanism of Self-Balancing in AVL Trees.
 First the **Balance Factor** of all nodes is calculated as a difference between the height of the left branch and the height of the right branch. If the balance factor is -1,0 or 1 then the tree is balanced, otherwise left and right rotations of the nodes must be done in order to shorten the height of branches with single nodes. During rotations the fundamental property of binary trees must be satisfied that the right child node is bigger than the parent and the left one is smaller. After rotations balance factors are calculated again and if they are -1,0 or 1 a new element can be inserted. Otherwise rotations are conducted further until balanced state is achieved.
 
-#### Explain the mechanism of Self-Balancing in Red-Black Trees.
+#### 1.1.4.55. Explain the mechanism of Self-Balancing in Red-Black Trees.
 The fundamental rules of Red-Black Trees are:<br>
     1. Every node has a color either red or black.<br>
     2. The root of the tree is always black.<br>
@@ -4703,13 +4703,13 @@ The fundamental rules of Red-Black Trees are:<br>
     5. Every leaf (e.i. NULL node) must be colored BLACK.<br>
 After insertion two basic operations are used in order to ensure the balance: **Rotation and Recolouring**. First, an element is inserted like in general binary trees and coloured red. One tries first the recolouring during balancing and if it does not work, rotations are conducted. If the new node (**child**) appears to be the root it is recoloured in black (see properties). Check the colour of the parent (**father**) node. If it is black then left the colour of the child node as red. If the father is also red, check the colour of its opposite node (**uncle**) on the same level. If the color of this node is also red then change both father and uncle nodes to black and the **grandfather** (parent node of father and uncle) to red if its not the root node, otherwise do not change the grandfathers color. Repeat the procedure for grandfather upwards. But if the uncle's color is black then rotations in 4 possible ways are conducted untill one can recolour the new arrangement of the nodes.  
 
-#### What is Recursion?
+#### 1.1.4.56. What is Recursion?
 Recursion is defined as a process which calls itself directly or indirectly and the corresponding function is called a recursive function. As an example calculation of Fibonacci series can be formulated in the form of Recursion, like F(n) = F(n-1) + F(n-2), for n >= 2.
 
-#### What is Dynamic Programming?
+#### 1.1.4.57. What is Dynamic Programming?
 Dynamic Programming is a method used in mathematics and computer science to solve complex problems by breaking them down into simpler subproblems. By solving each subproblem only once and storing the results, it avoids redundant computations, leading to more efficient solutions for a wide range of problems. 
 
-#### What is Linear Programming?
+#### 1.1.4.58. What is Linear Programming?
 Linear programming is the technique used for optimizing a particular scenario. Using linear programming provides us with the best possible outcome in a given situation. It uses all the available resources in a manner such that they produce the optimum result. Problems like Transportation, manufacturing and diet can be solved by this approach. <br>
 A linear programming problem consits of **Decision Variables**, **Objective Function**, **Constraints** and **Non-negative Restrictions**.
 Decision variables are the variables x, and y, which decide the output of the linear programming problem and represent the final solution. 
@@ -4750,17 +4750,17 @@ Step 4: The region will include an area region enclosed by two axes and all line
 
 Step 5: Find Z for each intersection point and thus maxima and minima.
 
-#### What is Backtracking?
+#### 1.1.4.59. What is Backtracking?
 Backtracking is a problem-solving algorithmic technique that involves finding a solution incrementally by trying different options and undoing them if they lead to a dead end. It is commonly used in situations where you need to explore multiple possibilities to solve a problem, like searching for a path in a maze or solving puzzles like Sudoku.
 
-#### What is a Greedy Algorithm?
+#### 1.1.4.60. What is a Greedy Algorithm?
 Greedy Algorithm is defined as a method for solving optimization problems by taking decisions that result in the most evident and immediate benefit irrespective of the final outcome. It works for cases where minimization or maximization leads to the required solution.
 
 ---
 ---
 
 
-### Interview questions for C++.
+### 1.1.5. Interview questions for C++.
 **Sources:** <br>
 www.geeksforgeeks.org/cpp-interview-questions/ <br>
 www.interviewbit.com/cpp-interview-questions/ <br>
@@ -4777,7 +4777,7 @@ github.com/mpavezb/cpp_concurrency?tab=readme-ov-file <br>
 en.cppreference.com/w/cpp/language/coroutines <br>
 medium.com/@litombeg/concurrency-in-c-passing-data-between-threads-promise-future-e22fb672736f <br>
 
-#### What is C++? What are the advantages of C++?
+#### 1.1.5.1. What is C++? What are the advantages of C++?
 C++ is an object-oriented programming language that was introduced to overcome the jurisdictions where C was lacking. By object-oriented we mean that it works with the concept of polymorphism, inheritance, abstraction, encapsulation, object, and class. <br>
 **Advantages of C++:**
 * C++ is an OOPs language that means the data is considered as objects.
@@ -4785,7 +4785,7 @@ C++ is an object-oriented programming language that was introduced to overcome t
 * Memory management is a key feature in C++ as it enables dynamic memory allocation.
 * It is a Mid-Level programming language which means it can develop games, desktop applications, drivers, and kernels
 
-#### What are the differences between C and C++?
+#### 1.1.5.2. What are the differences between C and C++?
 | | |
 |:---|:---|
 |<strong>C</strong>|<strong>C++</strong>|
@@ -4795,7 +4795,7 @@ C++ is an object-oriented programming language that was introduced to overcome t
 |It is a function-driven language|It is an object-driven language|
 
 
-#### What are the different data types present in C++?
+#### 1.1.5.3. What are the different data types present in C++?
 * **Primary**
     * Integer
     * Character
@@ -4816,25 +4816,25 @@ C++ is an object-oriented programming language that was introduced to overcome t
     * Enum
     * Typedef
 
-#### Define ‘std’?
+#### 1.1.5.4. Define ‘std’?
 ‘std’ is also known as Standard or it can be interpreted as a namespace. The command “using namespace std” informs the compiler to add everything under the std namespace and inculcate them in the global namespace. This all inculcation of global namespace benefits us to use “cout” and “cin” without using “std::_operator_”.
 
-#### What is a Pointer in C++?
+#### 1.1.5.5. What is a Pointer in C++?
 A Pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes: 
 * To allocate new objects on the heap.
 * To pass functions to other functions.
 * To iterate over elements in arrays or other data structures.
 
-#### What are references in C++?
+#### 1.1.5.6. What are references in C++?
 When a variable is described as a reference it becomes an alias of the already existing variable. In simple terms, a referenced variable is another named variable of an existing variable keeping in mind that changes made in the reference variable will be reflected in the already existing variable. A reference variable is preceded with a ‘&’ symbol.
 
-#### What are the differences between References and Pointers?
+#### 1.1.5.7. What are the differences between References and Pointers?
 * You cannot have NULL references. You must always be able to assume that a reference is connected to a legitimate piece of storage.
 * Once a reference is initialized to an object, it cannot be changed to refer to another object. Pointers can be pointed to another object at any time.
 * A reference must be initialized when it is created. Pointers can be initialized at any time.
 * To access the members of class/struct it uses a References use '.' and Pointers '->'.
 
-#### What is meant by Call by Value and Call by Reference?
+#### 1.1.5.8. What is meant by Call by Value and Call by Reference?
 | | |
 |:---|:---|
 |<strong>Call by Value</strong>|<strong>Call by Reference</strong>|
@@ -4843,7 +4843,7 @@ When a variable is described as a reference it becomes an alias of the already e
 |The changes made in the function are never reflected outside the function on the variable. In short, the original value is never altered in Call by Value.|The changes made in the functions can be seen outside the function on the passed function. In short, the original value is altered in Call by reference.|
 |Passed actual and formal parameters are stored in different memory locations. Therefore, making Call by Value a little memory insufficient. |Passed actual and formal parameters are stored in the same memory location. Therefore, making Call by Reference a little more memory efficient.|
 
-#### Define token in C++.
+#### 1.1.5.9. Define token in C++.
 A token is the smallest individual element of a program that is understood by a compiler. A token comprises the following:
 * **Keywords** – That contain a special meaning to the compiler
 * **Identifiers** – That hold a unique value/identity 
@@ -4852,7 +4852,7 @@ A token is the smallest individual element of a program that is understood by a 
 * **Special Symbols** – They have some special meaning and cannot be used for another purpose; eg: [] () {}, ; * = # 
 * **Operators** – Who perform operations on the operand
 
-#### What are the differences between Structures and Classes?
+#### 1.1.5.10. What are the differences between Structures and Classes?
 | | |
 |:---|:---|
 |<strong>Structures</strong>|<strong>Classes</strong>|
@@ -4860,11 +4860,11 @@ A token is the smallest individual element of a program that is understood by a 
 |Structures are of the value type. They only hold value in memory.|Classes are of reference type. It holds a reference of an object in memory.|
 |The memory in structures is stored as stacks.|The memory in classes is stored as heaps.|
 
-#### Discuss prefix and postfix operators.
+#### 1.1.5.11. Discuss prefix and postfix operators.
 In the prefix version (i.e., ++i), the value of i is incremented, and the value of the expression is the new value of i. Prefix operator returns the reference to the incremented variable.
 In the postfix version (i.e., i++), the value of i is incremented, but the value of the expression is the original value of i.
 
-#### What is the difference between new and malloc()?
+#### 1.1.5.12. What is the difference between new and malloc()?
 | | |
 |:---|:---|
 |<strong>new</strong>|<strong>malloc()</strong>|
@@ -4873,7 +4873,7 @@ In the postfix version (i.e., i++), the value of i is incremented, but the value
 |new is faster than malloc as it is an operator|malloc is slower than new as it is a function|
 |new returns the exact data type|malloc returns void*|
 
-#### What are the differences between Program Stack and Heap memory types?
+#### 1.1.5.13. What are the differences between Program Stack and Heap memory types?
 * Stack is a linear data structure whereas Heap is a hierarchical data structure.
 * Stack memory will never become fragmented whereas Heap memory can become fragmented as blocks of memory are first allocated and then freed.
 * Stack accesses local variables only while Heap allows you to access variables globally.
@@ -4882,7 +4882,7 @@ In the postfix version (i.e., i++), the value of i is incremented, but the value
 * Stack doesn’t require to de-allocate variables whereas in Heap de-allocation is needed.
 * Stack allocation and deallocation are done by compiler instructions whereas Heap allocation and deallocation is done by the programmer.
 
-#### What is the difference between function overloading and operator overloading?
+#### 1.1.5.14. What is the difference between function overloading and operator overloading?
 | | |
 |:---|:---|
 |<strong>Function Overloading</strong>|<strong>Operator Overloading</strong>|
@@ -4890,7 +4890,7 @@ In the postfix version (i.e., i++), the value of i is incremented, but the value
 |Parameterized Functions are a good example of Function Overloading as just by changing the argument or parameter of a function you make it useful for different purposes |Polymorphism is a good example of an operator overloading as an object of allocations class can be used and called by different classes for different purposes|
 |Example of Function Overloading:<br>int GFG(int X, int Y);<br>int GFG(char X, char Y);<br>|Example of Operator Overloading:<br> int GFG() = X() + Y();<br> int GFG() = X() – Y();<br>|
 
-#### What does the Scope Resolution operator do?
+#### 1.1.5.15. What does the Scope Resolution operator do?
 A scope resolution operator is denoted by a **‘::‘** symbol. Just like its name this operator resolves the barrier of scope in a program. A scope resolution operator is used to reference a member function or a global variable out of their scope furthermore to which it can also access the concealed variable or function in a program. <br>
 Scope Resolution is used for numerous amounts of tasks:
 * To access a global variable when there is a local variable with the same name.
@@ -4898,7 +4898,7 @@ Scope Resolution is used for numerous amounts of tasks:
 * In case of multiple inheritances.
 * For namespace.
 
-#### What is the difference between shallow copy and deep copy?
+#### 1.1.5.16. What is the difference between shallow copy and deep copy?
 | | |
 |:---|:---|
 |<strong>Shallow Copy</strong>|<strong>Deep Copy</strong>|
@@ -4906,7 +4906,7 @@ Scope Resolution is used for numerous amounts of tasks:
 |Shallow Copy reflects changes made to the new/copied object in the original object.|Deep copy doesn’t reflect changes made to the new/copied object in the original object.|
 |Shallow Copy stores the copy of the original object and points the references to the objects.|Deep copy stores the copy of the original object and recursively copies the objects as well.|
 |A shallow copy is faster.|Deep copy is comparatively slower.|
-#### Can you compile a program without the main function?
+#### 1.1.5.17. Can you compile a program without the main function?
 Yes, it is absolutely possible to compile a program without a main(). For example Use Macros that defines the main.
 ```cpp
     #include <iostream>
@@ -4938,11 +4938,11 @@ Using Argumented Macro:<br>
         return 0; 
     }
 ```
-#### Define inline function. Can we have a recursive inline function in C++?
+#### 1.1.5.18. Define inline function. Can we have a recursive inline function in C++?
 An inline function cannot be recursive because in the case of an inline function the code is merely placed into the position from where it is called and does not maintain a piece of information on the stack which is necessary for recursion.<br>
 Plus, if you write an **inline** keyword in front of a **recursive function**, the compiler will automatically ignore it because the inline is only taken as a suggestion by the compiler.
 
-#### Define the spicifier 'auto'.
+#### 1.1.5.19. Define the spicifier 'auto'.
 The 'auto' keyword in C++ automatically detects and assigns a data type to the variable with which it is used. The compiler analyses the variable's data type by looking at its initialization.
 ``` cpp
 auto integerNumber = 20;
@@ -4954,7 +4954,7 @@ auto sum(const int& integerNumber, const float& floatNumber2)
 }
 ```
 
-#### Define the specifier 'decltype'.
+#### 1.1.5.20. Define the specifier 'decltype'.
 The decltype type specifier yields the type of a specified expression. The decltype type specifier, together with the auto keyword, is useful primarily to developers who write template libraries.
 ```cpp
 struct A { double x; };
@@ -4969,13 +4969,13 @@ auto add(T t, U u) -> decltype(t + u) // return type depends on template paramet
     return t + u;
 }
 ```
-#### Define the specifier 'constexpr'.
+#### 1.1.5.21. Define the specifier 'constexpr'.
 The 'constexpr' specifier declares that it is possible to evaluate the value of the function or variable at compile time. Such variables and functions can then be used where only compile time constant expressions are allowed (e.g. template meta-programming).
 
-#### What is the main use of the keyword 'volatile'?
+#### 1.1.5.22. What is the main use of the keyword 'volatile'?
 It is used to inform the compiler that the value may change anytime. Also, the volatile keyword prevents the compiler from performing optimization on the code. It was intended to be used when interfacing with memory-mapped hardware, signal handlers, and machine code instruction.
 
-#### Define storage class in C++ and name some.
+#### 1.1.5.23. Define storage class in C++ and name some.
 Storage class is used to define the features(lifetime and visibility) of a variable or function. These features usually help in tracing the existence of a variable during the runtime of a program.
 * **auto** - type of a variable is defined automatically after initialization.<br>
 * **register** - has the same functionality as that of the auto variables, the only difference is that the compiler tries to store these variables in the register of the microprocessor if a free register is available. This makes the use of register variables to be much faster than that of the variables stored in the memory during the runtime of the program. If a free register is not available, these are then stored in the memory only. An important and interesting point to be noted here is that we cannot obtain the address of a register variable using pointers. <br>
@@ -4984,7 +4984,7 @@ Storage class is used to define the features(lifetime and visibility) of a varia
 * **mutable** - the keyword mutable is mainly used to allow a particular data member of a const object to be modified. 
 * **thread_local** - allows each thread in a multi-threaded program to have its own separate instance of a variable.
 
-#### Enlist Value Categories.
+#### 1.1.5.24. Enlist Value Categories.
 * A **glvalue** (“generalized” lvalue) is an expression whose evaluation determines the identity of an object or function. It includes both lvalues and certain rvalues. Examples of glvalues include variables, references, and functions. <br>
     **Characteristics:**<br>
         **-** Can have an identifiable memory address.<br>
@@ -5141,7 +5141,7 @@ Storage class is used to define the features(lifetime and visibility) of a varia
 
     ```
 
-#### Explain 'move()' semantics.
+#### 1.1.5.25. Explain 'move()' semantics.
 It was designed to move objects, whose lifetime expires, instead of copying them. The data is transferred from one object to another. In most cases, the data transfer does not move this data physically in memory.
 ```cpp
     #include <iomanip>
@@ -5173,7 +5173,7 @@ It was designed to move objects, whose lifetime expires, instead of copying them
 
 ```
 
-#### Explain Perfect Forwarding.
+#### 1.1.5.26. Explain Perfect Forwarding.
 Perfect forwarding is there to ensure that the argument provided to a function is forwarded (passed) to another function with the same value category (basically r-value vs l-value) as originally provided. It is typically used with template functions where reference collapsing may have taken place.
 ```cpp
     #include <iostream>
@@ -5242,7 +5242,7 @@ rvalue overload, n=4<br>
 lvalue overload, n=1<br>
 rvalue overload, n=5<br>
 
-#### What are Range Based For Loops?
+#### 1.1.5.27. What are Range Based For Loops?
 Range-based for loop in C++ has been added since C++ 11. It executes a for loop over a range. Used as a more readable equivalent to the traditional for loop operating over a range of values, such as all elements in a container.
 ```cpp
     #include <iostream>
@@ -5301,7 +5301,7 @@ Range-based for loop in C++ has been added since C++ 11. It executes a for loop 
     }
 ```
 
-#### Enlist some key advantages of 'switch' over 'if-else' ladders.
+#### 1.1.5.28. Enlist some key advantages of 'switch' over 'if-else' ladders.
 * A switch statement is significantly faster than an if-else ladder if there are many nested if-else's involved. This is due to the creation of a jump table for switch during compilation. As a result, instead of checking which case is satisfied throughout execution, it just decides which case must be completed. The number of comparisons made is lesser hence, reducing the compile time. Hence, the switch would work better while selecting from a large set of values.
 * When compared to if-else statements, it is more readable. You can also see this in the examples given below. In the if-else code, you can't clearly see the months which have 30 days; however, in switch, it's easily highlighted.
 ```cpp
@@ -5339,19 +5339,19 @@ Range-based for loop in C++ has been added since C++ 11. It executes a for loop 
             break
     }
 ```
-#### Which operations are permitted on pointers?
+#### 1.1.5.29. Which operations are permitted on pointers?
 Pointers are the variables that are used to store the address location of another variable. Operations that are permitted to a pointer are:
 * Increment/Decrement of a Pointer.
 * Addition and Subtraction of integer to a pointer.
 * Comparison of pointers of the same type.
 
-#### What are Smart Pointers? Enlist their types.
+#### 1.1.5.30. What are Smart Pointers? Enlist their types.
 Smart pointers are defined in the std namespace in the memory.h header file. They are crucial to the RAII or Resource Acquisition Is Initialization programming idiom. The main principle of RAII is to give ownership of any heap-allocated resource—for example, dynamically-allocated memory or system object handles to a stack-allocated object whose destructor contains the code to delete or free the resource and also any associated cleanup code. A smart pointer is a class template that you declare on the stack, and initialize by using a raw pointer that points to a heap-allocated object. After the smart pointer is initialized, it owns the raw pointer. This means that the smart pointer is responsible for deleting the memory that the raw pointer specifies. The smart pointer destructor contains the call to delete, and because the smart pointer is declared on the stack, its destructor is invoked when the smart pointer goes out of scope, even if an exception is thrown somewhere further up the stack.<br>
 * **unique_ptr** - Allows exactly one owner of the underlying pointer. Can be moved to a new owner, but not copied or shared. This type of smart pointers is small and efficient; the size is one pointer and it supports rvalue references for fast insertion and retrieval from C++ Standard Library collections.
 * **shared_ptr** - is a reference-counted smart pointer. Use when you want to assign one raw pointer to multiple owners, for example, when you return a copy of a pointer from a container but want to keep the original. The raw pointer is not deleted until all shared_ptr owners have gone out of scope or have otherwise given up ownership. The size is two pointers; one for the object and one for the shared control block that contains the reference count.
 * **weak_ptr** - is a special-case smart pointer for use in conjunction with shared_ptr. A weak_ptr provides access to an object that is owned by one or more shared_ptr instances, but does not participate in reference counting and thus has no ownership of the object. Use when you want to observe an object, but do not require it to remain alive. Required in some cases to break circular references, which can cause memory leaks in structures such as doubly-linked lists or graphs where two objects reference each other using std::shared_ptr. A weak pointer can be created only from a shared pointer.
 
-#### Give an example of Circular Dependency issues with std::shared_ptr, and how to resolve it with std::weak_ptr.
+#### 1.1.5.31. Give an example of Circular Dependency issues with std::shared_ptr, and how to resolve it with std::weak_ptr.
  Consider the following case, where the shared pointers in two separate objects each point at the other object:
 ```cpp
     #include <iostream>
@@ -5412,13 +5412,13 @@ No deallocations took place. It happend because while calling the distructor of 
 ``Ricky destroyed`` <br>
 ``Lucy destroyed`` <br>
 
-#### Are Shared Pointers thread safe?
+#### 1.1.5.32. Are Shared Pointers thread safe?
 Only the reference counting part of the shared_ptr is atomic and thus thread safe. The shared_ptr itself is not thread safe. 
 * **Different** std::shared_ptr instances can be read from and modified by multiple threads at the same time, even if these instances are copies and share ownership of the same object.
 * **The same** std::shared_ptr instance can be read by multiple threads simultaneously.
 * **The same** std::shared_ptr instance cannot be directly modified by multiple threads without additional synchronization. But can be done by means of mutex and atomics.
 
-#### What are the various OOPs concepts in C++?
+#### 1.1.5.33. What are the various OOPs concepts in C++?
 * **Classes:** It is a user-defined datatype
 * **Objects:** It is an instance of a class
 * **Abstraction:** It is a technique of showing only necessary details
@@ -5426,38 +5426,38 @@ Only the reference counting part of the shared_ptr is atomic and thus thread saf
 * **Inheritance:** The capability of a class to derive properties and characteristics from another class
 * **Polymorphism:** Polymorphism is known as many forms of the same thing
 
-#### What are Classes and Objects in C++?
+#### 1.1.5.34. What are Classes and Objects in C++?
 A **class** is a user-defined data type where all the member functions and data members are tailor-made according to demands and requirements in addition to which these all can be accessed with the help of an object. To declare a user-defined data type we use a keyword class. <br>
 An **object** is an instance of a class and an entity with value and state; In simple terms, it is used as a catalyst or to represent a class member. It may contain different parameters or none.
 
-#### What are the C++ access modifiers?
+#### 1.1.5.35. What are the C++ access modifiers?
 The access restriction specified to the class members( whether it is member function or data member) is known as access modifiers/specifiers. <br>
 Access Modifiers are of 3 types:
 * **private** – It can neither be accessed nor be viewed from outside the class.
 * **protected** – It can be accessed if and only if the accessor is the derived class.
 * **public** – It can be accessed or be viewed from outside the class. 
 
-#### What is the difference between 'struct' and 'class'?
+#### 1.1.5.36. What is the difference between 'struct' and 'class'?
 The two constructs are identical in C++ except that in structs the default accessibility is public, whereas in classes the default is private. One can even use inheritence for structures, but the acessibility by default is public.
 
-#### What is the difference between C and C++ structures?
+#### 1.1.5.37. What is the difference between C and C++ structures?
 C++ structures can have not only data members, but also functions. The C++ structures can have inheritance as well, what is not possible for C structures.
 
-#### What is an Abstract Class and when do you use it?
+#### 1.1.5.38. What is an Abstract Class and when do you use it?
 An abstract class is a class that is specifically designed to be used as a base class. An abstract class contains at least one pure virtual function. You declare a pure virtual function by using a **pure specifier (= 0)** in the declaration of a virtual member function in the class declaration.<br>
 You cannot use an abstract class as a parameter type, a function return type, or the type of an explicit conversion, nor can you declare an object of an abstract class. However, it can be used to declare pointers and references to an abstract class.<br>
 An abstract class is used if you want to provide a common, implemented functionality among all the implementations of the component. Abstract classes will allow you to partially implement your class, whereas interfaces would have no implementation for any members whatsoever. In simple words, Abstract Classes are a good fit if you want to provide implementation details to your children but don’t want to allow an instance of your class to be directly instantiated.
 
-#### What are the static data members and static member functions?
+#### 1.1.5.39. What are the static data members and static member functions?
 Static data member in C++ are declared inside the class but they are initialized outside of the class. Static member functions can be accessed using class name and scope resolution operator. Also, we can call the static member function without creating any object of the class.
 
-#### Explain inheritance.
+#### 1.1.5.40. Explain inheritance.
 The capability or ability of a class to derive properties and characteristics from another class is known as inheritance. In simple terms, it is a system or technique of reusing and extending existing classes without modifying them.
 
-#### When should we use multiple inheritance?
+#### 1.1.5.41. When should we use multiple inheritance?
 Multiple inheritances mean that a derived class can inherit two or more base/parent classes. It is useful when a derived class needs to combine numerous attributes/contracts and inherit some, or all, of the implementation from these attributes/contracts.
 
-#### What is virtual inheritance?
+#### 1.1.5.42. What is virtual inheritance?
 Virtual inheritance is a technique that ensures only one copy of a base class’s member variables is inherited by grandchild-derived classes. Or in simple terms, virtual inheritance is used when we are dealing with a situation of multiple inheritances but want to prevent multiple instances of the same class from appearing in the inheritance hierarchy.
 ```cpp
     #include <iostream> 
@@ -5524,7 +5524,7 @@ One can resolve it by virtual inheritence:
 ``Hello from A``<br>
 Now class B and class C use the virtual base class A and no duplication of member function is done; Classes B and C share a single copy of the members in the virtual base class A.
 
-#### What is polymorphism in C++?
+#### 1.1.5.43. What is polymorphism in C++?
 Polymorphism is known as many forms of the same thing. In simple terms, we can say that Polymorphism is the ability to display a member function in multiple forms depending on the type of object that calls it. 
 There is 2 type of polymorphism:<br>
 **Compile Time Polymorphism or Static Binding:**<br>
@@ -5535,13 +5535,13 @@ There is 2 type of polymorphism:<br>
 * Function Overriding
 * Virtual Function
 
-#### What is Function Overriding?
+#### 1.1.5.44. What is Function Overriding?
 When a function of the same name, same arguments or parameters, and same return type already present/declared in the base class is used in a derived class is known as Function Overriding. It is an example of Runtime Polymorphism or Late Binding which means the overridden function will be executed at the run time.
 
-#### What is the difference between Virtual Functions and Pure Virtual Functions?
+#### 1.1.5.45. What is the difference between Virtual Functions and Pure Virtual Functions?
 A **Virtual Function** is a member function of a base class which can be **redefined** by derived class. A **Pure Virtual Function** is a member function of a base class only with a declaration provided in the base class and it should be **defined in a derived class** otherwise derived class also becomes abstract.
 
-#### Explain Constructors in C++.
+#### 1.1.5.46. Explain Constructors in C++.
 A constructor is a special type of member function of a class, whose name is the same as that of the class by whom it is invoked. It initializes value to the object of a class. <br>
 There are 4 types of constructors:
 * **Default constructor:** It is the most basic type of constructor which accepts no arguments or parameters. Even if it is not called the compiler calls it automatically when an object is created.
@@ -5549,33 +5549,33 @@ There are 4 types of constructors:
 * **Copy Constructor:** A copy constructor is a member function that initializes an object using another object of the same class. Also, the Copy constructor takes a reference to an object of the same class as an argument.
 * **Move Constructore:** A move constructor is a special member function that moves ownership of an existing object's data to a new variable without copying the original data.
 
-#### What is the sequence of calling Constructors in a Class Hierarhcy?
+#### 1.1.5.47. What is the sequence of calling Constructors in a Class Hierarhcy?
 A constructor performs its work in this order:
 * It calls base class and member constructors in the order of declaration.
 * If the class is derived from virtual base classes, it initializes the object's virtual base pointers.
 * If the class has or inherits virtual functions, it initializes the object's virtual function pointers. Virtual function pointers point to the class's virtual function table to enable correct binding of virtual function calls to code.
 * It executes any code in its function body.
 
-#### Explain Destructors in C++.
+#### 1.1.5.48. Explain Destructors in C++.
 Destructors are member functions in a class that delete an object when an object of the class goes out of scope. Destructors have the same name as the class preceded by a tilde (~) sign. Also, destructors follow a down-to-top approach, unlike constructors which follow a top-to-down.
 
-#### When is a Destructor in a Base Class should be virtual?
+#### 1.1.5.49. When is a Destructor in a Base Class should be virtual?
 When destroying instances or objects of a derived class using a base class pointer object, a virtual destructor is invoked to free up memory space allocated by the derived class object or instance. <br>
 **Virtual destructor guarantees that first the derived class’ destructor is called.** Then the base class’s destructor is called to release the space occupied by both destructors in the inheritance class which saves us from the memory leak. It is advised to make your destructor virtual whenever your class is polymorphic.
 
-#### Is Destructor Overloading possible?
+#### 1.1.5.50. Is Destructor Overloading possible?
 The simple answer is no we cannot overload a destructor. It is mandatory to have only one destructor per class in C++.
 
-#### Can a Destructor have parameters?
+#### 1.1.5.51. Can a Destructor have parameters?
 Destructors neither take any arguments nor they have a parameter that might help to overload.
 
-#### What is a Template in programming and why it is useful?
+#### 1.1.5.52. What is a Template in programming and why it is useful?
 A template in programming is a tool that allows developers to write generic code, making it reusable and adaptable for any types and classes.
 
-#### What is the difference between a Template Function and Function Overloading in C++?
+#### 1.1.5.53. What is the difference between a Template Function and Function Overloading in C++?
 You use the function overloading when you want to perform similar operations. On the other hand, templates in C++ are used to perform precisely identical operations on different data types. A good indicator to choose between these two techniques is to verify that no Code Duplication is generated.
 
-#### How does Template Specialization in C++ work?
+#### 1.1.5.54. How does Template Specialization in C++ work?
 Template specialization in C++ allows for different code to be executed depending on the data type used. It’s a way of customizing template classes or functions for specific types or values, enhancing flexibility and efficiency.<br>
 Consider a simple template function that returns the larger of two inputs:
 ```cpp
@@ -5592,23 +5592,23 @@ We can specialize it for ``char*`` type where it compares strings lexicographica
     }
 ```
 
-#### What is a Class Template in C++ and how is it different from Function Templates?
+#### 1.1.5.55. What is a Class Template in C++ and how is it different from Function Templates?
 A class template in C++ is a blueprint for creating generic classes. It allows the same class to accommodate different data types without rewriting code, enhancing reusability and efficiency. A function template creates a family of functions with different argument types.
 
-#### Explain how template metaprogramming works.
+#### 1.1.5.56. Explain how template metaprogramming works.
 Template metaprogramming (TMP) is a technique in C++ where templates are used to perform compile-time computations. TMP leverages the compiler’s ability to interpret template parameters as types or values, enabling computation at compile time rather than runtime. This results in more efficient code execution.<br>
 In TMP, templates act as both containers of generic algorithms and generators of specific implementations for different data types. The process begins when a programmer defines a template with one or more parameters. During compilation, the compiler generates an appropriate function or class based on the provided arguments.<br>
 A key feature of TMP is its recursive nature. A template can call itself with modified parameters until a base case is reached. This recursion happens during compilation, not execution, leading to highly optimized code.<br>
 However, TMP has drawbacks such as increased complexity and longer compile times. It also requires deep understanding of C++ syntax and semantics. Despite these challenges, it remains a powerful tool for optimizing performance-critical applications.
 
-#### Can you discuss some of the potential problems or challenges that can occur when working with templates?
+#### 1.1.5.57. Can you discuss some of the potential problems or challenges that can occur when working with templates?
 Templates, while powerful tools in programming, can present several challenges. <br>
 * One common issue is **Code Bloat**, where each template instantiation generates a new set of functions or classes, leading to increased binary size. This can also cause **longer compilation times**.<br>
 * Another problem is **Debugging Difficulty** due to complex error messages. Templates are instantiated at compile-time and any errors that occur during this process result in verbose and often confusing compiler diagnostics.<br>
 * **Type Checking Issues** may arise as well. Since templates work with generic types, it’s possible for the programmer to use an inappropriate type, causing unexpected behavior or runtime errors.<br>
 * Lastly, there’s the risk of **Poor Abstraction**. If not used carefully, templates can lead to tightly coupled code, reducing modularity and making maintenance more difficult.<br>
 
-#### Enlist Types of Template Parameters.
+#### 1.1.5.58. Enlist Types of Template Parameters.
 There are 3 basic types of template parameters:<br>
 * **Type Parameters.**
 * **Non-type Parameters.**
@@ -5625,11 +5625,11 @@ Examples for them are:<br>
 
 ```
 
-#### Explain the difference between Template Classes and Class Templates.
+#### 1.1.5.59. Explain the difference between Template Classes and Class Templates.
 Template classes and class templates, while sounding similar, serve different purposes in programming. A class template is a blueprint for creating classes. It allows the programmer to define generic types, making it possible to create a class that can work with different data types. For instance, you could have a class template for an array that works with integers, floats, or any other type.<br>
 On the other hand, a template class is a specific instance of a class template. When we instantiate a class template with a particular data type, we get a template class. Using our previous example, if we use our array class template to create an array of integers, the resulting class is a template class.
 
-#### How can you create a templated function within a class in C++?
+#### 1.1.5.60. How can you create a templated function within a class in C++?
 To create a templated function within a class in C++, you first declare the template above your class. This is done using the ‘template’ keyword followed by ‘T‘ where T is a placeholder for any data type. Inside the class, you can then define your function as usual but use T instead of a specific data type.
 ```cpp
     template <typename T>
@@ -5641,13 +5641,13 @@ To create a templated function within a class in C++, you first declare the temp
     };
 ```
 
-#### Can you explain the term Template Instantiation?
+#### 1.1.5.61. Can you explain the term Template Instantiation?
 Template instantiation in programming refers to the process of creating a specific function or class from a template. This is done by the compiler, which replaces the generic types in the template with the specified types provided by the programmer.
 
-#### What is meant by Template Argument Deduction in C++?
+#### 1.1.5.62. What is meant by Template Argument Deduction in C++?
 Template argument deduction in C++ is a compiler process that determines the types of template arguments from function or class template calls. It allows developers to omit explicit template arguments while calling these templates, enhancing code readability and maintainability. The compiler deduces the type based on the provided arguments. For instance, if we have a function template ‘void func(T arg)’ and call it as ‘func(5)’, the compiler deduces T as int. However, this process has limitations. If the deduction leads to ambiguity or no valid match, it fails, causing a compile-time error.
 
-#### Can you explain the difference between Complete and Incomplete Template Specialization?
+#### 1.1.5.63. Can you explain the difference between Complete and Incomplete Template Specialization?
 Complete template specialization refers to the process where all template parameters are provided, resulting in a specific type or function. This allows for unique behavior when certain types are used as arguments.<br>
 On the other hand, incomplete (or partial) template specialization involves specifying some but not all template parameters. It’s useful when we want to define different behaviors for a subset of types, while still maintaining general behavior for others.<br>
 
@@ -5684,7 +5684,7 @@ On the other hand, incomplete (or partial) template specialization involves spec
     }
 ```
 
-#### What are Variadic Templates in C++ and how are they useful?
+#### 1.1.5.64. What are Variadic Templates in C++ and how are they useful?
 Variadic templates in C++, introduced in C++11, allow a function or class to accept an indefinite number of arguments. This is achieved by using the ellipsis operator (…) in template parameters. They are useful for creating generic functions or classes that can handle any number and type of arguments, enhancing code reusability and efficiency. <br>
 For instance, consider a simple print function. Without variadic templates, we would need separate versions for different argument counts/types. With variadic templates, one version suffices:
 ```cpp
@@ -5694,11 +5694,11 @@ For instance, consider a simple print function. Without variadic templates, we w
     }
 ```
 
-#### Can you discuss a situation when it would be more beneficial to use a virtual function rather than a template?
+#### 1.1.5.65. Can you discuss a situation when it would be more beneficial to use a virtual function rather than a template?
 In object-oriented programming, a situation where it would be more beneficial to use a virtual function rather than a template is when dealing with dynamic polymorphism. Dynamic polymorphism allows objects of different types to be treated at run-time as objects of a common parent type. This is useful in scenarios where we have an array or list of objects of the base class type but each needs to execute their version of a function.<br>
 Templates wouldn’t work here because they’re resolved at compile-time, while virtual functions are dynamically bound at runtime. Thus, templates can’t provide the dynamic dispatch needed for this kind of polymorphism.
 
-#### How can you prevent the instantiation of a template for a particular data type?
+#### 1.1.5.66. How can you prevent the instantiation of a template for a particular data type?
 To prevent the instantiation of a template for a specific data type, you can use explicit specialization or SFINAE (Substitution Failure Is Not An Error). Explicit specialization allows you to define a different implementation for a particular data type. If this specialized version is not suitable for the given arguments, it won’t be used and will result in a compile error. SFINAE technique involves creating a condition that causes substitution failure if a certain type is used. This can be achieved using std::enable_if or similar meta-programming techniques. For instance:
 ```cpp
     template <class T , typename = std::enable_if <!std::is_same<T,Foo>::value,T>::type >
@@ -5706,7 +5706,7 @@ To prevent the instantiation of a template for a specific data type, you can use
     //...
     };
 ```
-#### Explain the potential challenges of debugging a templated code and how would you overcome them?
+#### 1.1.5.67. Explain the potential challenges of debugging a templated code and how would you overcome them?
 Debugging templated code can be challenging due to **Type Independence**, **Compiler Errors**, and **Instantiation Issues**.<br>
 **Type Independence** means that a template function or class works with any data type. This flexibility can lead to unexpected behavior if the types used don’t support all operations in the template.<br>
 **Compiler Errors** are another challenge. They often become complex and difficult to understand when templates are involved because compilers generate them based on instantiated templates, not the template definition itself.<br>
@@ -5715,7 +5715,7 @@ To overcome these challenges, use **static assertions** to enforce type requirem
 When dealing with **compiler errors**, try **instantiating the problematic template with a specific type**. This can make error messages more understandable.<br>
 Finally, for instantiation issues, ensure you **thoroughly test each template with various types**.
 
-#### What are Template Type Traits in C++?
+#### 1.1.5.68. What are Template Type Traits in C++?
 Type traits are a feature of C++ that allows performing compile-time analysis of types. Common use cases of type traits are:
 * **Template type safety and documentation:** ensuring that template functions are only called with the expected types, thereby preventing runtime errors, and improving the developer experience.
 * **Compile-Time if statements:** enabling or disabling lines of code based on the properties of a type, or other compile-time factors.
@@ -5742,7 +5742,7 @@ Some more examples of type traits:<br>
 * **std::is_same** lets us determine if a type is the same as another type.
 * **std::is_base_of** lets us determine if a type is the same as another type, or derived from that type through inheritance.
 
-#### How to check a Trait at Compile-Time in a Template?
+#### 1.1.5.69. How to check a Trait at Compile-Time in a Template?
 By using **if constexpr** statements. These are evaluated at compile time and, if the expression we pass to if constexpr evaluates to false, the block of code is removed from our function entirely.
 ```cpp
     #include <iostream>
@@ -5770,7 +5770,7 @@ The instantiated functions from above look like this:
 ```
 String type has no operator '*'.
 
-#### Define a Metafunction.
+#### 1.1.5.70. Define a Metafunction.
 A metafunction is not a function but a class/struct. But like regular functions, it can also 'return' something, such as a value or a type. See the following examples:
 ```cpp
     // Return a value from a metafunction
@@ -5790,7 +5790,7 @@ A metafunction is not a function but a class/struct. But like regular functions,
     };
     constexpr Echo<int>::type i = 5; 
 ```
-#### What is a Concept for Templates?
+#### 1.1.5.71. What is a Concept for Templates?
 A concept is a set of constraints on template parameters evaluated at compile time. They can be use for class templates and function templates to control function overloads and partial specialization. <br>
 C++20 gives a language support (new keywords - **requires**, **concept**) and a set of predefined concepts from the Standard Library.
 Here are some examples:<br>
@@ -5830,10 +5830,10 @@ And another more complex example:<br>
 
 ```
 
-#### What is the main advantage of Concepts?
+#### 1.1.5.72. What is the main advantage of Concepts?
 The main advantage is more readable and understandable compiler errors.
 
-#### What is C++ STL?
+#### 1.1.5.73. What is C++ STL?
 The Standard Template Library (STL) is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc. It is a generalized library and so, its components are parameterized.<br>
 STL has 4 components:
 * **Containers**
@@ -5841,7 +5841,7 @@ STL has 4 components:
 * **Algorithms**
 * **Functors**
 
-#### Enlist Container Types in STL.
+#### 1.1.5.74. Enlist Container Types in STL.
 * **Sequence Containers:** implement data structures that can be accessed in a sequential manner.
     * **vector** - is the same as dynamic arrays with the ability to resize itselve automatically when an element is inserted or deleted, with its storage being handled automatically by the container. Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators. In vectors, data is inserted at the end. Inserting at the end takes differential time, as sometimes the array may need to be extended. Removing the last element takes only constant time because no resizing happens. Inserting and erasing at the beginning or in the middle is linear in time.
     * **list** - is a sequence container that allows non-contiguous memory allocation. As compared to the vector, the list has slow traversal, but once a position has been found, insertion and deletion are quick (constant time). Normally, when we say a List, we talk about a **doubly linked list**.
@@ -5863,7 +5863,7 @@ STL has 4 components:
     * **unordered_map** - is an associated container that stores elements formed by the combination of a key value and a mapped value. The key value is used to uniquely identify the element and the mapped value is the content associated with the key. Both key and value can be of any type predefined or user-defined. In simple terms, an unordered_map is like a data structure of dictionary type that stores elements in itself. It contains successive pairs (key, value), which allows fast retrieval of an individual element based on its unique key. Internally unordered_map is implemented using **Hash Table**, the key provided to map is hashed into indices of a hash table which is why the performance of data structure depends on the hash function a lot but on average, the cost of search, insert, and delete from the hash table is O(1). 
     * **unordered_multimap** - the same as **unordered_map**, but allows duplicates of key-value pairs.
 
-#### What is an Iterator in STL?
+#### 1.1.5.75. What is an Iterator in STL?
 An iterator is an object (like a pointer) that points to an element inside the container. We can use iterators to move through the contents of the container. They can be visualized as something similar to a pointer pointing to some location and we can access the content at that particular location using them.<br>
 There are 5 types of iterators:
 * **Input Iterators:** They are the weakest of all the iterators and have very limited functionality. They can only be used in a single-pass algorithms, i.e., those algorithms which process the container sequentially, such that no element is accessed more than once.
@@ -5887,7 +5887,7 @@ There are 5 types of iterators:
 |Unordered-Set|Forward|
 |Unordered-Multiset|Forward|
 
-#### Give an overview of Algorithms in STL.
+#### 1.1.5.76. Give an overview of Algorithms in STL.
 The header algorithm defines a collection of functions specially designed to be used on a range of elements. They act on containers and provide means for various operations for the contents of the containers. <br>
 * **Sorting** - There is a built-in function in C++ STL by the name of **sort()**. This function internally uses IntroSort. In more details it is implemented using hybrid of QuickSort, HeapSort and InsertionSort. By default, it uses QuickSort but if QuickSort is doing unfair partitioning, it switches to HeapSort and when the array size becomes really small, it switches to InsertionSort. 
 * **Searching** - **Binary Search** in a sorted array **binary_search(startaddress, endaddress, valuetofind)**.
@@ -5908,19 +5908,19 @@ Partition operations :
     * **prev_permutation(first_iterator, last_iterator)** – modifies the container to its previous permutation. 
     * **distance(first_iterator,desired_position)** – It returns the distance of desired position from the first iterator.This function is very useful while finding the index. 
 
-#### What is Concurrency in Programming?
+#### 1.1.5.77. What is Concurrency in Programming?
 In computer science, concurrency is the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the outcome.
 
-#### What is the difference between Concurrency and Parallelism?
+#### 1.1.5.78. What is the difference between Concurrency and Parallelism?
 Concurrency is about multiple tasks which start, run, and complete in overlapping time periods, in no specific order. Parallelism is about multiple tasks or subtasks of the same task that literally run at the same time on a hardware with multiple computing resources like multi-core processor.
 
-#### Elist Errors and Risks associated with Concurency.
+#### 1.1.5.79. Elist Errors and Risks associated with Concurency.
 Concurrent multithreading applications need to be carefully designed as it is prone to many errors leading to undefined behaviour. Some of these errors are:
 * **Race Conditions** - happen when two or more threads access shared data concurrently leading to the undefined behaviour.
 * **Deadlocks** - refer to the situation where two or more threads are blocked forever waiting for each other. The careful synchronization is essential to prevent deadlocks.
 * **Starvation** - is the condition where a thread is unable to gain regular access to the shared resources.
 
-#### Enlist Libraries and Instruments for realizing Concurrency in C++.
+#### 1.1.5.80. Enlist Libraries and Instruments for realizing Concurrency in C++.
 In C++, the support for concurrency was first added in C++ 11 to improve the performance of the program and enable multitasking. The components such as thread, mutex, memory model, and various synchronization primitives were added as the part of Concurrency Support Library.
 * **Threads** - Threads are the basic unit of multitasking. The concurrent execution of the tasks is done by creating multiple threads in a multithreaded environment. The C++ provides a ``thread`` library for creating and managing threads.
 * **Thread Synchronization** - Thread synchronization can be done using the following components provided in C++:
@@ -5932,7 +5932,7 @@ In C++, the support for concurrency was first added in C++ 11 to improve the per
 * **Atomic Operation** - indivisible operation. It cannot be observed half-done from any thread in the system. If one thread writes to an atomic object while another thread reads from it, the behavior is well-defined. Atomics allow writting lock-free multithreading, meaning there is no need to use any synchronization primitive.
 * **Coroutines** - A coroutine is a function that can suspend execution to be resumed later. Coroutines are stackless: they suspend execution by returning to the caller and the data that is required to resume execution is stored separately from the stack. This allows for sequential code that executes asynchronously (e.g. to handle non-blocking I/O without explicit callbacks), and also supports algorithms on lazy-computed infinite sequences and other uses.
 
-#### Give an example of a Race Condition in C++.
+#### 1.1.5.81. Give an example of a Race Condition in C++.
 Following code shows a situation of race condition if thread synchronization by locking mutex is not present:
 ```cpp
     #include <iostream>
@@ -5966,7 +5966,7 @@ Following code shows a situation of race condition if thread synchronization by 
         return 0;
     }
 ```
-#### Enlist types of Mutexes.
+#### 1.1.5.82. Enlist types of Mutexes.
 There are three basic types of mutual exclusion:
 * ``std::mutex`` – is a synchronization primitive that can be used to protect shared data from being simultaneously accessed by multiple threads. Mutex offers exclusive, non-recursive ownership semantics:
     * A calling thread owns a mutex from the time that it successfully calls either ``lock`` or ``try_lock`` until it calls ``unlock``.
@@ -5990,7 +5990,7 @@ Only when the exclusive lock has not been acquired by any thread, the shared loc
 Within one thread, only one lock (shared or exclusive) can be acquired at the same time.<br>
 Shared mutexes are especially useful when shared data can be safely read by any number of threads simultaneously, but a thread may only write the same data when no other thread is reading or writing at the same time. 
 
-#### Enlist types of RAII(Resource Acquisition Is Initialization) Wrappers of Mutex Locks.
+#### 1.1.5.83. Enlist types of RAII(Resource Acquisition Is Initialization) Wrappers of Mutex Locks.
 There are mainly three types of such wrappers:
 * ``std::unique_lock`` - is a general-purpose mutex ownership wrapper allowing deferred locking, time-constrained attempts at locking, recursive locking, transfer of lock ownership, and use with condition variables. The class ``unique_lock`` is movable, but not copyable.
 * ``std::shared_lock`` - is a general-purpose shared mutex ownership wrapper allowing deferred locking, timed locking and transfer of lock ownership. Locking a ``shared_lock`` locks the associated shared mutex in shared mode (to lock it in exclusive mode, ``std::unique_lock`` can be used). The shared_lock class is movable, but not copyable.
@@ -5998,7 +5998,7 @@ There are mainly three types of such wrappers:
 When a ``scoped_lock`` object is created, it attempts to take ownership of the mutexes it is given. When control leaves the scope in which the ``scoped_lock`` object was created, the ``scoped_lock`` is destructed and the mutexes are released. If several mutexes are given, deadlock avoidance algorithm is used as if by ``std::lock``.<br>
 The ``scoped_lock`` class is non-copyable.
 
-#### Give some examples of Deadlocks and how to avoid them.
+#### 1.1.5.84. Give some examples of Deadlocks and how to avoid them.
 The following code will deadlock since ``std::mutex`` can be locked at most once:
 ```cpp
     #include <mutex>
@@ -6051,7 +6051,7 @@ Or alternatively, if globaly consistent order is not possible, one can use ``std
     }
 ```
 
-#### What is a Condition Variable in C++?
+#### 1.1.5.85. What is a Condition Variable in C++?
 A condition variable is a synchronization primitive that allows multiple threads to wait until an (arbitrary) condition becomes true.
 The standard library defines the class ``std::condition_variable`` in the header ``condition_variable`` which has the following member functions:
 * **wait():** takes a reference to a ``std::unique_lock`` that must be locked by the caller as an argument, unlocks the mutex and waits for the condition variable.
@@ -6087,7 +6087,7 @@ An example of application of condition variables are worker queues:
     }
 ```
 
-#### Give an example of using an Atomic Variable in Concurrency.
+#### 1.1.5.86. Give an example of using an Atomic Variable in Concurrency.
 The following code represents a possible use case for an Atomic Variable:
 ```cpp
     #include <atomic>
@@ -6106,7 +6106,7 @@ The following code represents a possible use case for an Atomic Variable:
     }
 ```
 
-#### Give an example of a Use Case for Futures and Promises.
+#### 1.1.5.87. Give an example of a Use Case for Futures and Promises.
 A possible Use Case for Futures and Promises would be passing of data between threads (an alternative to wait-notify pattern implemented by condition variables):
 ```cpp
     #include <iostream>
