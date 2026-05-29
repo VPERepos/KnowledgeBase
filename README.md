@@ -49,21 +49,32 @@ $$ P(A \cup B) = P(A) + P(B)$$
 Let $s$ be a possible outcome or an element of a sample space $S$:
 $$ s \in S $$
 
-#### 1.1.1.7. What are the differences between "element of", "subset" and "proper subset"?
+## What are the differences between "element of", "subset" and "proper subset"?
 * $\subseteq$ - "subset" means every element of a set is also in another set and these sets may be equal, e.g.:
+```math
 $$ \{1,2\} \subseteq \{1,2,3,4\} $$
+```
+```math
 $$ \{1,2,3,4\} \subseteq \{1,2,3,4\} $$
+```
 
 * $\subset$ - "proper subset" means every element of a set is also in another set, but they are not equal, e.g.:
+```math
 $$ \{1,2\} \subset \{1,2,3,4\} $$
+```
+```math
 $$ \{1,2,3,\} \subset \{1,2,3,4\} $$
-
+```
 * $\in$ - "element of" means an object is an element of a set, e.g.:
+```math
 $$ 3 \in \{1,2,3,4\}$$
+```
  A set can also be an element of another set, but only as a single element and not as a combination or permutation of another single elements, e.g:
+```math
 $$ \{1,2\} \in \{\{1,2\},1,2,3,4\} $$
+```
 
-#### 1.1.1.8. What is the difference between union and intersection of two sets?
+## What is the difference between union and intersection of two sets?
 * $A \cup B$ - union, means that elements are in A, or in B, or in both sets, e.g.:
 $$ A=\{1,2,3\},B=\{3,4,5\}$$
 $$ A\cup B=\{1,2,3,4,5\}$$
@@ -72,15 +83,15 @@ $$ A\cup B=\{1,2,3,4,5\}$$
 $$ A=\{1,2,3\},B=\{3,4,5\}$$
 $$ A\cap B = \{3\}$$
 
-#### 1.1.1.9. What is the probability of the union of two non-disjoint event sets?
+## What is the probability of the union of two non-disjoint event sets?
 Addition rule of probability, or inclusion exclusion formula:
 $$ P(A \cup B) = P(A) + P(B) - P(A \cap B) $$
 
-#### 1.1.1.10. How to calculate a probability that an event won't happen, knowing its probability to happen?
+## How to calculate a probability that an event won't happen, knowing its probability to happen?
 Because the probability of a sample space is 1 and if we know the probability of an event to happen, we can calculate the needed probability as follows:
 $$ P(A^c) = 1 - P(A) $$
 
-#### 1.1.1.11. What is conditional probability of two events and how it is calculated? Give a simple example.
+## What is conditional probability of two events and how it is calculated? Give a simple example.
 The conditional probability of an event A given event B is written as:
 $$ P(A|B) $$
 and is defined by:
@@ -104,7 +115,7 @@ $$
 P(A∣B)=\frac{P(A \cap B)}{P(B)}=\frac{\frac{20}{100}}{\frac{50}{100}}=\frac{20}{50}=0.4
 $$
 
-#### 1.1.1.12. What is Bayes' rule?
+## What is Bayes' rule?
 Bayes' rule describes connection between conditional probabilities of two events:
 $$
 P(A|B) = \frac{P(A)P(B|A)}{P(B)}
@@ -115,18 +126,18 @@ P(A \cap B) = P(B)P(A|B) = P(A)P(B|A)
 $$
 Which in turn follows from the definition of conditional probability.
 
-#### 1.1.1.13. Define the law of total probability.
+## Define the law of total probability.
 The law of total probability allows to compute the probability of an event A by breaking the sample space into disjoint cases (events that do not overlap) that together cover all possibilities.
 If $\{B_1, B_2, ..., B_n\}$ is a partition of the sample space S (disjoint events that sum to the whole space, $B_1 \cup ... \cup B_n=S$), then:
 $$
 P(A) = \sum_{i=1}^{n}P(A|B_i)P(B_i).
 $$
 
-#### 1.1.1.14. What is the difference between prior and posterior probabilities?
+## What is the difference between prior and posterior probabilities?
 The prior probability of an event is the initial belief about the event before observing any new evidence. It’s what is known or assumed before seeing data. The prior probability is defined by $P(A)$.
 The posterior probability is the updated belief about an event after observing evidence. It is defined by conditional probability $P(A|B)$.
 
-#### 1.1.1.15. When are two events independent?
+## When are two events independent?
 Two events are independent when the probability of their intersection is equal to the multiplication of their prior probabilities:
 $$
 P(A \cap B) = P(A)P(B).
@@ -137,10 +148,10 @@ $$
 P(A|B)=P(A).
 $$
 
-#### 1.1.1.16. How is independence of many events defined?
+## How is independence of many events defined?
 Infintely many events are said to be independent if any finite subset of them is independent. It means that the probabilities of the intersections of the finite subsets is defined by multiplication of their prior probabilities (pairs, triplets, quadruplets and so on).
 
-#### 1.1.1.17. What is conditional independence?
+## What is conditional independence?
 Events A and B are conditionally independent given E if the following is true:
 $$
 P(A \cap B|E) = P(A|E)P(B|E).
