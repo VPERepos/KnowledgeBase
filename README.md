@@ -488,19 +488,19 @@ Probability tells you how to go from a population to a sample, and statistics te
 #### Enlist and explain the most important combinatoric formulas.
 * <strong> Number of possible permutations to arrange $n$ distinct objects: </strong> <br/>
 Consider 5 balls of different colors, how many ways are there to put it on a table near each other on a line?
-\$$P(n) = n!$$
+$$P(n) = n!$$
 
 * <strong> Permutations with replacement: </strong> <br/>
 How to order r distinct, independent objects with n options for each object (how many outcomes are there throwing r = 6 dies with n = 6 faces).
-\$$P(n,r) = n^r$$ 
+$$P(n,r) = n^r$$ 
 
 * <strong> Permutations without replacement: </strong> <br/>
 How to order r samples out of n distinct objects (how many ways are there to take r = 5 cards out of a deck with n = 52 distinct cards).
-\$$P(n,r) = \frac{n!}{(n-r)!}$$ 
+$$P(n,r) = \frac{n!}{(n-r)!}$$ 
 
 * <strong> Combinations with replacement: </strong> <br/>
 Choose r distinct objects with n options, where order of the objects does not matter, but options of the objects can repeat (choosing 2 ice-cream scoops out of 3 flavors, but scoops can be of the same flavor ).
-\$$C(n,r) = \frac{(n+r-1)!}{r!(n-1)!}$$ 
+$$C(n,r) = \frac{(n+r-1)!}{r!(n-1)!}$$ 
 
 * <strong> Combinations without replacement: </strong> <br/>
 Choose r samples out of n available (like choose r = 3 persons from a group of n = 5 people, a person can not be chosen twice).
