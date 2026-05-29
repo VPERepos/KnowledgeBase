@@ -487,7 +487,7 @@ Probability tells you how to go from a population to a sample, and statistics te
 
 #### Enlist and explain the most important combinatoric formulas.
 * <strong> Number of possible permutations to arrange $n$ distinct objects: </strong> <br/>
-Consider 5 balls of different colors, how many ways are there to put it on a table near each other on a line?
+Consider 5 balls of different colors, how many ways are there to put it on a table near each other on a line?\
 $$P(n) = n!$$
 
 * <strong> Permutations with replacement: </strong> <br/>
